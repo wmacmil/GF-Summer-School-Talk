@@ -41,10 +41,10 @@
 \useoutertheme{infolines}
 
 %\titlegraphic{\includegraphics[width=25mm]{gottingen1.png}}
-\title{A Note on Negation in Categorial Grammar}
-\subtitle{H.Wansing 2006}
-\author{Éricles - Giacomo - Warrick}
-\date{$16^{th}$ October 2020}
+\title{Modeling Formal Languages in Grammatical Framework}
+\subtitle{On the Grammar of Proof}
+\author{Warrick Macmillan}
+\date{$7^{th}$ August 2021}
 
 
 \begin{document}
@@ -74,26 +74,204 @@
 \end{enumerate}
 \end{frame}
 
+
 \begin{frame}[fragile]
-\begin{center}
-% \begin{tikzcd}
-% A\arrow{r}{e}\arrow{d}[swap]{f} & B\arrow{d}{g} \\
-% C\arrow{r}[swap]{h} & D \\
-% \end{tikzcd}
+\begin{columns}
+\begin{column}{.5\linewidth}
 \begin{tikzcd}
-Strings \ar[r,"Lexical\ Analysis"] \ar[rr,bend right,"GF\ Parser"'] &[10em] Lexemes
-\ar[r,"Parsing"] &[10em] ASTs \ar[ll,bend right, "GF\ Linearization"] 
+Strings \ar[d,"Lexical\ Analysis"] \ar[dd,bend right=+90.0, swap,"Front\ End"]
+&[5m]
+\\ Lexemes \ar[d,"Parsing"] &[5em]
+\\ ASTs \ar[d,"Type\ Checker"] &[5m]
+\\ Typed\ ASTs
+  \ar[dd, bend left, "Code\ Generator"] 
+  \ar[dd, bend right, swap, "Interpreter"] &[5m]
+\\ ...
+\\ Target\ Language
 \end{tikzcd}
-\end{center}
+\end{column}
+\begin{column}{0.6 \linewidth}
+\begin{tikzcd}
+  Phonemes \arrow[d, "Morhphophonological
+  \\ Anaylsis" description]
+  \\ Morphemes \arrow[d, "Parse"]
+  \\ \{\ Syntactic\ Representation\ \} \arrow[d, "Montague"', bend right=49]
+    \arrow[d, "Ranta", bend left=49] \arrow[d, "..." description]
+  \\ {\{\ STLC,\ ...\ ,\ DTT\ \}} \arrow[d, "?" description]
+  \\ {\{\ Nearal Encoding\ ,\ ...\ ,\ I\ Language\ \}} \arrow[d, "?" description]
+  \\ Phonemes
+\end{tikzcd}
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}[fragile]
+\centering 
+\begin{tikzcd}
+                                                                            &  &  & Logic \arrow[llldddd, "Denotational\ Semantics" description] \arrow[rrrdddd, "Include\ Terms" description] &  &  &                                                                                                       \\
+                                                                            &  &  &                                                                                                            &  &  &                                                                                                       \\
+                                                                            &  &  &                                                                                                            &  &  &                                                                                                       \\
+                                                                            &  &  &                                                                                                            &  &  &                                                                                                       \\
+Math \arrow[rrruuuu, "Embedded\ in\ FOL", bend left] \arrow[rrrrrr, "ITP"'] &  &  &                                                                                                            &  &  & CS \arrow[llllll, "Denotational\ Semantics", bend left] \arrow[llluuuu, "Remove\ Terms"', bend right]
+\end{tikzcd}
+  
+
 \end{frame}
 
 
-% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBpiBdUkANwEMAbAVxiRDpAF9T1Nd9CKAIzkqtRizYAjLmJhQA5vCKgAZgCcIAWyRkQOCEiGcKnIA
+\begin{frame}[fragile]
+\centering 
+\begin{tikzcd}
+     &  &  & Logic                                                                                                                     &  &  &            \\
+     &  &  &                                                                                                                           &  &  &            \\
+     &  &  & Linguistics \arrow[uu, "Montague\ Semantics"'] \arrow[llldd, "Distributional\ Semantics"'] \arrow[rrrdd, "TT\ Semantics"] &  &  &            \\
+     &  &  &                                                                                                                           &  &  &            \\
+Math &  &  &                                                                                                                           &  &  & CS\ (MLTT)
+\end{tikzcd} 
 
-  % hw
+\end{frame}
+
+
+\begin{frame}[fragile]
+\centering 
+\begin{tikzcd}
+                                                &  &  & Logic \arrow[dd, "Embedding"] &  &  &                               \\
+                                                &  &  &                               &  &  &                               \\
+                                                &  &  & Linguistics                   &  &  &                               \\
+                                                &  &  &                               &  &  &                               \\
+Math \arrow[rrruu, "Language\ Of\ Mathematics"] &  &  &
+&  &  & CS\ (MLTT) \arrow[llluu, "Meaning\ Explanations"]
+\end{tikzcd} 
+
+\end{frame}
+
+\begin{frame}[fragile]
+\centering 
+  
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZAZgBoAGAXVJADcBDAGwFcYkQAZCAcywGMQAX1LpMufIRTlSAFmp0mrdgFl6OABZCRIDNjwEiANlnyGLNohABhAMoAdOwAIAFMo4AVdwEotovRKIyACZTRQsQAHEAMSF5GChueCJQADMAJwgAWyRpEBwIJDIQRnoAIxhGAAUxfUlimBScEBozJUsAJXowHHoHRy5ePj7nKwBBABEAUR9hVIzsxABGGnzCmhLyqpqAy0YGppaw9k7u3qcACQgcHGGbAFU+1Q0Z7XSspCCVgsQi1vC+ZilfhMTyxQRAA
+\begin{tikzcd}
+                                              &  &  & Logic \arrow[dd, "Ranta\ Logic\ (CADE)"] &  &  &                                       \\
+                                              &  &  &                                          &  &  &                                       \\
+                                              &  &  & GF                                       &  &  &                                       \\
+                                              &  &  &                                          &  &  &                                       \\
+Math \arrow[rrruu, "Ranta\ Hott\ (SU\ Math)"] &  &  &                                          &  &  & CS\ (MLTT) \arrow[llluu, "cubicalTT"]
+\end{tikzcd}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\centering 
+
+\begin{tikzcd}
+     &  &  & Logic                                                                                                                                             &  &  &            \\
+     &  &  &                                                                                                                                                   &  &  &            \\
+     &  &  & GF \arrow[uu, "?"'] \arrow[llldd, "Theory\ of\ Operads"']
+     \arrow[rrrdd, "Implementation\ of", bend left] \arrow[rrrdd, "Agda\ Embedding", bend right] &  &  &            \\
+     &  &  &                                                                                                                                                   &  &  &            \\
+Math &  &  &                                                                                                                                                   &  &  & CS\ (MLTT)
+\end{tikzcd}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\centering 
+
+\end{frame}
+
+\section{Preliminaries and Perspectives}
+
+\subsection{MLTT}
+
+\begin{frame}
+
+MLTT and its relation to FOL
+Set theory
+Implement mathematics constructively
+More recent incarnations HoTT, and now cubical
+
+\end{frame}
+
+\begin{frame}
+
+  Examples
+Donkey anaphora
+|
+V
+Dependent Types in GF
+
+\end{frame}
+
+
+\subsection{Agda}
+
+\begin{frame}
+
+What is Agda
+- Logical Framework
+- Interactive proof development environment
+- Inductive Types, Modules,
+- Implementation of MLTT
+
+\end{frame}
+
+\begin{frame}
+Boolean example
+
+(type theoretic syntax)
+
+\end{frame}
+
+\subsection{Philosophical Considerations}
+
+
+\begin{frame}
+
+  What is a Proof?
+  
+\end{frame}
+
+\begin{frame}
+
+  Defintions
+
+  Syntctic Completeness
+  Semantic Adequacy
+
+\end{frame}
+
+\begin{frame}[fragile]
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
+\centering
+\begin{tikzcd}
+Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
+                                                                                                                                                       &  &  & {}                      \\
+                                                                                                                                                       &  &  &                         \\
+Specturm\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy     
+\end{tikzcd}
+
+\end{frame}
+
+\section{GF Grammars}
+
+
+\begin{frame}
+
   
 
+\end{frame}
 
+\begin{frame}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}[fragile]
+\centering 
+
+\end{frame}
 
 
 \begin{frame}

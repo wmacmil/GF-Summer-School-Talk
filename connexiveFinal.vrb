@@ -1,10 +1,2 @@
-\begin{center}
-% \begin{tikzcd}
-% A\arrow{r}{e}\arrow{d}[swap]{f} & B\arrow{d}{g} \\
-% C\arrow{r}[swap]{h} & D \\
-% \end{tikzcd}
-\begin{tikzcd}
-Strings \ar[r,"Lexical\ Analysis"] \ar[rr,bend right,"GF\ Parser"'] &[10em] Lexemes
-\ar[r,"Parsing"] &[10em] ASTs \ar[ll,bend right, "GF\ Linearization"]
-\end{tikzcd}
-\end{center}
+\centering
+
