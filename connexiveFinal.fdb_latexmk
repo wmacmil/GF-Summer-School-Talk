@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1627916617 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1627916651
-  "connexiveFinal.xdv" 1627916617 1163184 3abbdb539fc7a007299c9ec86aa4aa99 "xelatex"
+["xdvipdfmx"] 1627922518 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1627922589
+  "connexiveFinal.xdv" 1627922517 824184 d63ac504cc4c359014422cc00e6867fa "xelatex"
   (generated)
   "connexiveFinal.pdf"
-["xelatex"] 1627916612 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1627916651
+["xelatex"] 1627922514 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1627922589
   "/etc/texmf/web2c/texmf.cnf" 1598478810 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -250,18 +250,23 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1598480481 4647953 4fb384f10db2f066e60fdfcda71c580e ""
-  "connexiveFinal.aux" 1627916617 8524 f02b7f2800212351d5e39db1174a0bf3 "xelatex"
-  "connexiveFinal.nav" 1627916617 4718 b2ea4553e53c1fd86a0a5d5bbc0f389b "xelatex"
-  "connexiveFinal.out" 1627916617 610 184d870ae705ba67ebdee5196a708de8 "xelatex"
-  "connexiveFinal.tex" 1627916612 21588 91d6354fc807109e09fea705a05b451a ""
-  "connexiveFinal.vrb" 1627916616 12 f3a0af3b25f454fc5a76c18c19579dbf "xelatex"
+  "connexiveFinal.aux" 1627922517 6790 659c0315f9aa942d32ebfafb74e4a292 "xelatex"
+  "connexiveFinal.nav" 1627922517 3674 23cc22cf4126bcaae27e199cc0050b06 "xelatex"
+  "connexiveFinal.out" 1627922517 413 f054d6c1d9739035ab74c29609f35b0b "xelatex"
+  "connexiveFinal.ptb" 1627922517 524 67513db29790e2ba4ef77073a4efd5ea "xelatex"
+  "connexiveFinal.tex" 1627922473 23328 9628db4995f0f8eeb92462b42fc696f9 ""
+  "connexiveFinal.vrb" 1627922517 776 03ae50ebff8f2e3d619b9cd6590a0091 "xelatex"
   "latex/agda.sty" 1627578751 25379 d172c873cc9290d6a780ea9676fcead4 ""
+  "latex/twin-primes.aux" 1627922517 901 1a57010ac796cc56d7676ff8a5a96e95 "xelatex"
+  "latex/twin-primes.tex" 1627922514 4769 3ddaf9947abb2bfcdfa33f2df96ca921 ""
   (generated)
-  "connexiveFinal.vrb"
   "connexiveFinal.xdv"
-  "connexiveFinal.toc"
+  "latex/twin-primes.aux"
+  "connexiveFinal.vrb"
   "connexiveFinal.nav"
-  "connexiveFinal.snm"
   "connexiveFinal.out"
-  "connexiveFinal.aux"
+  "connexiveFinal.toc"
+  "connexiveFinal.ptb"
   "connexiveFinal.log"
+  "connexiveFinal.aux"
+  "connexiveFinal.snm"

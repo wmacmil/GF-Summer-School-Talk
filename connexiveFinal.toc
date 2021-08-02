@@ -3,9 +3,6 @@
 \beamer@subsectionintoc {1}{1}{Introduction}{2}{0}{1}
 \beamer@sectionintoc {2}{Preliminaries and Perspectives}{10}{0}{2}
 \beamer@subsectionintoc {2}{1}{MLTT}{10}{0}{2}
-\beamer@subsectionintoc {2}{2}{Agda}{16}{0}{2}
-\beamer@subsectionintoc {2}{3}{Philosophical Considerations}{18}{0}{2}
-\beamer@sectionintoc {3}{GF Grammars}{21}{0}{3}
-\beamer@sectionintoc {4}{Two Exercises}{26}{0}{4}
-\beamer@subsectionintoc {4}{1}{Negative Normal Form}{26}{0}{4}
-\beamer@subsectionintoc {4}{2}{Proof in Agda}{34}{0}{4}
+\beamer@subsectionintoc {2}{2}{Agda}{18}{0}{2}
+\beamer@subsectionintoc {2}{3}{Philosophical Considerations}{22}{0}{2}
+\beamer@sectionintoc {3}{GF Grammars}{25}{0}{3}

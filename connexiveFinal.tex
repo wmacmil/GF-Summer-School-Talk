@@ -11,9 +11,15 @@
 \usepackage{unicode-math}
 \setmathfont{XITS Math}
 
+\setmainfont{DejaVu Serif}
+\setsansfont{DejaVu Sans}
+\setmonofont{DejaVu Sans Mono}
+
+
 \usepackage{newunicodechar}
 \newunicodechar{→}{\ensuremath{\mathnormal\to}}
-\newunicodechar{ℕ}{\ensuremath{\mathnormal\bN}}
+\newunicodechar{ℕ}{\ensuremath{\mathbb{N}}}
+
 
 \usepackage{xcolor}
 \usepackage[normalem]{ulem}
@@ -24,7 +30,7 @@
 % \usepackage{enumitem} %personalizza gli elenchi
 % \usepackage{amsthm} %teoremi e definizioni
 
-\usepackage{multirow}%più righe nella stessa cella in tabella
+\usepackage{multirow}
 \usepackage{multicol}
 \usepackage{caption}
 \usepackage{bussproofs}
@@ -252,6 +258,7 @@ not in the third.
 \end{frame}
 
 \begin{frame}
+\frametitle{Syntactic Comparisons}
 
 \begin{columns}
   
@@ -348,51 +355,119 @@ not in the third.
 
 \end{frame}
 
+\begin{frame}
+
+\frametitle{Judgments}
+
+\begin{columns}
+
+\begin{column}{0.4 \textwidth}
+\begin{block}{Type Theoretic Judgments}
+  \begin{itemize}
+  \item $T$ is a type
+  \item $T$ and $T'$ are equal types
+  \item $t$ is a term of type $T$
+  \item $t$ and $t'$ are equal terms of type $T$
+  \end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.4 \textwidth}
+\begin{block}{Mathematical Judgments}
+  \begin{itemize}
+  \item $P$ is a proposition
+  \item $P$ is true
+  \end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\\~\\
+\begin{itemize}
+  \item Notice that judgmental equality is uniquely type theoretic
+  \item Judgments in type theory are decidable
+  \item Truth (inhabitation) is not decidable
+  \item More exotic judgments are available in TT, i.e. $P$ is possible.
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{Important Differences}
+
+\begin{itemize}
+\item The rules of the types make explicit that they are not equivalent to those
+  of classical FOL
+\item An existential assertion in type theory requires data
+\item Excluded middle and double negation are not admitted in MLTT
+\item To be \emph{not unhappy} is clearly of a different meaning than to be \emph{happy}.
+\item This makes our approach to general translation of non-constructive mathematics \emph{impossible}  (at least such that it type-checks)
+
+\end{itemize}
+\end{frame}
 
 \begin{frame}
 
 \begin{itemize}
-
+\item One doesn't define logics, type systems in mathematics (e.g. metamathemeatics)
+\item Encoding things like rational and real numbers in type theory are
 \item already, category theorists and set theorists are at odds, (small and
   large categories), higher categories, which skeletons of categories are canonical, etc.
-\item The rules of the types make explicit that they are not equivalent to those
-  of classical FOL (e.g. an existential assertions in type theory require data)
-\item excluded middle and double negation are not admitted in MLTT
-\item to be \emph{not unhappy} is clearly of a different meaning than to be \emph{happy}.
-\item This makes general translation of non-constructive mathematics impossible  (at least such that it type-checks)
-
-\item one doesn't define logics, type systems in mathematics (e.g. metamathemeatics)
-\item encoding things like rational and real numbers in type theory are
   incredibly difficult
-\item Additionally, intensional type theory comes with two distinct notions of equality,
-definitional (computational) and propositional
-\item judgments are separate [separate slides?]
+\item Additionally, intensional type theory comes with two distinct notions of
+  equality, judgmental/definitional/computational and propositional equality
 \end{itemize}  
-
 \end{frame}
 
 \begin{frame}
-\frametitle{Donkey Anaphora}
 
-interpret the sentence ``every man who owns a donkey beats it'' in MLTT via the following judgment :
+\frametitle{Example Donkey Anaphora}
+  
+Interpret the sentence ``every man who owns a donkey beats it'' in MLTT via the following judgment :
 
-\[\Pi z : (\Sigma x : man. \; \Sigma y : donkey. \; owns(x,y)). \; beats(\pi_1z,\pi_1(\pi_2z))\]
+\[\Pi z : (\Sigma x : man. \; \Sigma y : donkey. \; owns(x,y)). \;
+  beats(\pi_1z,\pi_1(\pi_2z))\] 
 
-we judge $\vdash man \; {:} {\rm type}$ and $\vdash donkey \; {:}
-{\rm type}$ where ${\rm type}$ really denotes a universe
+We judge $\vdash man \; {:} {\rm type}$ and $\vdash donkey \; {:}
+{\rm type}$. ${\rm type}$ really denotes a universe
 
 \end{frame}
 
 \subsection{Agda}
 
 \begin{frame}
+\frametitle{What is Agda?}
 
-What is Agda
-- Logical Framework
-- Interactive proof development environment
-- Inductive Types, Modules,
-- Implementation of MLTT
+\begin{itemize}
+\item Implementation of MLTT
+\item Logical Framework
+\item Interactive proof development environment
+\item Inductive Types, Modules, Pattern Matching, & more
+\end{itemize}
 
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Twin Prime Conjecture in Agda}
+
+\include{latex/twin-primes}
+
+\end{frame}
+
+\begin{frame}
+\begin{block}{Mathematical Declarations}
+  \begin{itemize}
+    \item Theorem
+    \item Proof
+    \item Lemma
+    \item Axiom
+    \item Definition
+    \item Example 
+  \end{itemize}
+\end{block}
 \end{frame}
 
 \begin{frame}
@@ -441,241 +516,241 @@ Specturm\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ 
 
 \end{frame}
 
-\begin{frame}
+% \begin{frame}
 
 
 
-\end{frame}
+% \end{frame}
 
 
 
-\begin{frame}[fragile]
-\centering 
+% \begin{frame}[fragile]
+% \centering 
 
-\end{frame}
+% \end{frame}
 
 
-\begin{frame}
-  \frametitle{Overview}
+% \begin{frame}
+%   \frametitle{Overview}
 
-\begin{enumerate}
-\item \textit{Negation} is a contentions notion, in a sense (but we'll
-  not get into this here)
-\item Buszkowski added axioms for a kind of negation in categorial
-  grammars
-\item Wansing presents a different kind, which leads to motivation
-  of connexive logic
-\end{enumerate}
-\end{frame}
+% \begin{enumerate}
+% \item \textit{Negation} is a contentions notion, in a sense (but we'll
+%   not get into this here)
+% \item Buszkowski added axioms for a kind of negation in categorial
+%   grammars
+% \item Wansing presents a different kind, which leads to motivation
+%   of connexive logic
+% \end{enumerate}
+% \end{frame}
 
-\begin{frame}
-  \frametitle{Negative Information}
-  To allow for the expression that ``'sleeps John' is an invalid
-  sentence'' (it's not just ``not valid'', it's \textit{invalid}, one could assign it the type ``$¬(s\backslash n)$''
+% \begin{frame}
+%   \frametitle{Negative Information}
+%   To allow for the expression that ``'sleeps John' is an invalid
+%   sentence'' (it's not just ``not valid'', it's \textit{invalid}, one could assign it the type ``$¬(s\backslash n)$''
   
-  There are many nice connections to algebra, and even category theory (Lambek calculus was inspired on that), but we won't be touching upon (no time).
+%   There are many nice connections to algebra, and even category theory (Lambek calculus was inspired on that), but we won't be touching upon (no time).
   
-\end{frame}
+% \end{frame}
   
 
-\section{Two Exercises}
-\subsection{Negative Normal Form}
+% \section{Two Exercises}
+% \subsection{Negative Normal Form}
 
-\begin{frame}
+% \begin{frame}
 
-
-\begin{alertblock}{Observation 3.4}
-For every type symbol $x$, $x'$ is in NNF and $\vdash_S x \Leftrightarrow x'$, for $S \in \{\textbf{NL}^\neg , \textbf{L}^\neg \}$.
-\end{alertblock}  
-\begin{columns}
-\frametitle{The Negation Normal Form}
-\begin{column}{0.4 \textwidth}
-\begin{exampleblock}{Definition 3.1: type symbol}
-  \begin{enumerate}
-    \item atomic type symbols $x,y,w,\dots$ are type symbols;
-    \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
-    \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
-   % \item nothing else is a type symbol.
-  \end{enumerate}
-\end{exampleblock}
-\end{column}
-
-  \begin{column}{0.4 \textwidth}
-  \begin{exampleblock}{Negation Normal Form}
-  Define a function $'$ such that:
-  \begin{align*}
-    x' &= x \quad \text{\small (x atomic)}\\
-    (\neg x)' &= \neg x \quad \text{\small (x atomic)}\\
-    (\neg\neg X)' &= X' \\
-    (X * Y)' &= (X' * Y') \\
-    (\neg(Y/X))' &= ((\neg Y)'/X') \\
-    (\neg (X\backslash Y))' &= (X' \backslash (\neg Y)')
-  \end{align*}   
-    \end{exampleblock} 
-  \end{column}
-
-\end{columns}
-  
-\end{frame}
-
-\begin{frame}
 
 % \begin{alertblock}{Observation 3.4}
 % For every type symbol $x$, $x'$ is in NNF and $\vdash_S x \Leftrightarrow x'$, for $S \in \{\textbf{NL}^\neg , \textbf{L}^\neg \}$.
 % \end{alertblock}  
-Proof: \begin{itemize}
-  \item[A.] $x$ is a type symbol $\rightarrow$ $x'$ is its negation normal form;
-  \item[B.] $x$ is a type symbol $\rightarrow$ $\vdash_{\small S} x \Leftrightarrow x'$
-\end{itemize}
-\pause
-\begin{block}{A.}
-Proof is straightforward by induction on the complexity of type symbols.\\
-%\alert{Intuitively:} negation is "pushed" inside in the cases $\backslash$ and $/$, removed in case $\neg \neg x$ \\
+% \begin{columns}
+% \frametitle{The Negation Normal Form}
+% \begin{column}{0.4 \textwidth}
+% \begin{exampleblock}{Definition 3.1: type symbol}
+%   \begin{enumerate}
+%     \item atomic type symbols $x,y,w,\dots$ are type symbols;
+%     \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
+%     \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
+%    % \item nothing else is a type symbol.
+%   \end{enumerate}
+% \end{exampleblock}
+% \end{column}
 
-\end{block}
-(note: $\neg (X * Y)$ is not a valid type symbol here).
-  
-\end{frame}
+%   \begin{column}{0.4 \textwidth}
+%   \begin{exampleblock}{Negation Normal Form}
+%   Define a function $'$ such that:
+%   \begin{align*}
+%     x' &= x \quad \text{\small (x atomic)}\\
+%     (\neg x)' &= \neg x \quad \text{\small (x atomic)}\\
+%     (\neg\neg X)' &= X' \\
+%     (X * Y)' &= (X' * Y') \\
+%     (\neg(Y/X))' &= ((\neg Y)'/X') \\
+%     (\neg (X\backslash Y))' &= (X' \backslash (\neg Y)')
+%   \end{align*}   
+%     \end{exampleblock} 
+%   \end{column}
 
-\begin{frame}
-  \begin{block}{B. ($\Rightarrow case$)}
-By induction on the complexity of $x$:
-\begin{enumerate}
-  \item <1-> $x$ is atomic: $x' = x$ and by $(id)$ $\vdash x \Rightarrow x'$;
-  \item <2-> $x= (y \times w)$: by IH  $\vdash y \Leftrightarrow y'$ and $\vdash w \Leftrightarrow w'$
-  \begin{prooftree}
-  \AxiomC{$y \Rightarrow y'$}
-  \AxiomC{$w \Rightarrow w'$}
-  \RightLabel{\tiny $(\to \times)$}
-  \BinaryInfC{$y, w \Rightarrow (y' \times x')$}
-  \RightLabel{\tiny $(\times \to)$}
-  \UnaryInfC{ $(y\times w) \Rightarrow (y' \times x')$}
-  \end{prooftree}
+% \end{columns}
   
-  \item <2-> $x= (y / w)$: same IH
-   \begin{prooftree}
-  \AxiomC{$w' \Rightarrow w$}
-  \AxiomC{$y \Rightarrow y'$}
-  \RightLabel{\tiny $(/ \to)$}
-  \BinaryInfC{$(y/ w), w' \Rightarrow y'$}
-  \RightLabel{\tiny $(\to /)$}
-  \UnaryInfC{ $y/ w \Rightarrow y'/w'$}
-  \end{prooftree}
+% \end{frame}
+
+% \begin{frame}
+
+% % \begin{alertblock}{Observation 3.4}
+% % For every type symbol $x$, $x'$ is in NNF and $\vdash_S x \Leftrightarrow x'$, for $S \in \{\textbf{NL}^\neg , \textbf{L}^\neg \}$.
+% % \end{alertblock}  
+% Proof: \begin{itemize}
+%   \item[A.] $x$ is a type symbol $\rightarrow$ $x'$ is its negation normal form;
+%   \item[B.] $x$ is a type symbol $\rightarrow$ $\vdash_{\small S} x \Leftrightarrow x'$
+% \end{itemize}
+% \pause
+% \begin{block}{A.}
+% Proof is straightforward by induction on the complexity of type symbols.\\
+% %\alert{Intuitively:} negation is "pushed" inside in the cases $\backslash$ and $/$, removed in case $\neg \neg x$ \\
+
+% \end{block}
+% (note: $\neg (X * Y)$ is not a valid type symbol here).
   
-  \item <2-> $x= (y \backslash w)$: dual.
-%    \begin{prooftree}
-%      \AxiomC{$y' \Rightarrow y$}
+% \end{frame}
+
+% \begin{frame}
+%   \begin{block}{B. ($\Rightarrow case$)}
+% By induction on the complexity of $x$:
+% \begin{enumerate}
+%   \item <1-> $x$ is atomic: $x' = x$ and by $(id)$ $\vdash x \Rightarrow x'$;
+%   \item <2-> $x= (y \times w)$: by IH  $\vdash y \Leftrightarrow y'$ and $\vdash w \Leftrightarrow w'$
+%   \begin{prooftree}
+%   \AxiomC{$y \Rightarrow y'$}
 %   \AxiomC{$w \Rightarrow w'$}
-%   \RightLabel{\tiny $(\backslash \to)$}
-%   \BinaryInfC{$y',(y\backslash w)\Rightarrow w'$}
-%   \RightLabel{\tiny $(\to \backslash)$}
-%   \UnaryInfC{ $y\backslash w \Rightarrow y'\backslash w'$}
+%   \RightLabel{\tiny $(\to \times)$}
+%   \BinaryInfC{$y, w \Rightarrow (y' \times x')$}
+%   \RightLabel{\tiny $(\times \to)$}
+%   \UnaryInfC{ $(y\times w) \Rightarrow (y' \times x')$}
 %   \end{prooftree}
-\end{enumerate}
-\end{block}
+  
+%   \item <2-> $x= (y / w)$: same IH
+%    \begin{prooftree}
+%   \AxiomC{$w' \Rightarrow w$}
+%   \AxiomC{$y \Rightarrow y'$}
+%   \RightLabel{\tiny $(/ \to)$}
+%   \BinaryInfC{$(y/ w), w' \Rightarrow y'$}
+%   \RightLabel{\tiny $(\to /)$}
+%   \UnaryInfC{ $y/ w \Rightarrow y'/w'$}
+%   \end{prooftree}
+  
+%   \item <2-> $x= (y \backslash w)$: dual.
+% %    \begin{prooftree}
+% %      \AxiomC{$y' \Rightarrow y$}
+% %   \AxiomC{$w \Rightarrow w'$}
+% %   \RightLabel{\tiny $(\backslash \to)$}
+% %   \BinaryInfC{$y',(y\backslash w)\Rightarrow w'$}
+% %   \RightLabel{\tiny $(\to \backslash)$}
+% %   \UnaryInfC{ $y\backslash w \Rightarrow y'\backslash w'$}
+% %   \end{prooftree}
+% \end{enumerate}
+% \end{block}
 
-\end{frame}
+% \end{frame}
 
-\begin{frame}
-  \begin{block}{}
-  \begin{enumerate}
-    \item[5] $x = \neg y$: by IH $\vdash y \Leftrightarrow y' $  \\We can't deduce $\neg y \Leftrightarrow (\neg y)' $ directly. We need to look at $y$:
-    \begin{itemize}
-      \item <2-> $y$ atomic then $(\neg y)' = \neg y$ and $\vdash \neg y \Rightarrow \neg y$ by (id);
-      \item <2-> $y =\neg w$. We want a proof of $\neg \neg w \Leftrightarrow (\neg \neg w)'$. 
-      By IH we know that $\vdash w \Leftrightarrow w'$ 
+% \begin{frame}
+%   \begin{block}{}
+%   \begin{enumerate}
+%     \item[5] $x = \neg y$: by IH $\vdash y \Leftrightarrow y' $  \\We can't deduce $\neg y \Leftrightarrow (\neg y)' $ directly. We need to look at $y$:
+%     \begin{itemize}
+%       \item <2-> $y$ atomic then $(\neg y)' = \neg y$ and $\vdash \neg y \Rightarrow \neg y$ by (id);
+%       \item <2-> $y =\neg w$. We want a proof of $\neg \neg w \Leftrightarrow (\neg \neg w)'$. 
+%       By IH we know that $\vdash w \Leftrightarrow w'$ 
 
-      \begin{prooftree}
-      \AxiomC{$w \Rightarrow w'$}
-    \RightLabel{\tiny $(\neg \neg \to)$}
-      \UnaryInfC{$ \neg  \neg w \Rightarrow w'$}
-     \RightLabel{\tiny $(\to \neg \neg )$}
-      \UnaryInfC{$ \neg  \neg w \Rightarrow \neg \neg w'$}
-      \end{prooftree} 
+%       \begin{prooftree}
+%       \AxiomC{$w \Rightarrow w'$}
+%     \RightLabel{\tiny $(\neg \neg \to)$}
+%       \UnaryInfC{$ \neg  \neg w \Rightarrow w'$}
+%      \RightLabel{\tiny $(\to \neg \neg )$}
+%       \UnaryInfC{$ \neg  \neg w \Rightarrow \neg \neg w'$}
+%       \end{prooftree} 
       
-      \item <3-> $y = w/z$. We want a proof of $\neg (w/z) \Rightarrow ((\neg w')/z')$ since $(\neg (w/z))' = ((\neg w')/z')$
-      By IH we can assume \[z \Leftrightarrow z' \qquad \neg w \Leftrightarrow (\neg w)'\]
+%       \item <3-> $y = w/z$. We want a proof of $\neg (w/z) \Rightarrow ((\neg w')/z')$ since $(\neg (w/z))' = ((\neg w')/z')$
+%       By IH we can assume \[z \Leftrightarrow z' \qquad \neg w \Leftrightarrow (\neg w)'\]
  
-         \begin{prooftree}
-  \AxiomC{$z' \Rightarrow z$}
-  \AxiomC{$\neg w \Rightarrow (\neg w)'$}
-  \RightLabel{\tiny $(\neg / \to)$}
-  \BinaryInfC{$\neg (w/z), z' \Rightarrow (\neg w)'$}
-  \RightLabel{\tiny $(\to /)$}
-  \UnaryInfC{ $ \neg (w/z) \Rightarrow ((\neg w)'/z')$}
-  \end{prooftree}
-     \end{itemize}
-  \end{enumerate}
+%          \begin{prooftree}
+%   \AxiomC{$z' \Rightarrow z$}
+%   \AxiomC{$\neg w \Rightarrow (\neg w)'$}
+%   \RightLabel{\tiny $(\neg / \to)$}
+%   \BinaryInfC{$\neg (w/z), z' \Rightarrow (\neg w)'$}
+%   \RightLabel{\tiny $(\to /)$}
+%   \UnaryInfC{ $ \neg (w/z) \Rightarrow ((\neg w)'/z')$}
+%   \end{prooftree}
+%      \end{itemize}
+%   \end{enumerate}
   
-  \end{block}
-\end{frame}
+%   \end{block}
+% \end{frame}
 
-\subsection{Proof in Agda}
-
-
-\begin{frame}
-\begin{columns}
-
-\begin{column}{0.4 \textwidth}
-\begin{exampleblock}{Definition 3.1: type symbol}
-  \begin{enumerate}
-    \item Atomic type symbols $x,y,w,\dots$ are type symbols;
-    \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
-    \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
-    \item nothing else is a type symbol.
-  \end{enumerate}
-\end{exampleblock}
-\end{column}
-
-  \begin{column}{0.6 \textwidth}
-
-  % \include{latex/Foo}
-
-  \end{column}
-
-\end{columns}
-\end{frame}
+% \subsection{Proof in Agda}
 
 
-\begin{frame}
+% \begin{frame}
+% \begin{columns}
+
+% \begin{column}{0.4 \textwidth}
+% \begin{exampleblock}{Definition 3.1: type symbol}
+%   \begin{enumerate}
+%     \item Atomic type symbols $x,y,w,\dots$ are type symbols;
+%     \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
+%     \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
+%     \item nothing else is a type symbol.
+%   \end{enumerate}
+% \end{exampleblock}
+% \end{column}
+
+%   \begin{column}{0.6 \textwidth}
+
+%   % \include{latex/Foo}
+
+%   \end{column}
+
+% \end{columns}
+% \end{frame}
 
 
-\begin{columns}
-\begin{column}{0.4 \textwidth}
-\begin{exampleblock}{Definition 3.2: categorial entailment}
+% \begin{frame}
 
-  \begin{prooftree}
-  \AxiomC{}
-  \RightLabel{\tiny $(id)$}
-  \UnaryInfC{$x \Rightarrow x$}
-  \end{prooftree}
 
-	\begin{prooftree}
-  \AxiomC{$x,X \Rightarrow y$}
-  \RightLabel{\tiny $(\to \backslash )$}
-  \UnaryInfC{$X \Rightarrow (x\backslash y)$}
-  \end{prooftree}
+% \begin{columns}
+% \begin{column}{0.4 \textwidth}
+% \begin{exampleblock}{Definition 3.2: categorial entailment}
+
+%   \begin{prooftree}
+%   \AxiomC{}
+%   \RightLabel{\tiny $(id)$}
+%   \UnaryInfC{$x \Rightarrow x$}
+%   \end{prooftree}
+
+% 	\begin{prooftree}
+%   \AxiomC{$x,X \Rightarrow y$}
+%   \RightLabel{\tiny $(\to \backslash )$}
+%   \UnaryInfC{$X \Rightarrow (x\backslash y)$}
+%   \end{prooftree}
   
-  \begin{prooftree}
-  \AxiomC{$X \Rightarrow x$}
-  \AxiomC{$Y,y,Y' \Rightarrow z$}
-  \RightLabel{\tiny $(\backslash \to)$}
-  \BinaryInfC{$Y,X,(x\backslash y),Y' \Rightarrow z$}
-  \end{prooftree}
+%   \begin{prooftree}
+%   \AxiomC{$X \Rightarrow x$}
+%   \AxiomC{$Y,y,Y' \Rightarrow z$}
+%   \RightLabel{\tiny $(\backslash \to)$}
+%   \BinaryInfC{$Y,X,(x\backslash y),Y' \Rightarrow z$}
+%   \end{prooftree}
   
 
-\end{exampleblock}
-\end{column}
+% \end{exampleblock}
+% \end{column}
 
 
-  \begin{column}{0.7 \textwidth}
+%   \begin{column}{0.7 \textwidth}
 
-  % \include{latex/Foo1}
+%   % \include{latex/Foo1}
 
-  \end{column}
+%   \end{column}
 
-\end{columns}
-\end{frame}
+% \end{columns}
+% \end{frame}
 
 
 

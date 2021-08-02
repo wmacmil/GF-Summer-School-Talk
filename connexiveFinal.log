@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  2 AUG 2021 17:03
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  2 AUG 2021 18:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -977,6 +977,170 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/XITSMath(3)/b/n on input line 13.
+
+Package fontspec Info: Font family 'DejaVuSerif(0)' created for font 'DejaVu
+(fontspec)             Serif' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'DejaVuSerif(1)' created for font 'DejaVu
+(fontspec)             Serif' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Serif/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  TU/XITSMath(1)/m/n --> TU/DejaVuSerif(1)/m/n on input l
+ine 15.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/DejaVuSerif(1)/m/it on input line 1
+5.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/DejaVuSerif(1)/bx/n on input line 1
+5.
+
+Package fontspec Info: Font family 'DejaVuSans(0)' created for font 'DejaVu
+(fontspec)             Sans' with options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+
+Package fontspec Info: Font family 'DejaVuSans(1)' created for font 'DejaVu
+(fontspec)             Sans' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/DejaVuSans(1)/m/n on input line 16.
+
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/DejaVuSans(1)/bx/n on input line 1
+6.
+
+Package fontspec Info: Font family 'DejaVuSansMono(0)' created for font
+(fontspec)             'DejaVu Sans Mono' with options
+(fontspec)             [WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=Word
+Space].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: Font family 'DejaVuSansMono(1)' created for font
+(fontspec)             'DejaVu Sans Mono' with options [].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu Sans
+(fontspec)             Mono/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/DejaVuSansMono(1)/m/n on input line
+ 17.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/DejaVuSansMono(1)/bx/n on input lin
+e 17.
 (/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 ) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
@@ -1217,29 +1381,29 @@ ive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (/usr/share/te
 xlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty) (/usr/share/texli
 ve/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive
 /texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (./connexiveFinal.a
-ux)
+ux (./latex/twin-primes.aux))
 \openout1 = `connexiveFinal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 70.
-LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1276,7 +1440,7 @@ LaTeX Font Info:    ... okay on input line 70.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box137
-Package hyperref Info: Link coloring OFF on input line 70.
+Package hyperref Info: Link coloring OFF on input line 76.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1286,9 +1450,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count368
 )
-LaTeX Info: Redefining \ref on input line 70.
-LaTeX Info: Redefining \pageref on input line 70.
-LaTeX Info: Redefining \nameref on input line 70.
+LaTeX Info: Redefining \ref on input line 76.
+LaTeX Info: Redefining \pageref on input line 76.
+LaTeX Info: Redefining \nameref on input line 76.
 (./connexiveFinal.out) (./connexiveFinal.out)
 \@outlinefile=\write6
 \openout6 = `connexiveFinal.out'.
@@ -1318,71 +1482,57 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  TU/XITSMath(1)/m/n --> TU/lmr/m/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> TU/lmr/m/it on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> TU/lmr/bx/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/bx/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 70.
-LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/bx/n on input line 70.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (./connexiveFinal.nav)
-Overfull \hbox (27.7034pt too wide) in paragraph at lines 70--70
+Overfull \hbox (46.13173pt too wide) in paragraph at lines 76--76
  [][][][]  
  []
 
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-0.
+6.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 70.
+(Font)              scaled to size 6.00064pt on input line 76.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 70.
+(Font)              scaled to size 5.00053pt on input line 76.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 70.
+(Font)              scaled to size 5.99936pt on input line 76.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 70.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 70.
+(Font)              scaled to size 4.99947pt on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 70.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 10.95116pt on input line 74.
+(Font)              scaled to size 10.95116pt on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 8.21336pt on input line 74.
+(Font)              scaled to size 8.21336pt on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 6.5707pt on input line 74.
+(Font)              scaled to size 6.5707pt on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 10.94882pt on input line 74.
+(Font)              scaled to size 10.94882pt on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 8.21161pt on input line 74.
+(Font)              scaled to size 8.21161pt on input line 80.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 6.5693pt on input line 74.
+(Font)              scaled to size 6.5693pt on input line 80.
 
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [1
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1521,7 +1671,7 @@ Overfull \hbox (12.33162pt too wide) detected at line 28
  []
 
 )
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1531,7 +1681,7 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1540,8 +1690,13 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 ]
 \openout4 = `connexiveFinal.vrb'.
 
-(./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+(./connexiveFinal.vrb
+Overfull \hbox (4.42986pt too wide) in paragraph at lines 14--15
+ [][] 
+ []
+
+)
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1551,12 +1706,12 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb
-Overfull \hbox (10.1391pt too wide) in paragraph at lines 10--11
+Overfull \hbox (15.6124pt too wide) in paragraph at lines 10--11
  [][] 
  []
 
 )
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1566,7 +1721,7 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1576,7 +1731,7 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
@@ -1586,24 +1741,21 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [9
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [10
 
 ]
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 252.
-
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
@@ -1614,14 +1766,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 \end{frame}
+l.258 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 252--252
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
 
  []
 
@@ -1632,223 +1784,154 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.252 \end{frame}
+l.258 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [11
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [12
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [13
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.393 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [14
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [15
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [16
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [17
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...odules, Pattern Matching, &
+                                                   more \end {itemize} \par ...
+l.450 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [18
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+\openout2 = `latex/twin-primes.aux'.
+
+(./latex/twin-primes.tex
+\openout5 = `connexiveFinal.ptb'.
+
+)
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [19
 
-]
-\openout4 = `connexiveFinal.vrb'.
 
-(./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+
+]
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [20
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [21
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [22
 
 ]
-\openout4 = `connexiveFinal.vrb'.
-
-(./connexiveFinal.vrb)
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [23
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [24
 
 ]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
+Overfull \hbox (46.13173pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [25
-
-]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[26
-
-]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 538.
-
-
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[27
-
-]
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 538.
-
-
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[28
-
-]
-\myBox1=\box138
-\myScoreStart1=\dimen343
-\myCenter1=\dimen344
-\myScoreEnd1=\dimen345
-\myBox2=\box139
-\myScoreStart2=\dimen346
-\myCenter2=\dimen347
-\myScoreEnd2=\dimen348
-
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[29
-
-]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[30
-
-]
-LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 611.
-LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 611.
-LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 611.
-LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 611.
-
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[31
-
-]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[32
-
-]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[33
-
-]
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[34
-
-]
-Overfull \hbox (12.32639pt too wide) detected at line 678
-[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-
-Overfull \hbox (27.7034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
-[35
 
 ]
 \tf@nav=\write7
@@ -1860,21 +1943,21 @@ Overfull \hbox (27.7034pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `connexiveFinal.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 683.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 683.
-(./connexiveFinal.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 683.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 683.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 758.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 758.
+(./connexiveFinal.aux (./latex/twin-primes.aux))
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 758.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 758.
 Package rerunfilecheck Info: File `connexiveFinal.out' has not changed.
-(rerunfilecheck)             Checksum: 184D870AE705BA67EBDEE5196A708DE8;610.
+(rerunfilecheck)             Checksum: F054D6C1D9739035AB74C29609F35B0B;413.
  ) 
 Here is how much of TeX's memory you used:
- 35306 strings out of 479819
- 704585 string characters out of 5895846
+ 35389 strings out of 479819
+ 707801 string characters out of 5895846
  1137324 words of memory out of 5000000
- 51681 multiletter control sequences out of 15000+600000
- 543195 words of font info for 95 fonts, out of 8000000 for 9000
+ 51727 multiletter control sequences out of 15000+600000
+ 542616 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 58i,19n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,18n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on connexiveFinal.xdv (35 pages, 1163184 bytes).
+Output written on connexiveFinal.xdv (25 pages, 824184 bytes).
