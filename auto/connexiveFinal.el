@@ -34,6 +34,10 @@
     "multicol"
     "caption"
     "bussproofs"
-    "tikz-cd"))
+    "tikz-cd")
+   (LaTeX-add-environments
+    "oldquote")
+   (LaTeX-add-xparse-environments
+    '("quote" "om")))
  :latex)
 

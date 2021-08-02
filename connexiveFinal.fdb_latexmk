@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1627599883 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1627599948
-  "connexiveFinal.xdv" 1627599883 1007156 23ba2f5807edfd49e62debbdc4f3631d "xelatex"
+["xdvipdfmx"] 1627916617 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1627916651
+  "connexiveFinal.xdv" 1627916617 1163184 3abbdb539fc7a007299c9ec86aa4aa99 "xelatex"
   (generated)
   "connexiveFinal.pdf"
-["xelatex"] 1627599878 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1627599948
+["xelatex"] 1627916612 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1627916651
   "/etc/texmf/web2c/texmf.cnf" 1598478810 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -250,18 +250,18 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1598480481 4647953 4fb384f10db2f066e60fdfcda71c580e ""
-  "connexiveFinal.aux" 1627599883 7972 2e1b8ed8befacdec9a6bee46c08971ad "xelatex"
-  "connexiveFinal.nav" 1627599883 4406 d2c1401b4c64771134abe574178863f3 "xelatex"
-  "connexiveFinal.out" 1627599883 621 cef2524eeaa7890928b9cce9b4f4451b "xelatex"
-  "connexiveFinal.tex" 1627599878 16786 c4c42223ef00fea47034297d22e9332d ""
-  "connexiveFinal.vrb" 1627599882 12 f3a0af3b25f454fc5a76c18c19579dbf "xelatex"
+  "connexiveFinal.aux" 1627916617 8524 f02b7f2800212351d5e39db1174a0bf3 "xelatex"
+  "connexiveFinal.nav" 1627916617 4718 b2ea4553e53c1fd86a0a5d5bbc0f389b "xelatex"
+  "connexiveFinal.out" 1627916617 610 184d870ae705ba67ebdee5196a708de8 "xelatex"
+  "connexiveFinal.tex" 1627916612 21588 91d6354fc807109e09fea705a05b451a ""
+  "connexiveFinal.vrb" 1627916616 12 f3a0af3b25f454fc5a76c18c19579dbf "xelatex"
   "latex/agda.sty" 1627578751 25379 d172c873cc9290d6a780ea9676fcead4 ""
   (generated)
-  "connexiveFinal.aux"
-  "connexiveFinal.toc"
-  "connexiveFinal.nav"
-  "connexiveFinal.out"
   "connexiveFinal.vrb"
   "connexiveFinal.xdv"
+  "connexiveFinal.toc"
+  "connexiveFinal.nav"
   "connexiveFinal.snm"
+  "connexiveFinal.out"
+  "connexiveFinal.aux"
   "connexiveFinal.log"

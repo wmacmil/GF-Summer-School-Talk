@@ -4,22 +4,22 @@
 \headcommand {\beamer@subsectionpages {1}{1}}
 \headcommand {\sectionentry {1}{Overview}{2}{Overview}{0}}
 \headcommand {\beamer@subsectionpages {2}{1}}
-\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Quick Recapitulation}}
-\headcommand {\slideentry {1}{1}{1}{2/2}{Quick Recapitulation}{0}}
+\headcommand {\beamer@subsectionentry {0}{1}{1}{2}{Introduction}}
+\headcommand {\slideentry {1}{1}{1}{2/2}{Introduction}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\slideentry {1}{1}{2}{3/3}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{2}{3/3}{Introduction}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\slideentry {1}{1}{3}{4/4}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{3}{4/4}{Introduction}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\slideentry {1}{1}{4}{5/5}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{4}{5/5}{Introduction}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\slideentry {1}{1}{5}{6/6}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{5}{6/6}{Introduction}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\slideentry {1}{1}{6}{7/7}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{6}{7/7}{Introduction}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\slideentry {1}{1}{7}{8/8}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{7}{8/8}{Introduction}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\slideentry {1}{1}{8}{9/9}{Quick Recapitulation}{0}}
+\headcommand {\slideentry {1}{1}{8}{9/9}{Introduction}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@sectionpages {2}{9}}
 \headcommand {\beamer@subsectionpages {2}{9}}
@@ -30,54 +30,62 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\slideentry {2}{1}{2}{11/11}{MLTT}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionpages {10}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{12}{Agda}}
-\headcommand {\slideentry {2}{2}{1}{12/12}{Agda}{0}}
+\headcommand {\slideentry {2}{1}{3}{12/12}{MLTT}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\slideentry {2}{2}{2}{13/13}{Agda}{0}}
+\headcommand {\slideentry {2}{1}{4}{13/13}{MLTT}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\beamer@subsectionpages {12}{13}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{14}{Philosophical Considerations}}
-\headcommand {\slideentry {2}{3}{1}{14/14}{Philosophical Considerations}{0}}
+\headcommand {\slideentry {2}{1}{5}{14/14}{MLTT}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\slideentry {2}{3}{2}{15/15}{Philosophical Considerations}{0}}
+\headcommand {\slideentry {2}{1}{6}{15/15}{MLTT}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\slideentry {2}{3}{3}{16/16}{Philosophical Considerations}{0}}
+\headcommand {\beamer@subsectionpages {10}{15}}
+\headcommand {\beamer@subsectionentry {0}{2}{2}{16}{Agda}}
+\headcommand {\slideentry {2}{2}{1}{16/16}{Agda}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@sectionpages {10}{16}}
-\headcommand {\beamer@subsectionpages {14}{16}}
-\headcommand {\sectionentry {3}{GF Grammars}{17}{GF Grammars}{0}}
-\headcommand {\slideentry {3}{0}{1}{17/17}{}{0}}
+\headcommand {\slideentry {2}{2}{2}{17/17}{Agda}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@subsectionpages {16}{17}}
+\headcommand {\beamer@subsectionentry {0}{2}{3}{18}{Philosophical Considerations}}
+\headcommand {\slideentry {2}{3}{1}{18/18}{Philosophical Considerations}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\slideentry {3}{0}{3}{19/19}{}{0}}
+\headcommand {\slideentry {2}{3}{2}{19/19}{Philosophical Considerations}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {3}{0}{4}{20/20}{}{0}}
+\headcommand {\slideentry {2}{3}{3}{20/20}{Philosophical Considerations}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {3}{0}{5}{21/21}{}{0}}
+\headcommand {\beamer@sectionpages {10}{20}}
+\headcommand {\beamer@subsectionpages {18}{20}}
+\headcommand {\sectionentry {3}{GF Grammars}{21}{GF Grammars}{0}}
+\headcommand {\slideentry {3}{0}{1}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@sectionpages {17}{21}}
-\headcommand {\beamer@subsectionpages {17}{21}}
-\headcommand {\sectionentry {4}{Two Exercises}{22}{Two Exercises}{0}}
-\headcommand {\beamer@subsectionpages {22}{21}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{22}{Negative Normal Form}}
-\headcommand {\slideentry {4}{1}{1}{22/22}{Negative Normal Form}{0}}
+\headcommand {\slideentry {3}{0}{2}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
-\headcommand {\slideentry {4}{1}{2}{23/24}{Negative Normal Form}{0}}
-\headcommand {\beamer@framepages {23}{24}}
-\headcommand {\slideentry {4}{1}{3}{25/26}{Negative Normal Form}{0}}
-\headcommand {\beamer@framepages {25}{26}}
-\headcommand {\slideentry {4}{1}{4}{27/29}{Negative Normal Form}{0}}
-\headcommand {\beamer@framepages {27}{29}}
-\headcommand {\beamer@subsectionpages {22}{29}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{30}{Proof in Agda}}
-\headcommand {\slideentry {4}{2}{1}{30/30}{Proof in Agda}{0}}
-\headcommand {\beamer@framepages {30}{30}}
-\headcommand {\slideentry {4}{2}{2}{31/31}{Proof in Agda}{0}}
-\headcommand {\beamer@framepages {31}{31}}
-\headcommand {\beamer@partpages {1}{31}}
-\headcommand {\beamer@subsectionpages {30}{31}}
-\headcommand {\beamer@sectionpages {22}{31}}
-\headcommand {\beamer@documentpages {31}}
-\headcommand {\gdef \inserttotalframenumber {27}}
+\headcommand {\slideentry {3}{0}{3}{23/23}{}{0}}
+\headcommand {\beamer@framepages {23}{23}}
+\headcommand {\slideentry {3}{0}{4}{24/24}{}{0}}
+\headcommand {\beamer@framepages {24}{24}}
+\headcommand {\slideentry {3}{0}{5}{25/25}{}{0}}
+\headcommand {\beamer@framepages {25}{25}}
+\headcommand {\beamer@sectionpages {21}{25}}
+\headcommand {\beamer@subsectionpages {21}{25}}
+\headcommand {\sectionentry {4}{Two Exercises}{26}{Two Exercises}{0}}
+\headcommand {\beamer@subsectionpages {26}{25}}
+\headcommand {\beamer@subsectionentry {0}{4}{1}{26}{Negative Normal Form}}
+\headcommand {\slideentry {4}{1}{1}{26/26}{Negative Normal Form}{0}}
+\headcommand {\beamer@framepages {26}{26}}
+\headcommand {\slideentry {4}{1}{2}{27/28}{Negative Normal Form}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\slideentry {4}{1}{3}{29/30}{Negative Normal Form}{0}}
+\headcommand {\beamer@framepages {29}{30}}
+\headcommand {\slideentry {4}{1}{4}{31/33}{Negative Normal Form}{0}}
+\headcommand {\beamer@framepages {31}{33}}
+\headcommand {\beamer@subsectionpages {26}{33}}
+\headcommand {\beamer@subsectionentry {0}{4}{2}{34}{Proof in Agda}}
+\headcommand {\slideentry {4}{2}{1}{34/34}{Proof in Agda}{0}}
+\headcommand {\beamer@framepages {34}{34}}
+\headcommand {\slideentry {4}{2}{2}{35/35}{Proof in Agda}{0}}
+\headcommand {\beamer@framepages {35}{35}}
+\headcommand {\beamer@partpages {1}{35}}
+\headcommand {\beamer@subsectionpages {34}{35}}
+\headcommand {\beamer@sectionpages {26}{35}}
+\headcommand {\beamer@documentpages {35}}
+\headcommand {\gdef \inserttotalframenumber {31}}

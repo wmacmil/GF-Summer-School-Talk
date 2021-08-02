@@ -16,11 +16,11 @@
 \newunicodechar{ℕ}{\ensuremath{\mathnormal\bN}}
 
 \usepackage{xcolor}
-\usepackage[normalem]{ulem}%per barrare parole
-\usepackage{soul} %barrare numeri
-% \usepackage{booktabs}%per tabelle
-\usepackage{amsmath} %leqno mette elenchi in align a sx
+\usepackage[normalem]{ulem}
+\usepackage{soul} 
+\usepackage{amsmath} 
 \usepackage{amssymb}
+
 % \usepackage{enumitem} %personalizza gli elenchi
 % \usepackage{amsthm} %teoremi e definizioni
 
@@ -31,6 +31,26 @@
 
 \usepackage{tikz-cd}
 \usetikzlibrary{matrix}
+
+\let\oldquote\quote
+\let\endoldquote\endquote
+
+\RenewDocumentEnvironment{quote}{om}
+  {\oldquote}
+  {\par\nobreak\smallskip
+   \hfill(#2\IfValueT{#1}{~---~#1})\endoldquote 
+   \addvspace{\bigskipamount}}
+
+% \newenvironment<>{varblock}[2][.9\textwidth]{%
+%   \setlength{\textwidth}{#1}
+%   \begin{actionenv}#3%
+%     \def\insertblocktitle{#2}%
+%     \par%
+%     \usebeamertemplate{block begin}}
+%   {\par%
+%     \usebeamertemplate{block end}%
+%   \end{actionenv}}
+
 
 % \usepackage{tikz-cd}
 % % \usepackage{tikz}
@@ -61,21 +81,22 @@
 
 \section{Overview}
 
-\subsection{Quick Recapitulation}
+\subsection{Introduction}
 \begin{frame}
-\frametitle{Recapitulation}
+\frametitle{Table of Contents}
 
 \begin{enumerate}
-\item types such as ``$(n \backslash s)$'', ``$n$'';
-\item Has ways of constructing new types and a grammar for
-  ``well-formedness'';
-\item A (finite set) of symbols (such as ``poor'' and ``John''), to
-  which are matched said types.
+
+\item Explore abstract relationships between math, CS, Type Theory, and
+  Linguistics 
+\item Practical and brief intro to MLTT and Agda
+\item Grammars elaborating the abstractions above
 \end{enumerate}
 \end{frame}
 
 
 \begin{frame}[fragile]
+\frametitle{Abstraction Ladders}
 \begin{columns}
 \begin{column}{.5\linewidth}
 \begin{tikzcd}
@@ -106,6 +127,7 @@ Strings \ar[d,"Lexical\ Analysis"] \ar[dd,bend right=+90.0, swap,"Front\ End"]
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Computational Trinitarianism}
 \centering 
 \begin{tikzcd}
                                                                             &  &  & Logic \arrow[llldddd, "Denotational\ Semantics" description] \arrow[rrrdddd, "Include\ Terms" description] &  &  &                                                                                                       \\
@@ -120,6 +142,13 @@ Math \arrow[rrruuuu, "Embedded\ in\ FOL", bend left] \arrow[rrrrrr, "ITP"'] &  &
 
 
 \begin{frame}[fragile]
+% \frametitle{Linguistic  Interpretations}
+\frametitle{Interpretation Language}
+\begin{alertblock}{Observation 1.1}
+  We acknowledge this is only semantic interpretations in these domains.
+  One may decide on syntactic, pragmatic, or other ways in which to treat
+  linguistics via these fields
+\end{alertblock}  
 \centering 
 \begin{tikzcd}
      &  &  & Logic                                                                                                                     &  &  &            \\
@@ -133,6 +162,7 @@ Math &  &  &                                                                    
 
 
 \begin{frame}[fragile]
+\frametitle{Trinitarian Linguistics }
 \centering 
 \begin{tikzcd}
                                                 &  &  & Logic \arrow[dd, "Embedding"] &  &  &                               \\
@@ -147,7 +177,7 @@ Math \arrow[rrruu, "Language\ Of\ Mathematics"] &  &  &
 
 \begin{frame}[fragile]
 \centering 
-  
+\frametitle{Trinitarian Grammars}
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZAZgBoAGAXVJADcBDAGwFcYkQAZCAcywGMQAX1LpMufIRTlSAFmp0mrdgFl6OABZCRIDNjwEiANlnyGLNohABhAMoAdOwAIAFMo4AVdwEotovRKIyACZTRQsQAHEAMSF5GChueCJQADMAJwgAWyRpEBwIJDIQRnoAIxhGAAUxfUlimBScEBozJUsAJXowHHoHRy5ePj7nKwBBABEAUR9hVIzsxABGGnzCmhLyqpqAy0YGppaw9k7u3qcACQgcHGGbAFU+1Q0Z7XSspCCVgsQi1vC+ZilfhMTyxQRAA
 \begin{tikzcd}
                                               &  &  & Logic \arrow[dd, "Ranta\ Logic\ (CADE)"] &  &  &                                       \\
@@ -160,8 +190,8 @@ Math \arrow[rrruu, "Ranta\ Hott\ (SU\ Math)"] &  &  &                           
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Models of  GF}
 \centering 
-
 \begin{tikzcd}
      &  &  & Logic                                                                                                                                             &  &  &            \\
      &  &  &                                                                                                                                                   &  &  &            \\
@@ -174,8 +204,16 @@ Math &  &  &                                                                    
 \end{frame}
 
 \begin{frame}[fragile]
+\frametitle{Remarks}
 \centering 
-
+\begin{itemize}
+% \begin{enumerate}
+\item Trinitarian doctrine is in the ``formal" space
+\item Trinitarian + Linguistics is partially formal, and very underexplored
+\item Introduces many philosophical concerns, perhaps a rereading of
+  Wittgenstein should take place in this context
+% \end{enumerate}
+\end{itemize}
 \end{frame}
 
 \section{Preliminaries and Perspectives}
@@ -184,23 +222,166 @@ Math &  &  &                                                                    
 
 \begin{frame}
 
-MLTT and its relation to FOL
-Set theory
-Implement mathematics constructively
-More recent incarnations HoTT, and now cubical
+\begin{itemize}
+  \item Frege : Formal Proof, Predicate Logic
+  \item Russel : Type Theory to resolve his paradox
+  \item Brouwer : Constructivism
+\end{itemize}
 
 \end{frame}
 
 \begin{frame}
 
-  Examples
-Donkey anaphora
-|
-V
-Dependent Types in GF
+\begin{quote}{Per Martin-Löf, Padua Italy, June 1980}
+
+Mathematical logic and the relation between logic and mathematics have been
+interpreted in at least three different ways:
+\newline
+
+\\
+i. mathematical logic as symbolic logic, or logic using mathematical symbolism; \\
+ii. mathematical logic as foundations (or philosophy) of mathematics;\\
+iii. mathematical logic as logic studied by mathematical methods, as a branch of mathematics.
+\newline
+
+\\
+We shall here mainly be interested in mathematical logic in the second sense.
+What we shall do is also mathematical logic in the first sense, but certainly
+not in the third.
+\end{quote}
+\end{frame}
+
+\begin{frame}
+
+\begin{columns}
+  
+\begin{column}{0.4 \textwidth}
+\begin{block}{First Order Logic}
+  \begin{itemize}
+    \item $\forall$
+    \item $\exists$
+    \item $\supset$
+    \item $\wedge$
+    \item $\lor$
+    \item $\neg$
+    \item $\top$
+    \item $\bot$
+    \item $=$
+  \end{itemize}
+\end{block}
+\end{column}
+
+\begin{column}{0.4 \textwidth}
+\begin{block}{Dependent Type Theory}
+  \begin{itemize}
+    \item $\Pi$
+    \item $\Sigma$
+    \item $\to$
+    \item $\times$
+    \item $+$
+    \item $\neg$
+    \item $\top$
+    \item $\bot$
+    \item $\equiv$
+  \end{itemize}
+\end{block}
+\end{column}
+
+\end{columns}
 
 \end{frame}
 
+\begin{frame}
+\begin{columns}
+  
+\begin{column}{0.4 \textwidth}
+\begin{exampleblock}{Sets}
+  \begin{itemize}
+    \item $\mathbb{N}$
+    \item $\mathbb{N} \times \mathbb{N}$
+    \item $\mathbb{N} \to \mathbb{N}$
+    \item $\{x|P(x)\}$
+    \item $\emptyset$
+    \item $?$
+    \item $\cup$
+    \item $?$
+  \end{itemize}
+\end{exampleblock}
+\end{column}
+
+\begin{column}{0.4 \textwidth}
+\begin{block}{Types}
+  \begin{itemize}
+    \item $Nat$
+    \item $Nat \times Nat$
+    \item $Nat \to Nat$
+    \item $\Sigma x : \_ . P(x)$
+    \item $\bot$
+    \item $\top$
+    \item $?$
+    \item $U_1$
+  \end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\begin{columns}
+  
+\begin{column}{0.4 \textwidth}
+\begin{exampleblock}{More Sets}
+  \begin{itemize}
+    \item $1$
+    \item $(1,0)$
+  \end{itemize}
+\end{exampleblock}
+\end{column}
+
+\begin{column}{0.4 \textwidth}
+\begin{block}{Programs}
+  \begin{itemize}
+    \item $suc\ zero$
+    \item $(suc\ zero, zero)$
+  \end{itemize}
+\end{block}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{itemize}
+
+\item already, category theorists and set theorists are at odds, (small and
+  large categories), higher categories, which skeletons of categories are canonical, etc.
+\item The rules of the types make explicit that they are not equivalent to those
+  of classical FOL (e.g. an existential assertions in type theory require data)
+\item excluded middle and double negation are not admitted in MLTT
+\item to be \emph{not unhappy} is clearly of a different meaning than to be \emph{happy}.
+\item This makes general translation of non-constructive mathematics impossible  (at least such that it type-checks)
+
+\item one doesn't define logics, type systems in mathematics (e.g. metamathemeatics)
+\item encoding things like rational and real numbers in type theory are
+  incredibly difficult
+\item Additionally, intensional type theory comes with two distinct notions of equality,
+definitional (computational) and propositional
+\item judgments are separate [separate slides?]
+\end{itemize}  
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Donkey Anaphora}
+
+interpret the sentence ``every man who owns a donkey beats it'' in MLTT via the following judgment :
+
+\[\Pi z : (\Sigma x : man. \; \Sigma y : donkey. \; owns(x,y)). \; beats(\pi_1z,\pi_1(\pi_2z))\]
+
+we judge $\vdash man \; {:} {\rm type}$ and $\vdash donkey \; {:}
+{\rm type}$ where ${\rm type}$ really denotes a universe
+
+\end{frame}
 
 \subsection{Agda}
 
