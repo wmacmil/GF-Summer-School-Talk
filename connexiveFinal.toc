@@ -5,4 +5,4 @@
 \beamer@subsectionintoc {2}{1}{MLTT}{10}{0}{2}
 \beamer@subsectionintoc {2}{2}{Agda}{18}{0}{2}
 \beamer@subsectionintoc {2}{3}{Philosophical Considerations}{22}{0}{2}
-\beamer@sectionintoc {3}{GF Grammars}{25}{0}{3}
+\beamer@sectionintoc {3}{GF Grammars}{29}{0}{3}

@@ -3,6 +3,5 @@
 Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
                                                                                                                                                        &  &  & {}                      \\
                                                                                                                                                        &  &  &                         \\
-Specturm\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
+Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
 \end{tikzcd}
-

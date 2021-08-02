@@ -1,6 +1,8 @@
 (TeX-add-style-hook
  "connexiveFinal"
  (lambda ()
+   (TeX-add-to-alist 'LaTeX-provided-class-options
+                     '(("beamer" "10pt")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("fontenc" "T1") ("inputenc" "utf8") ("babel" "english") ("ulem" "normalem")))
    (add-to-list 'LaTeX-verbatim-environments-local "semiverbatim")
@@ -14,7 +16,6 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "latex/twin-primes"
     "beamer"
     "beamer10"
     "fontenc"

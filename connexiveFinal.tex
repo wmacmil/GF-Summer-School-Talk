@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[10pt]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -26,9 +26,6 @@
 \usepackage{soul} 
 \usepackage{amsmath} 
 \usepackage{amssymb}
-
-% \usepackage{enumitem} %personalizza gli elenchi
-% \usepackage{amsthm} %teoremi e definizioni
 
 \usepackage{multirow}
 \usepackage{multicol}
@@ -451,13 +448,10 @@ We judge $\vdash man \; {:} {\rm type}$ and $\vdash donkey \; {:}
 
 \begin{frame}
 
-\frametitle{Twin Prime Conjecture in Agda}
+\begin{columns}
 
-\include{latex/twin-primes}
+\begin{column}{0.4 \textwidth}
 
-\end{frame}
-
-\begin{frame}
 \begin{block}{Mathematical Declarations}
   \begin{itemize}
     \item Theorem
@@ -468,32 +462,199 @@ We judge $\vdash man \; {:} {\rm type}$ and $\vdash donkey \; {:}
     \item Example 
   \end{itemize}
 \end{block}
+
+\end{column}
+
+\begin{column}{0.7 \textwidth}
+
+% \include{latex/judgements}
+
+\end{column}
+\end{columns}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Twin Prime Conjecture}
+\begin{Definition}
+A \emph{twin prime} is a prime number that is either 2 less or 2 more than another prime number
+\end{Definition}
+Alternatively, we may state it as follows :
+\begin{Definition}
+A \emph{twin prime} is a prime that has a prime gap of two.
+\end{Definition}
+\begin{Definition}
+A \emph{prime gap} is the difference between two successive prime numbers.
+\end{Definition}
+
+\begin{theorem}
+There are infinitely many twin primes.
+\end{theorem} 
+
 \end{frame}
 
 \begin{frame}
-Boolean example
 
-(type theoretic syntax)
+\frametitle{Twin Prime Conjecture in Agda}
+
+% \include{latex/twin-primes}
 
 \end{frame}
 
 \subsection{Philosophical Considerations}
 
+\begin{frame}
+
+\frametitle{What is a Proof?}
+
+\begin{quote}{Per Martin-Löf}
+
+A proof is what makes a judgment evident % \cite{mlMeanings}.
+
+\end{quote}
+
+
+\end{frame}
+
 
 \begin{frame}
 
-  What is a Proof?
+
+\begin{quote}{Mohan Ganesalingam}
+
+...there is a considerable gap between what mathematicians claim is true and what
+they believe, and this mismatch causes a number of serious linguistic problems.
+
+\end{quote}
+
+\end{frame}
+
+
+\begin{frame}
+
+\centering
+
+% \begin{Itemize}
+% \item Formal Proof
+%   for computer (or aliens)
+%   translation via compiler (i.e. to kernel, or other langauge)
+%   objective
+%   syntax oriented
+%   20th century
+%   unstated obligations inferable 
+%   computer verified
+%   unambiguous, possibly redundant
+%   semantic structure distributed in variable names and comments
+  
+
+% \item Informal Proof
+%   for human
+%   translation requires human
+%   subjective
+%   semantics oriented
+%   >= Euclid
+%   some obligations require domain expertise
+%   peer reviewed
+%   ambiguous (to non-experts), possibly redundant
+%   syntax both structured and unstructured.
+
+%   % aliens vs humans
+%   % this is a spectrum
+%   % the meaning of evidence clearly varies based off when in time you're
+%   % speaking about and who youre talkin to
+% \item Types, on the other hand, are often ambiguous
+% \end{itemize}
+
+\begin{tabular}{|c|c|c|} \hline
+  Comparsion & Formal Proof & Informal Proof \\ \hline
+  Audience & Agda (and Human) & Human \\ \hline
+  Translation & Compiler & Human \\ \hline
+  Objectivity & Objective & Subjective \\ \hline % not always true
+  Historical & 20th Century & $<=$ Euclid \\ \hline
+  Orientation & Syntax & Semantics \\ \hline
+  Inferability & Complete & Domain Expertise Necessary \\ \hline
+  Verification & PL Designer & Human \\ \hline
+  Ambiguity & Unambiguous & Ambiguous \\ \hline
+
+\end{tabular}
+
+\end{frame}
+
+\begin{frame}
+
+\begin{itemize}
+\item One missed comparison from above :  formal proof is an implementation, an informal proof is a specification
+
+\item Why? Historically, we think of semantics preceding (the abstract notion of a
+  circle preceded its geometric understanding)
+\item although syntax oriented thinking may now be dominating the CS tradition)
+\item syntax oriented approach in Agda program,
+\item Both are necessary in the end, especially for big proofs.
+\item  Propositions or theorem statements are \emph{intentionally unambiguous}
+
+\end{itemize}
+  
   
 \end{frame}
 
 \begin{frame}
+\begin{quote}{Avigad}
+...when it comes to understanding the power of mathematical language to guide
+our thought and help us reason well, formal mathematical languages like the ones
+used by interactive proof assistants provide informative models of informal
+mathematical language. The formal languages underlying foundational frameworks
+such as set theory and type theory were designed to provide an account of the
+correct rules of mathematical reasoning, and, as Gödel observed, they do a
+remarkably good job. But correctness isn’t everything: we want our mathematical
+languages to enable us to reason efficiently and effectively as well. To that
+end, we need not just accounts as to what makes a mathematical argument correct,
+but also accounts of the structural features of our theorizing that help us
+manage mathematical complexity.
+% \cite{avigad2015mathematics}
+\end{quote}
+\end{frame}
 
-  Defintions
+\begin{frame}
+\begin{block}{Syntactic Completeness}
+Given an utterance or natural language expression that a mathematician might
+understand, does the GF grammar emit a well-formed, syntactically complete
+expression in the target logic or programming language?
+\end{block}
 
-  Syntctic Completeness
-  Semantic Adequacy
+\begin{itemize}
+
+\item The intended meaning manifests differently for different people - there
+  may be no absolute intention
+\item Many possible syntax's - beyond just alpha conversion (think Coq) Perhaps the details will have to change depending on the tools available 
+
+\end{itemize}
 
 \end{frame}
+
+\begin{frame}
+
+\begin{block}{Semantic Adequacy}
+  Given a well formed syntactic expression in, for instance, Agda, one
+can ask if the resulting NL expression generated by GF is
+\emph{semantically adequate}, and coherent to a ``fluent speaker"
+
+\end{block}
+
+\begin{itemize}
+  \item In dispute among mathematicians
+  \item Kind of like a ``Turing test for our approach" % (hypothetical, but wellworth exploring)
+  \item depends historical developments as our language develops, both
+    internally (cite gangaselem) and more interestingly, as a society.
+    so the
+    things all mathematicians take for granted (and therefore, have implicitly
+    more intuition for).  think of technology as well
+
+\end{itemize}
+  
+
+\end{frame}
+
+\section{GF Grammars}
 
 \begin{frame}[fragile]
 % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
@@ -502,257 +663,42 @@ Boolean example
 Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
                                                                                                                                                        &  &  & {}                      \\
                                                                                                                                                        &  &  &                         \\
-Specturm\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy     
+Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy     
 \end{tikzcd}
-
 \end{frame}
-
-\section{GF Grammars}
-
 
 \begin{frame}
+\frametitle{Concrete vs. Abstract perspective}
 
+Comparison of concrete vs. abstract perspective when designing a GF Grammar
+
+Abstract : Capture more semantic content (from a NL perspective) more ``freedom
+of expression"
+simpler makes easier to work with in Haskell (where tactics would come into play
+in Coq)
   
+Concrete : Simpler semantic space, easier for designing PL for it eliminates ambiguity.
+focus on this may mean more feasibility  for real implementation
+
+As will be seen, a smaller abstract syntax leans towards syntactic completeness
+with a larger linearization syntax (in terms of the complexity of the lincats
+effects the complexity of the entire linearization space)
 
 \end{frame}
 
-% \begin{frame}
+\begin{frame}
+\frametitle{Logic '14}
 
+\end{frame}
 
+\begin{frame}
+\frametitle{Hott '14}
 
-% \end{frame}
+\end{frame}
 
+\begin{frame}
+\frametitle{This project '14}
 
-
-% \begin{frame}[fragile]
-% \centering 
-
-% \end{frame}
-
-
-% \begin{frame}
-%   \frametitle{Overview}
-
-% \begin{enumerate}
-% \item \textit{Negation} is a contentions notion, in a sense (but we'll
-%   not get into this here)
-% \item Buszkowski added axioms for a kind of negation in categorial
-%   grammars
-% \item Wansing presents a different kind, which leads to motivation
-%   of connexive logic
-% \end{enumerate}
-% \end{frame}
-
-% \begin{frame}
-%   \frametitle{Negative Information}
-%   To allow for the expression that ``'sleeps John' is an invalid
-%   sentence'' (it's not just ``not valid'', it's \textit{invalid}, one could assign it the type ``$¬(s\backslash n)$''
-  
-%   There are many nice connections to algebra, and even category theory (Lambek calculus was inspired on that), but we won't be touching upon (no time).
-  
-% \end{frame}
-  
-
-% \section{Two Exercises}
-% \subsection{Negative Normal Form}
-
-% \begin{frame}
-
-
-% \begin{alertblock}{Observation 3.4}
-% For every type symbol $x$, $x'$ is in NNF and $\vdash_S x \Leftrightarrow x'$, for $S \in \{\textbf{NL}^\neg , \textbf{L}^\neg \}$.
-% \end{alertblock}  
-% \begin{columns}
-% \frametitle{The Negation Normal Form}
-% \begin{column}{0.4 \textwidth}
-% \begin{exampleblock}{Definition 3.1: type symbol}
-%   \begin{enumerate}
-%     \item atomic type symbols $x,y,w,\dots$ are type symbols;
-%     \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
-%     \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
-%    % \item nothing else is a type symbol.
-%   \end{enumerate}
-% \end{exampleblock}
-% \end{column}
-
-%   \begin{column}{0.4 \textwidth}
-%   \begin{exampleblock}{Negation Normal Form}
-%   Define a function $'$ such that:
-%   \begin{align*}
-%     x' &= x \quad \text{\small (x atomic)}\\
-%     (\neg x)' &= \neg x \quad \text{\small (x atomic)}\\
-%     (\neg\neg X)' &= X' \\
-%     (X * Y)' &= (X' * Y') \\
-%     (\neg(Y/X))' &= ((\neg Y)'/X') \\
-%     (\neg (X\backslash Y))' &= (X' \backslash (\neg Y)')
-%   \end{align*}   
-%     \end{exampleblock} 
-%   \end{column}
-
-% \end{columns}
-  
-% \end{frame}
-
-% \begin{frame}
-
-% % \begin{alertblock}{Observation 3.4}
-% % For every type symbol $x$, $x'$ is in NNF and $\vdash_S x \Leftrightarrow x'$, for $S \in \{\textbf{NL}^\neg , \textbf{L}^\neg \}$.
-% % \end{alertblock}  
-% Proof: \begin{itemize}
-%   \item[A.] $x$ is a type symbol $\rightarrow$ $x'$ is its negation normal form;
-%   \item[B.] $x$ is a type symbol $\rightarrow$ $\vdash_{\small S} x \Leftrightarrow x'$
-% \end{itemize}
-% \pause
-% \begin{block}{A.}
-% Proof is straightforward by induction on the complexity of type symbols.\\
-% %\alert{Intuitively:} negation is "pushed" inside in the cases $\backslash$ and $/$, removed in case $\neg \neg x$ \\
-
-% \end{block}
-% (note: $\neg (X * Y)$ is not a valid type symbol here).
-  
-% \end{frame}
-
-% \begin{frame}
-%   \begin{block}{B. ($\Rightarrow case$)}
-% By induction on the complexity of $x$:
-% \begin{enumerate}
-%   \item <1-> $x$ is atomic: $x' = x$ and by $(id)$ $\vdash x \Rightarrow x'$;
-%   \item <2-> $x= (y \times w)$: by IH  $\vdash y \Leftrightarrow y'$ and $\vdash w \Leftrightarrow w'$
-%   \begin{prooftree}
-%   \AxiomC{$y \Rightarrow y'$}
-%   \AxiomC{$w \Rightarrow w'$}
-%   \RightLabel{\tiny $(\to \times)$}
-%   \BinaryInfC{$y, w \Rightarrow (y' \times x')$}
-%   \RightLabel{\tiny $(\times \to)$}
-%   \UnaryInfC{ $(y\times w) \Rightarrow (y' \times x')$}
-%   \end{prooftree}
-  
-%   \item <2-> $x= (y / w)$: same IH
-%    \begin{prooftree}
-%   \AxiomC{$w' \Rightarrow w$}
-%   \AxiomC{$y \Rightarrow y'$}
-%   \RightLabel{\tiny $(/ \to)$}
-%   \BinaryInfC{$(y/ w), w' \Rightarrow y'$}
-%   \RightLabel{\tiny $(\to /)$}
-%   \UnaryInfC{ $y/ w \Rightarrow y'/w'$}
-%   \end{prooftree}
-  
-%   \item <2-> $x= (y \backslash w)$: dual.
-% %    \begin{prooftree}
-% %      \AxiomC{$y' \Rightarrow y$}
-% %   \AxiomC{$w \Rightarrow w'$}
-% %   \RightLabel{\tiny $(\backslash \to)$}
-% %   \BinaryInfC{$y',(y\backslash w)\Rightarrow w'$}
-% %   \RightLabel{\tiny $(\to \backslash)$}
-% %   \UnaryInfC{ $y\backslash w \Rightarrow y'\backslash w'$}
-% %   \end{prooftree}
-% \end{enumerate}
-% \end{block}
-
-% \end{frame}
-
-% \begin{frame}
-%   \begin{block}{}
-%   \begin{enumerate}
-%     \item[5] $x = \neg y$: by IH $\vdash y \Leftrightarrow y' $  \\We can't deduce $\neg y \Leftrightarrow (\neg y)' $ directly. We need to look at $y$:
-%     \begin{itemize}
-%       \item <2-> $y$ atomic then $(\neg y)' = \neg y$ and $\vdash \neg y \Rightarrow \neg y$ by (id);
-%       \item <2-> $y =\neg w$. We want a proof of $\neg \neg w \Leftrightarrow (\neg \neg w)'$. 
-%       By IH we know that $\vdash w \Leftrightarrow w'$ 
-
-%       \begin{prooftree}
-%       \AxiomC{$w \Rightarrow w'$}
-%     \RightLabel{\tiny $(\neg \neg \to)$}
-%       \UnaryInfC{$ \neg  \neg w \Rightarrow w'$}
-%      \RightLabel{\tiny $(\to \neg \neg )$}
-%       \UnaryInfC{$ \neg  \neg w \Rightarrow \neg \neg w'$}
-%       \end{prooftree} 
-      
-%       \item <3-> $y = w/z$. We want a proof of $\neg (w/z) \Rightarrow ((\neg w')/z')$ since $(\neg (w/z))' = ((\neg w')/z')$
-%       By IH we can assume \[z \Leftrightarrow z' \qquad \neg w \Leftrightarrow (\neg w)'\]
- 
-%          \begin{prooftree}
-%   \AxiomC{$z' \Rightarrow z$}
-%   \AxiomC{$\neg w \Rightarrow (\neg w)'$}
-%   \RightLabel{\tiny $(\neg / \to)$}
-%   \BinaryInfC{$\neg (w/z), z' \Rightarrow (\neg w)'$}
-%   \RightLabel{\tiny $(\to /)$}
-%   \UnaryInfC{ $ \neg (w/z) \Rightarrow ((\neg w)'/z')$}
-%   \end{prooftree}
-%      \end{itemize}
-%   \end{enumerate}
-  
-%   \end{block}
-% \end{frame}
-
-% \subsection{Proof in Agda}
-
-
-% \begin{frame}
-% \begin{columns}
-
-% \begin{column}{0.4 \textwidth}
-% \begin{exampleblock}{Definition 3.1: type symbol}
-%   \begin{enumerate}
-%     \item Atomic type symbols $x,y,w,\dots$ are type symbols;
-%     \item if $X$ and $Y$ are type symbols, also $(X * Y)$ is a type symbol, for $ * \in \{ \backslash , / , x \}$
-%     \item if $X$ is a type symbol, also $\neg X$ is a type symbol $( X \neq Y \times Z)$;
-%     \item nothing else is a type symbol.
-%   \end{enumerate}
-% \end{exampleblock}
-% \end{column}
-
-%   \begin{column}{0.6 \textwidth}
-
-%   % \include{latex/Foo}
-
-%   \end{column}
-
-% \end{columns}
-% \end{frame}
-
-
-% \begin{frame}
-
-
-% \begin{columns}
-% \begin{column}{0.4 \textwidth}
-% \begin{exampleblock}{Definition 3.2: categorial entailment}
-
-%   \begin{prooftree}
-%   \AxiomC{}
-%   \RightLabel{\tiny $(id)$}
-%   \UnaryInfC{$x \Rightarrow x$}
-%   \end{prooftree}
-
-% 	\begin{prooftree}
-%   \AxiomC{$x,X \Rightarrow y$}
-%   \RightLabel{\tiny $(\to \backslash )$}
-%   \UnaryInfC{$X \Rightarrow (x\backslash y)$}
-%   \end{prooftree}
-  
-%   \begin{prooftree}
-%   \AxiomC{$X \Rightarrow x$}
-%   \AxiomC{$Y,y,Y' \Rightarrow z$}
-%   \RightLabel{\tiny $(\backslash \to)$}
-%   \BinaryInfC{$Y,X,(x\backslash y),Y' \Rightarrow z$}
-%   \end{prooftree}
-  
-
-% \end{exampleblock}
-% \end{column}
-
-
-%   \begin{column}{0.7 \textwidth}
-
-%   % \include{latex/Foo1}
-
-%   \end{column}
-
-% \end{columns}
-% \end{frame}
-
-
-
+\end{frame}
 
 \end{document}

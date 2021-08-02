@@ -11,7 +11,6 @@ open Eq.≡-Reasoning using (begin_; _≡⟨⟩_; step-≡; _∎)
 \end{code}
 
 \begin{code}
-
 is-prime : ℕ → Set
 is-prime n =
   (n ≥ 2) ×
@@ -22,4 +21,36 @@ twin-prime-conjecture = (n : ℕ) → Σ[ p ∈ ℕ ] (p ≥ n)
   × is-prime p
   × is-prime (p ∔ 2)
 
+variable
+  A : Set
+  D : Set
+  stuff : Set
+  -- definition-body : Set
+  -- T : Set
+
+definition-body = ℕ
+
+T = ℕ
+L = ℕ
+E = ℕ
+
+proof : T
+proof = zero
+
+postulate
+  axiom : A -- Axiom
+
+definition : stuff → Set
+definition s = definition-body
+
+theorem : T     -- Theorem Statement
+theorem = proof -- Proof
+
+lemma : L
+lemma = proof
+
+example : E
+example = proof
+
 \end{code}
+
