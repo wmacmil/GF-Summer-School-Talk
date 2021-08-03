@@ -1,7 +1,25 @@
-\centering
-\begin{tikzcd}
-Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
-                                                                                                                                                       &  &  & {}                      \\
-                                                                                                                                                       &  &  &                         \\
-Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
-\end{tikzcd}
+
+\begin{itemize}
+\item We also show that a notion of a map being an equivalence, that of the
+  every element in the codomain having a contractible image (think bijection)
+\item notice the error in the Pidgin case
+\end{itemize}
+
+\\~\\
+
+ \textbf{Definition}:
+ A map $f : \arrowH {A}{B}$ is an equivalence, if for all $y : B$, its fiber, $\comprehensionH {x}{A}{\equalH {\appH {f}{x}}{y}}$, is contractible.
+ We write $\equivalenceH {A}{B}$, if there is an equivalence $\arrowH {A}{B}$.
+
+\\~\\
+
+\begin{figure}
+\begin{verbatim}
+Equivalence ( f : A -> B ) : Set =
+  ( y : B ) -> ( isContr ( fiber it ) ) ; ; ;
+  fiber it : Set = ( x : A ) ( * ) ( Id ( f ( x ) ) ( y ) )
+\end{verbatim}
+\end{figure}
+
+\input{latex/equiv}
+

@@ -91,14 +91,26 @@
 \headcommand {\beamer@framepages {36}{36}}
 \headcommand {\slideentry {3}{1}{7}{37/37}{Logic '11}{0}}
 \headcommand {\beamer@framepages {37}{37}}
-\headcommand {\slideentry {3}{1}{8}{38/38}{Logic '11}{0}}
+\headcommand {\beamer@subsectionpages {31}{37}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{38}{Hott '14}}
+\headcommand {\slideentry {3}{2}{1}{38/38}{Hott '14}{0}}
 \headcommand {\beamer@framepages {38}{38}}
-\headcommand {\slideentry {3}{1}{9}{39/39}{Logic '11}{0}}
+\headcommand {\slideentry {3}{2}{2}{39/39}{Hott '14}{0}}
 \headcommand {\beamer@framepages {39}{39}}
-\headcommand {\slideentry {3}{1}{10}{40/40}{Logic '11}{0}}
+\headcommand {\slideentry {3}{2}{3}{40/40}{Hott '14}{0}}
 \headcommand {\beamer@framepages {40}{40}}
-\headcommand {\beamer@partpages {1}{40}}
-\headcommand {\beamer@subsectionpages {31}{40}}
-\headcommand {\beamer@sectionpages {29}{40}}
-\headcommand {\beamer@documentpages {40}}
-\headcommand {\gdef \inserttotalframenumber {40}}
+\headcommand {\slideentry {3}{2}{4}{41/41}{Hott '14}{0}}
+\headcommand {\beamer@framepages {41}{41}}
+\headcommand {\slideentry {3}{2}{5}{42/42}{Hott '14}{0}}
+\headcommand {\beamer@framepages {42}{42}}
+\headcommand {\slideentry {3}{2}{6}{43/43}{Hott '14}{0}}
+\headcommand {\beamer@framepages {43}{43}}
+\headcommand {\slideentry {3}{2}{7}{44/44}{Hott '14}{0}}
+\headcommand {\beamer@framepages {44}{44}}
+\headcommand {\slideentry {3}{2}{8}{45/45}{Hott '14}{0}}
+\headcommand {\beamer@framepages {45}{45}}
+\headcommand {\beamer@partpages {1}{45}}
+\headcommand {\beamer@subsectionpages {38}{45}}
+\headcommand {\beamer@sectionpages {29}{45}}
+\headcommand {\beamer@documentpages {45}}
+\headcommand {\gdef \inserttotalframenumber {45}}

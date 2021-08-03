@@ -7,3 +7,4 @@
 \beamer@subsectionintoc {2}{3}{Philosophical Considerations}{22}{0}{2}
 \beamer@sectionintoc {3}{GF Grammars}{29}{0}{3}
 \beamer@subsectionintoc {3}{1}{Logic '11}{31}{0}{3}
+\beamer@subsectionintoc {3}{2}{Hott '14}{38}{0}{3}

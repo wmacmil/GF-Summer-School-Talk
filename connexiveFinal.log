@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  3 AUG 2021 17:23
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  3 AUG 2021 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -663,7 +663,17 @@ Package babel Info: \l@australian = using hyphenrules for ukenglish
 (babel)             (\language11) on input line 105.
 Package babel Info: \l@newzealand = using hyphenrules for ukenglish
 (babel)             (\language11) on input line 108.
-)) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/stmaryrd.sty
+Package: stmaryrd 1994/03/03 St Mary's Road symbol package
+\symstmry=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `stmry' in version `bold'
+(Font)                  U/stmry/m/n --> U/stmry/b/n on input line 89.
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2019/11/10 v1.5r LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks45
+\verbatim@line=\toks46
+\verbatim@in@stream=\read4
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 ) (./latex/agda.sty
 
@@ -701,7 +711,7 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \col@sep=\dimen280
 \ar@mcellbox=\box74
 \extrarowheight=\dimen281
-\NC@list=\toks45
+\NC@list=\toks47
 \extratabsurround=\skip66
 \backup@length=\skip67
 \ar@cellbox=\box75
@@ -709,8 +719,8 @@ Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
 \PT@colwidth=\dimen282
 \PT@cols=\count314
 \PT@table=\count315
-\PT@toks=\toks46
-\PT@in=\read4
+\PT@toks=\toks48
+\PT@in=\read5
 \PT@out=\write5
 ) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
 Package: environ 2014/05/04 v0.3 A new way to define environments
@@ -735,8 +745,8 @@ Package: xparse 2020-02-14 L3 Experimental document command parser
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/share/texl
 ive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks47
-\XKV@tempa@toks=\toks48
+\XKV@toks=\toks49
+\XKV@tempa@toks=\toks50
 )
 \XKV@depth=\count323
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
@@ -826,13 +836,13 @@ Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 13.
+(Font)              `operators' in the math version `normal' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/XITSMath(1)/m/n on input line 13.
+(Font)                  OT1/lmr/m/n --> TU/XITSMath(1)/m/n on input line 15.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 13.
+(Font)              `operators' in the math version `bold' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/XITSMath(1)/b/n on input line 13.
+(Font)                  OT1/lmr/bx/n --> TU/XITSMath(1)/b/n on input line 15.
 
 Package fontspec Info: XITS Math scale = 1.0001.
 
@@ -904,13 +914,13 @@ stment={\fontdimen
 (fontspec)             21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 13.
+(Font)              `symbols' in the math version `normal' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/XITSMath(2)/m/n on input line 13.
+(Font)                  OMS/lmsy/m/n --> TU/XITSMath(2)/m/n on input line 15.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 13.
+(Font)              `symbols' in the math version `bold' on input line 15.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/XITSMath(2)/b/n on input line 13.
+(Font)                  OMS/lmsy/b/n --> TU/XITSMath(2)/b/n on input line 15.
 
 Package fontspec Info: XITS Math scale = 0.9999.
 
@@ -966,14 +976,14 @@ stment={\fontdimen
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
-3.
+5.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/XITSMath(3)/m/n on input line 13.
+(Font)                  OMX/lmex/m/n --> TU/XITSMath(3)/m/n on input line 15.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 13.
+(Font)              `largesymbols' in the math version `bold' on input line 15.
 
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/XITSMath(3)/b/n on input line 13.
+(Font)                  OMX/lmex/m/n --> TU/XITSMath(3)/b/n on input line 15.
 
 Package fontspec Info: Font family 'DejaVuSerif(0)' created for font 'DejaVu
 (fontspec)             Serif' with options [Ligatures=TeX].
@@ -1017,13 +1027,13 @@ Package fontspec Info: Font family 'DejaVuSerif(1)' created for font 'DejaVu
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
 (Font)                  TU/XITSMath(1)/m/n --> TU/DejaVuSerif(1)/m/n on input l
-ine 15.
+ine 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/lmr/m/it --> TU/DejaVuSerif(1)/m/it on input line 1
-5.
+7.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/lmr/bx/n --> TU/DejaVuSerif(1)/bx/n on input line 1
-5.
+7.
 
 Package fontspec Info: Font family 'DejaVuSans(0)' created for font 'DejaVu
 (fontspec)             Sans' with options [Ligatures=TeX].
@@ -1065,11 +1075,11 @@ Package fontspec Info: Font family 'DejaVuSans(1)' created for font 'DejaVu
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/DejaVuSans(1)/m/n on input line 16.
+(Font)                  OT1/lmss/m/n --> TU/DejaVuSans(1)/m/n on input line 18.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/lmss/bx/n --> TU/DejaVuSans(1)/bx/n on input line 1
-6.
+8.
 
 Package fontspec Info: Font family 'DejaVuSansMono(0)' created for font
 (fontspec)             'DejaVu Sans Mono' with options
@@ -1134,17 +1144,17 @@ Package fontspec Info: Font family 'DejaVuSansMono(1)' created for font
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/lmtt/m/n --> TU/DejaVuSansMono(1)/m/n on input line
- 17.
+ 19.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/lmtt/m/n --> TU/DejaVuSansMono(1)/bx/n on input lin
-e 17.
+e 19.
 (/usr/share/texlive/texmf-dist/tex/latex/newunicodechar/newunicodechar.sty
 Package: newunicodechar 2018/04/08 v1.2 Defining Unicode characters
 ) (/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box77
 \UL@hyphenbox=\box78
 \UL@skip=\skip70
-\UL@hook=\toks49
+\UL@hook=\toks51
 \UL@height=\dimen287
 \UL@pe=\count343
 \UL@pixel=\dimen288
@@ -1153,11 +1163,11 @@ Package: ulem 2019/11/18
 \ULdepth=\dimen289
 ) (/usr/share/texlive/texmf-dist/tex/latex/soul/soul.sty
 Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
-\SOUL@word=\toks50
-\SOUL@lasttoken=\toks51
-\SOUL@cmds=\toks52
-\SOUL@buffer=\toks53
-\SOUL@token=\toks54
+\SOUL@word=\toks52
+\SOUL@lasttoken=\toks53
+\SOUL@cmds=\toks54
+\SOUL@buffer=\toks55
+\SOUL@token=\toks56
 \SOUL@spaceskip=\skip71
 \SOUL@ttwidth=\dimen290
 \SOUL@uldp=\dimen291
@@ -1314,8 +1324,8 @@ Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen328
 \pgffor@skip=\dimen329
-\pgffor@stack=\toks55
-\pgffor@toks=\toks56
+\pgffor@stack=\toks57
+\pgffor@toks=\toks58
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
@@ -1381,26 +1391,26 @@ ve/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive
 ux)
 \openout1 = `connexiveFinal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
-LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
+LaTeX Font Info:    ... okay on input line 67.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1437,7 +1447,7 @@ LaTeX Font Info:    ... okay on input line 73.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box137
-Package hyperref Info: Link coloring OFF on input line 73.
+Package hyperref Info: Link coloring OFF on input line 67.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1447,9 +1457,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count368
 )
-LaTeX Info: Redefining \ref on input line 73.
-LaTeX Info: Redefining \pageref on input line 73.
-LaTeX Info: Redefining \nameref on input line 73.
+LaTeX Info: Redefining \ref on input line 67.
+LaTeX Info: Redefining \pageref on input line 67.
+LaTeX Info: Redefining \nameref on input line 67.
 (./connexiveFinal.out) (./connexiveFinal.out)
 \@outlinefile=\write6
 \openout6 = `connexiveFinal.out'.
@@ -1482,41 +1492,48 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (./connexiveFinal.nav)
-Overfull \hbox (18.21034pt too wide) in paragraph at lines 73--73
+Overfull \hbox (18.21034pt too wide) in paragraph at lines 67--67
  [][][][]  
  []
 
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 7
-3.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
+7.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 73.
+(Font)              scaled to size 5.00053pt on input line 67.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 73.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 73.
+(Font)              scaled to size 4.99947pt on input line 67.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 73.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
+7.
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 77.
+(Font)              scaled to size 10.00107pt on input line 71.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 7.5008pt on input line 77.
+(Font)              scaled to size 7.5008pt on input line 71.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 77.
+(Font)              scaled to size 6.00064pt on input line 71.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 77.
+(Font)              scaled to size 9.99893pt on input line 71.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 7.49919pt on input line 77.
+(Font)              scaled to size 7.49919pt on input line 71.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 77.
+(Font)              scaled to size 5.99936pt on input line 71.
+
+LaTeX Font Warning: Font shape `U/stmry/m/n' in size <7.5> not available
+(Font)              size <7> substituted on input line 71.
+
 
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
@@ -1738,7 +1755,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 
  []
 
@@ -1749,14 +1766,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 \end{frame}
+l.249 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--255
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
 
  []
 
@@ -1767,7 +1784,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.255 \end{frame}
+l.249 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1802,7 +1819,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.390 \end{frame}
+l.384 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1840,7 +1857,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 ! Misplaced alignment tab character &.
 \beamer@doifinframe ...odules, Pattern Matching, &
                                                    more \end {itemize} \par ...
-l.447 \end{frame}
+l.441 \end{frame}
                  
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -1857,7 +1874,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [18
 
 ]
-Overfull \hbox (14.41638pt too wide) detected at line 474
+Overfull \hbox (14.41638pt too wide) detected at line 468
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1966,7 +1983,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 File: core.png Graphic file (type bmp)
 <core.png>
 
-Overfull \hbox (11.46419pt too wide) in paragraph at lines 712--712
+Overfull \hbox (11.46419pt too wide) in paragraph at lines 719--719
  | [] 
  []
 
@@ -1988,7 +2005,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 File: e.png Graphic file (type bmp)
 <e.png>
 
-Overfull \hbox (11.46419pt too wide) in paragraph at lines 738--738
+Overfull \hbox (11.46419pt too wide) in paragraph at lines 745--745
  | [] 
  []
 
@@ -2000,23 +2017,6 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [35
 
 ]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.768 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.768 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -2024,16 +2024,27 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [36
 
 ]
-Runaway argument?
- 
-! Paragraph ended before \@xverbatim was complete.
-<to be read again> 
-                   \par 
-l.779 \end{frame}
+! Undefined control sequence.
+\beamer@doifinframe ...ry\ Nat\ is\ even\ or \odd 
+                                                  $ \item Negation \\ $it\ i...
+l.781 \end{frame}
                  
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...t\ x\ is\ even\ \mapsto \x 
+                                                  is\ not\ even$ \item Refle...
+l.781 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
 
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
@@ -2050,6 +2061,14 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [38
 
 ]
+File: testdep3.jpg Graphic file (type bmp)
+<testdep3.jpg>
+
+Overfull \hbox (11.46419pt too wide) in paragraph at lines 807--807
+ | [] 
+ []
+
+
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -2057,11 +2076,138 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [39
 
 ]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb
+Overfull \hbox (9.00777pt too wide) in paragraph at lines 9--9
+[]  \TU/DejaVuSansMono(0)/m/n/10 Prop ; -- proposition,sentence or formula, A i
+s contractible[] 
+ []
+
+
+Overfull \hbox (7.00093pt too wide) in paragraph at lines 11--11
+[]  \TU/DejaVuSansMono(0)/m/n/10 Ind ; -- individual element corresponding to a
+ singular term[] 
+ []
+
+)
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [40
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \end{itemize}\\~
+                    \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \\~
+        \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./latex/contr.tex
+\openout5 = `connexiveFinal.ptb'.
+
+))
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \\~
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \\~
+        \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./latex/equiv.tex
+\openout5 = `connexiveFinal.ptb'.
+
+))
+Overfull \vbox (6.68776pt too high) detected at line 901
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[44
+
+]
+Overfull \vbox (283.62793pt too high) detected at line 966
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
 
 ]
 \tf@nav=\write7
@@ -2073,21 +2219,25 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `connexiveFinal.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 815.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 815.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 969.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 969.
 (./connexiveFinal.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 815.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 815.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 969.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 969.
 Package rerunfilecheck Info: File `connexiveFinal.out' has not changed.
-(rerunfilecheck)             Checksum: FFBFCD13056E963638B42E624C7F61E7;475.
+(rerunfilecheck)             Checksum: 5FF46928DDEFA5126853C8202345B159;536.
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 0.5pt have occurred.
+
  ) 
 Here is how much of TeX's memory you used:
- 35394 strings out of 479819
- 707261 string characters out of 5895846
- 1137333 words of memory out of 5000000
- 51739 multiletter control sequences out of 15000+600000
- 541597 words of font info for 104 fonts, out of 8000000 for 9000
+ 35787 strings out of 479819
+ 713043 string characters out of 5895846
+ 1138189 words of memory out of 5000000
+ 52100 multiletter control sequences out of 15000+600000
+ 542486 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,18n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on connexiveFinal.xdv (40 pages, 1302232 bytes).
+Output written on connexiveFinal.xdv (45 pages, 1490480 bytes).
