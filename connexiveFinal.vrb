@@ -1,25 +1,17 @@
-
-\begin{itemize}
-\item We also show that a notion of a map being an equivalence, that of the
-  every element in the codomain having a contractible image (think bijection)
-\item notice the error in the Pidgin case
-\end{itemize}
-
-\\~\\
-
- \textbf{Definition}:
- A map $f : \arrowH {A}{B}$ is an equivalence, if for all $y : B$, its fiber, $\comprehensionH {x}{A}{\equalH {\appH {f}{x}}{y}}$, is contractible.
- We write $\equivalenceH {A}{B}$, if there is an equivalence $\arrowH {A}{B}$.
-
-\\~\\
-
-\begin{figure}
+\frametitle{Case Study : Associativity of natural numbers}
+% [from software foundations]
 \begin{verbatim}
-Equivalence ( f : A -> B ) : Set =
-  ( y : B ) -> ( isContr ( fiber it ) ) ; ; ;
-  fiber it : Set = ( x : A ) ( * ) ( Id ( f ( x ) ) ( y ) )
+Theorem: For any n, m and p,
+  n + (m + p) = (n + m) + p.
+Proof: By induction on n.
+  First, suppose n = 0. We must show that
+    0 + (m + p) = (0 + m) + p.
+  This follows directly from the definition of +.
+  Next, suppose n = S n', where
+    n' + (m + p) = (n' + m) + p.
+  We must now show that
+    (S n') + (m + p) = ((S n') + m) + p.
+  By the definition of +, this follows from
+    S (n' + (m + p)) = S ((n' + m) + p),
+  which is immediate from the induction hypothesis. Qed.
 \end{verbatim}
-\end{figure}
-
-\input{latex/equiv}
-
