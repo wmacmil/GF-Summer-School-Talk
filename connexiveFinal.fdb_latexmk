@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1627941072 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1627941152
-  "connexiveFinal.xdv" 1627941071 1085880 6545acdb646a12964f29b9120f2842d0 "xelatex"
+["xdvipdfmx"] 1628004192 "connexiveFinal.xdv" "connexiveFinal.pdf" "connexiveFinal" 1628004290
+  "connexiveFinal.xdv" 1628004191 1302232 bfd2b09401c807ae043dc649d6c0fd49 "xelatex"
   (generated)
   "connexiveFinal.pdf"
-["xelatex"] 1627941067 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1627941152
+["xelatex"] 1628004187 "connexiveFinal.tex" "connexiveFinal.xdv" "connexiveFinal" 1628004290
   "/etc/texmf/web2c/texmf.cnf" 1598478810 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
@@ -249,18 +249,20 @@
   "/usr/share/texmf/tex/latex/lm/t1lmss.fd" 1256929440 1639 ba1c66ef577aa5cadc2c0fdc691a26ee ""
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/web2c/xetex/xelatex.fmt" 1598480481 4647953 4fb384f10db2f066e60fdfcda71c580e ""
-  "connexiveFinal.aux" 1627941071 8103 14143b712fa4ab785871f737485d5bff "xelatex"
-  "connexiveFinal.nav" 1627941071 4522 0d7c0f6f67aef1771f329d002eb57b1f "xelatex"
-  "connexiveFinal.out" 1627941071 413 f054d6c1d9739035ab74c29609f35b0b "xelatex"
-  "connexiveFinal.tex" 1627941067 22070 49685d6342c6ee5a5edd3efdb50d2fe3 ""
-  "connexiveFinal.vrb" 1627941071 775 23d863425aac15e7a263ab4bb89b1d8b "xelatex"
+  "connexiveFinal.aux" 1628004191 9490 4f87d5efa2d9334bba1e4a021d12c3e9 "xelatex"
+  "connexiveFinal.nav" 1628004191 5369 cab59aee269a00740a978d1adde4d9e2 "xelatex"
+  "connexiveFinal.out" 1628004191 475 ffbfcd13056e963638b42e624c7f61e7 "xelatex"
+  "connexiveFinal.tex" 1628004186 24631 822e7da8c052e3463b8622debd16e957 ""
+  "connexiveFinal.vrb" 1628004191 775 23d863425aac15e7a263ab4bb89b1d8b "xelatex"
+  "core.png" 1628001069 103163 bc48959f4b9c259752f966a2753fc993 ""
+  "e.png" 1628000564 81978 6a0e2c86af45d319c0132b5371a7bbef ""
   "latex/agda.sty" 1627578751 25379 d172c873cc9290d6a780ea9676fcead4 ""
   (generated)
-  "connexiveFinal.vrb"
-  "connexiveFinal.toc"
-  "connexiveFinal.aux"
-  "connexiveFinal.nav"
-  "connexiveFinal.snm"
   "connexiveFinal.xdv"
+  "connexiveFinal.toc"
+  "connexiveFinal.vrb"
+  "connexiveFinal.nav"
   "connexiveFinal.log"
   "connexiveFinal.out"
+  "connexiveFinal.snm"
+  "connexiveFinal.aux"

@@ -468,6 +468,8 @@ INPUT connexiveFinal.vrb
 OUTPUT connexiveFinal.vrb
 INPUT connexiveFinal.vrb
 INPUT connexiveFinal.vrb
+INPUT core.png
+INPUT e.png
 OUTPUT connexiveFinal.nav
 OUTPUT connexiveFinal.toc
 OUTPUT connexiveFinal.snm
