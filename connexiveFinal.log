@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  3 AUG 2021 18:29
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  3 AUG 2021 20:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2246,6 +2246,20 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
 [48
 
+] (./latex/n.tex
+\openout5 = `connexiveFinal.ptb'.
+
+)
+Overfull \vbox (10.68776pt too high) detected at line 991
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[49
+
 ]
 \openout4 = `connexiveFinal.vrb'.
 
@@ -2254,43 +2268,72 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[49
-
-]
-Overfull \hbox (18.21034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [50
 
-]
+] (./latex/p.tex
+\openout5 = `connexiveFinal.ptb'.
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+
+Overfull \hbox (2.17673pt too wide) in paragraph at lines 263--263
+ [][][]  
+ []
+
+)
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [51
 
-]
+] (./latex/i.tex
+\openout5 = `connexiveFinal.ptb'.
 
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1047 \end{frame}
-                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
+)
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
 [52
 
-]
+] (./latex/ih.tex
+\openout5 = `connexiveFinal.ptb'.
+
+)
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -2305,7 +2348,48 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [54
 
 ]
-Overfull \vbox (320.38965pt too high) detected at line 1137
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[55
+
+]
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1063 \end{frame}
+                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[56
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[57
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[58
+
+]
+Overfull \vbox (320.38965pt too high) detected at line 1153
  []
 
 
@@ -2313,7 +2397,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[55
+[59
 
 ]
 \tf@nav=\write7
@@ -2325,11 +2409,11 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 \tf@snm=\write9
 \openout9 = `connexiveFinal.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1156.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1156.
 (./connexiveFinal.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1140.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1156.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1156.
 
 Package rerunfilecheck Info: File `connexiveFinal.out' has not changed.
 (rerunfilecheck)             Checksum: DA5996439FAE0F174190FF3CD0ADEE84;606.
@@ -2342,12 +2426,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 35825 strings out of 479819
- 713768 string characters out of 5895846
+ 35943 strings out of 479819
+ 715390 string characters out of 5895846
  1138189 words of memory out of 5000000
- 52125 multiletter control sequences out of 15000+600000
+ 52231 multiletter control sequences out of 15000+600000
  544754 words of font info for 125 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,18n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on connexiveFinal.xdv (55 pages, 1789664 bytes).
+Output written on connexiveFinal.xdv (59 pages, 1924156 bytes).

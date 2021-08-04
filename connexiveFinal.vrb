@@ -1,4 +1,4 @@
-\frametitle{Case Study : Associativity of natural numbers}
+\frametitle{Associativity of natural numbers}
 % [from software foundations]
 \begin{verbatim}
 Theorem: For any n, m and p,
