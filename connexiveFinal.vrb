@@ -1,12 +1,9 @@
-\frametitle{Remarks}
-
-\begin{quote}{Robert Harper, OPLSS}
-  Concrete syntax is, in some sense, where programming meets psychology.
-\end{quote}
-
-\begin{itemize}
-\item Trinitarian doctrine is in the ``formal" space
-\item Trinitarianism + linguistics is partially informal and very underexplored
-\item Introduces many philosophical concerns
-\item Perhaps a rereading of Wittgenstein should take place in this context
-\end{itemize}
+\frametitle{The Dimensions of Grammar}
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
+\centering
+\begin{tikzcd}
+Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
+                                                                                                                                                       &  &  & {}                      \\
+                                                                                                                                                       &  &  &                         \\
+Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
+\end{tikzcd}

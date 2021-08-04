@@ -71,15 +71,19 @@
 \end{frame}
 
 
-% \begin{frame}
-% \frametitle{Overview}
-% \tableofcontents
-% \end{frame}
 
 \section{Overview}
 
 \subsection{Introduction}
 
+\begin{frame}
+\frametitle{One Remark}
+
+\begin{alertblock}{~}
+I want feedback on this talk, please
+\end{alertblock}
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Table of Contents}
@@ -110,6 +114,8 @@
 \item \textbf{BNF} : Backus-Naur form
 \item \textbf{CADE} : Conference on Automated Deduction
 \item \textbf{HOL} : Higher Order Logic
+\item \textbf{HIT} : Higher Inductive Type
+\item \textbf{GADT} : Generalized Algebraic Data Type
 \end{itemize}
 \end{frame}
 
@@ -162,7 +168,7 @@ Math \arrow[rrruuuu, "Embedded\ in\ FOL", bend left] \arrow[rrrrrr, "ITP"'] &  &
 \begin{frame}[fragile]
 % \frametitle{Linguistic  Interpretations}
 \frametitle{Interpretation of Language}
-\begin{alertblock}{Observation 1.1}
+\begin{alertblock}{Observation}
   Only semantic interpretations in these domains.
   One may decide on syntactic, pragmatic, or other paradigms to view this through.
 \end{alertblock}
@@ -457,399 +463,437 @@ not in the third.
 
 \end{frame}
 
-% \begin{frame}
-% \frametitle{HoTT}
-
-% \begin{itemize}
-%   \item Equality is perhaps the most confusing detail for mathematicians
-%   \item Propositional equality can be iterated
-%   \item Homotopy Type Theory is an all out coming to terms with what equality is
-%     in type theory
-%   \item Univalence Axiom : Equivalence is equivalent to equality
-%   \item Allows one to admit a topological interpretation of types
-%   \item Has led to Higher Inductive Types, where constructors can include
-%     equality types.  
-%   \item given a type $A$, we can form the homotopy $p=_{x=_{A} y}q$
-% with endpoints $p$ and $q$ inhabiting the path space $x=_{A} y$.
-
-    
-% \end{itemize}
-% \end{frame}
+\begin{frame}
+\frametitle{HoTT}
+
+\begin{itemize}
+  \item Homotopy Type Theory is an all out coming to terms with what equality is
+    in type theory
+  \item Equality is perhaps the most confusing detail for mathematicians
+    learning TT
+  \item Propositional equality can be iterated
+  \item given a type $A$, we can form the homotopy $p=_{x=_{A} y}q$
+with endpoints $p$ and $q$ inhabiting the path space $x=_{A} y$.
+  \item Univalence axiom : Equivalence is equivalent to equality
+  \item Allows one to admit a topological interpretation of types
+  \item Has led to HITs, where constructors can include
+    equality types.  
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Interpretations of $t : \tau$}
+\begin{itemize}
+\item Set theory : $n$ is an element of $\mathbb{N}$
+\item Type theory : $n$ is a term of type $\mathbb{N}$
+\item Homotopy theory : $n$ is a point in the space $\mathbb{N}$
+\item Category theory : $n$ is an arrow between the object $\mathbb{N}$ and itself
+\item Logic : $n$ is a proof of the proposition $\mathbb{N}$ --broken
+\end{itemize}
+\end{frame}
 
-% \begin{frame}
-% \frametitle{Interpretations of $t : \tau$}
-% \begin{itemize}
-% \item Set theory : $n is an element of N$
-% \item Type theory : n is a term of type Nat
-% \item Homotopy theory : n is a point in the space N
-% \item Category theory : n is an arrow between the object N and itself
-% \item Logic : n is a proof of the proposition Nat --broken
-% \end{itemize}
-% \end{frame}
+\subsection{Agda}
 
-% \subsection{Agda}
+\begin{frame}
+\frametitle{What is Agda?}
 
-% \begin{frame}
-% \frametitle{What is Agda?}
+\begin{itemize}
+\item Implementation of MLTT
+\item Logical Framework
+\item Think a kernel with $\Pi$ and $\Sigma$ (think $\forall$ and $\exists$, respectively)
+\item Interactive proof development environment
+\item Inductive types, modules, pattern matching, \& more
+\item Large standard library, many other libraries
+\item Universe Hierarchy (not present classically)
+\item Tons of experimental stuff\\
+      sized types, coinduction, tactics, etc.
+\end{itemize}
+\end{frame}
 
-% \begin{itemize}
-% \item Implementation of MLTT
-% \item Logical Framework
-% \item Think $\Pi\ and\ \Sigma$ (think $\forall$ and $\exists$, respectively)
-% \item Lambda is central.
-% \item Interactive proof development environment
-% \item Inductive types, modules, pattern matching, \& more
-% \item Large standard library, many other libraries
-% \item Universe Hierarchy (not present classically)
-% \item Tons of experimental stuff\\
-%       sized types, coinduction, tactics, etc.
-% \end{itemize}
-% \end{frame}
+\begin{frame}
+\frametitle{Math Keywords in Agda}
 
-% \begin{frame}
+\begin{columns}
 
-% \begin{columns}
+\begin{column}{0.4 \textwidth}
 
-% \begin{column}{0.4 \textwidth}
+\begin{block}{Mathematical Declarations}
+  \begin{itemize}
+    \item Theorem
+    \item Proof
+    \item Lemma
+    \item Axiom
+    \item Definition
+    \item Example
+  \end{itemize}
+\end{block}
 
-% \begin{block}{Mathematical Declarations}
-%   \begin{itemize}
-%     \item Theorem
-%     \item Proof
-%     \item Lemma
-%     \item Axiom
-%     \item Definition
-%     \item Example
-%   \end{itemize}
-% \end{block}
+\end{column}
 
-% \end{column}
+\begin{column}{0.7 \textwidth}
 
-% \begin{column}{0.7 \textwidth}
+\include{latex/judgements}
+% where clause if time permits
 
-% % \include{latex/judgements}
+\end{column}
+\end{columns}
+\end{frame}
 
-% \end{column}
-% \end{columns}
-% \end{frame}
 
+\begin{frame}
+\frametitle{Twin Prime Conjecture}
+\begin{Definition}
+A \emph{twin prime} is a prime number that is either 2 less or 2 more than another prime number
+\end{Definition}
+Alternatively, we may state it as follows :
+\begin{Definition}
+A \emph{twin prime} is a prime that has a prime gap of two.
+\end{Definition}
+\begin{Definition}
+A \emph{prime gap} is the difference between two successive prime numbers.
+\end{Definition}
 
-% \begin{frame}
-% \frametitle{Twin Prime Conjecture}
-% \begin{Definition}
-% A \emph{twin prime} is a prime number that is either 2 less or 2 more than another prime number
-% \end{Definition}
-% Alternatively, we may state it as follows :
-% \begin{Definition}
-% A \emph{twin prime} is a prime that has a prime gap of two.
-% \end{Definition}
-% \begin{Definition}
-% A \emph{prime gap} is the difference between two successive prime numbers.
-% \end{Definition}
+\begin{theorem}
+There are infinitely many twin primes.
+\end{theorem}
 
-% \begin{theorem}
-% There are infinitely many twin primes.
-% \end{theorem}
+\end{frame}
 
-% \end{frame}
+\begin{frame}
 
-% \begin{frame}
+\frametitle{Twin Prime Conjecture in Agda}
 
-% \frametitle{Twin Prime Conjecture in Agda}
+% \include{latex/twin-primes}
 
-% % \include{latex/twin-primes}
+\end{frame}
 
-% \end{frame}
+\subsection{Philosophical Considerations}
 
-% \subsection{Philosophical Considerations}
+\begin{frame}
 
-% \begin{frame}
+\begin{quote}{Per Martin-Löf, On the Meanings of the Logical Constants And the
+    Justifications of the Logical Laws, 1983}
 
-% \frametitle{What is a Proof?}
+A proof is what makes a judgment evident % \cite{mlMeanings}.
 
-% \begin{quote}{Per Martin-Löf}
+\end{quote}
 
-% A proof is what makes a judgment evident % \cite{mlMeanings}.
 
-% \end{quote}
+\end{frame}
 
 
-% \end{frame}
+\begin{frame}
+\begin{quote}{Mohan Ganesalingam}
 
+...there is a considerable gap between what mathematicians claim is true and what
+they believe, and this mismatch causes a number of serious linguistic problems.
 
-% \begin{frame}
+\end{quote}
+\end{frame}
 
 
-% \begin{quote}{Mohan Ganesalingam}
+\begin{frame}
 
-% ...there is a considerable gap between what mathematicians claim is true and what
-% they believe, and this mismatch causes a number of serious linguistic problems.
+\frametitle{Comparing Formal and Informal Proofs}
 
-% \end{quote}
+% Note : this is a (subjective) spectrum of qualitative differences, this topic is itself worthy of a lot of research
 
-% \end{frame}
+\centering
 
+%   semantic structure distributed in variable names and comments
 
-% \begin{frame}
+% \item Informal Proof
+%   syntax both structured and unstructured.
 
 
-% % Note : this is a (subjective) spectrum of qualitative differences, this topic is itself worthy of a lot of research
+\begin{tabular}{|c|c|c|} \hline
+  Category & Formal Proof & Informal Proof \\ \hline
+  Audience & Agda (and Human) & Human \\ \hline
+  Translation & Compiler & Human \\ \hline
+  Objectivity & Objective & Subjective \\ \hline % not always true
+  Historical & 20th Century & <= Euclid \\ \hline
+  Orientation & Syntax & Semantics \\ \hline
+  Inferability & Complete & Domain Expertise Necessary \\ \hline
+  Verification & PL Designer & Human \\ \hline
+  Ambiguity & Unambiguous & Ambiguous \\ \hline
 
-% \centering
+\end{tabular}
 
-% %   semantic structure distributed in variable names and comments
 
-% % \item Informal Proof
-% %   syntax both structured and unstructured.
+\end{frame}
 
+\begin{frame}
+\frametitle{Specification and Implementation}
 
-% \begin{tabular}{|c|c|c|} \hline
-%   Comparsion & Formal Proof & Informal Proof \\ \hline
-%   Audience & Agda (and Human) & Human \\ \hline
-%   Translation & Compiler & Human \\ \hline
-%   Objectivity & Objective & Subjective \\ \hline % not always true
-%   Historical & 20th Century & <= Euclid \\ \hline
-%   Orientation & Syntax & Semantics \\ \hline
-%   Inferability & Complete & Domain Expertise Necessary \\ \hline
-%   Verification & PL Designer & Human \\ \hline
-%   Ambiguity & Unambiguous & Ambiguous \\ \hline
+\begin{alertblock}{My Takeaway}
+  An informal proof is a specification and a formal proof is an implementation.
+\end{alertblock}
 
-% \end{tabular}
+\begin{itemize}
+\item Historically, we think of semantics preceding\\
+  i.e. the abstract notion of a circle preceded its ``algebraic" understanding
+\item Syntax oriented thinking is very popular in the CS tradition
+\item Sometimes given an expressive enough type, the programs seem to \emph{write themselves}
+\item Both syntactic and semantic thinking are necessary in the end, especially for big proofs
 
+\end{itemize}
+\end{frame}
 
-% \end{frame}
+\begin{frame}
+\frametitle{Formal Abstracts vision}
 
-% \begin{frame}
+\begin{quote}{The Formal Abstracts Project}
+The Formal Abstracts (FAbstracts) project will establish a formal abstract service that will express the results of mathematical publications in a computer-readable form that captures the semantic content of publications
+\end{quote}
 
-% \begin{itemize}
-% \item One missed comparison from above :  formal proof is an implementation, an informal proof is a specification
+\begin{alertblock}{A Smaller Problem}
+Propositions or theorem statements in natural language are \emph{intentionally unambiguous}
+\end{alertblock}
+\end{frame}
 
-% \item Why? Historically, we think of semantics preceding (the abstract notion of a
-%   circle preceded its geometric understanding)
-% \item although syntax oriented thinking may now be dominating the CS tradition)
-% \item syntax oriented approach in Agda program,
-% \item Both are necessary in the end, especially for big proofs.
-% \item  Propositions or theorem statements are \emph{intentionally unambiguous}
+\begin{frame}
+\begin{quote}{Avigad, Mathematics and language, 2015}
+...when it comes to understanding the power of mathematical language to guide
+our thought and help us reason well, formal mathematical languages like the ones
+used by interactive proof assistants provide informative models of informal
+mathematical language. The formal languages underlying foundational frameworks
+such as set theory and type theory were designed to provide an account of the
+correct rules of mathematical reasoning, and, as Gödel observed, they do a
+remarkably good job. But correctness isn’t everything: we want our mathematical
+languages to enable us to reason efficiently and effectively as well. To that
+end, we need not just accounts as to what makes a mathematical argument correct,
+but also accounts of the structural features of our theorizing that help us
+manage mathematical complexity.
+% \cite{avigad2015mathematics}
+\end{quote}
+\end{frame}
+\frametitle{Syntactic Completeness}
 
-% \end{itemize}
+\begin{frame}
+  \begin{block}{Syntactic Completeness}
+Given an natural language expression that a mathematician
+understands, does the GF grammar emit a well-formed and well-typed
+expression in the target logic or programming language?
+\end{block}
 
+\begin{itemize}
 
-% \end{frame}
+\item The intended meaning manifests differently for different people - there
+  may be no absolute intention
+\item Many possible syntaxes beyond just alpha conversion
+\item The details will have to change depending on the tools and machines available
+\item Begin with math as developed in an ITP
+\end{itemize}
 
-% \begin{frame}
-% \begin{quote}{Avigad}
-% ...when it comes to understanding the power of mathematical language to guide
-% our thought and help us reason well, formal mathematical languages like the ones
-% used by interactive proof assistants provide informative models of informal
-% mathematical language. The formal languages underlying foundational frameworks
-% such as set theory and type theory were designed to provide an account of the
-% correct rules of mathematical reasoning, and, as Gödel observed, they do a
-% remarkably good job. But correctness isn’t everything: we want our mathematical
-% languages to enable us to reason efficiently and effectively as well. To that
-% end, we need not just accounts as to what makes a mathematical argument correct,
-% but also accounts of the structural features of our theorizing that help us
-% manage mathematical complexity.
-% % \cite{avigad2015mathematics}
-% \end{quote}
-% \end{frame}
+\end{frame}
 
-% \begin{frame}
-% \begin{block}{Syntactic Completeness}
-% Given an utterance or natural language expression that a mathematician might
-% understand, does the GF grammar emit a well-formed, syntactically complete
-% expression in the target logic or programming language?
-% \end{block}
+\begin{frame}
 
-% \begin{itemize}
+\frametitle{Semantic Adequacy}
 
-% \item The intended meaning manifests differently for different people - there
-%   may be no absolute intention
-% \item Many possible syntax's - beyond just alpha conversion (think Coq) Perhaps the details will have to change depending on the tools available
-% \item Starting Point : math as developed in interactive theorem prover
+\begin{block}{Semantic Adequacy}
+  Given a well formed syntactic expression in, for instance, Agda, one
+can ask if the resulting NL expression generated by GF is
+\emph{semantically adequate} and coherent to a ``fluent speaker"
+\end{block}
 
-% \end{itemize}
+\begin{itemize}
+  \item Think expressive adequacy in logic
+  \item In dispute among mathematicians
+  \item Kind of like a Turing Test for machine proof translation 
+  \item Depends on historical developments as our language develops, both
+    internally and more interestingly, as a society
+  \item Ganesalingam calls a related notion \emph{adaptivity}, the phenomenon whereby ``the
+    grammar of an individual mathematician changes as definitions are encountered"
+  \item Grammar should just be a starting point for mathematical literacy generally
+  \item Begin with \emph{real mathematics} empirically
 
-% \end{frame}
+\end{itemize}
 
-% \begin{frame}
 
-% \begin{block}{Semantic Adequacy}
-%   Given a well formed syntactic expression in, for instance, Agda, one
-% can ask if the resulting NL expression generated by GF is
-% \emph{semantically adequate}, and coherent to a ``fluent speaker"
+\end{frame}
 
-% \end{block}
+\section{GF Grammars}
 
-% \begin{itemize}
-%   \item Think expressive adequacy in logic
-%   \item In dispute among mathematicians
-%   \item Kind of like a ``Turing test for our approach" % (hypothetical, but wellworth exploring)
-%   \item depends historical developments as our language develops, both
-%     internally (cite gangaselem) and more interestingly, as a society.
-%     % so the
-%     % things all mathematicians take for granted (and therefore, have implicitly
-%     % more intuition for).  think of technology as well
-%   \item Starting Point : \cite{real} mathematics
+\subsection{GF Spectrum}
 
-% \end{itemize}
+\begin{frame}[fragile]
+\frametitle{The Dimensions of Grammar}
+% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
+\centering
+\begin{tikzcd}
+Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
+                                                                                                                                                       &  &  & {}                      \\
+                                                                                                                                                       &  &  &                         \\
+Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
+\end{tikzcd}
+\end{frame}
 
-
-% \end{frame}
-
-% \section{GF Grammars}
-
-% \begin{frame}[fragile]
-% % https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
-% \centering
-% \begin{tikzcd}
-% Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
-%                                                                                                                                                        &  &  & {}                      \\
-%                                                                                                                                                        &  &  &                         \\
-% Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
-% \end{tikzcd}
-% \end{frame}
-
-% \begin{frame}
-% \frametitle{Concrete vs Abstract}
+\begin{frame}
+\frametitle{Choosing Sides: Concrete vs Abstract}
 
 % Comparison of concrete vs. abstract perspective when designing a GF Grammar
 
-% Abstract : Capture more semantic content (from a NL perspective) more ``freedom
-% of expression"
-% simpler makes easier to work with in Haskell (where tactics would come into play
-% in Coq)
+\begin{block}{Abstract}
+\begin{itemize}
+\item Capture more semantic content from a NL perspective and more ``freedom
+of expression"
+\item Simpler makes easier to work with in Haskell - really large GADTs after PGF embedding
+\end{itemize}
+\end{block}
 
-% Concrete : Simpler semantic space, easier for designing PL for it eliminates ambiguity.
-% focus on this may mean more feasibility  for real implementation
+\begin{block}{Concrete}
+\begin{itemize}
+\item Simpler semantic space, easier for designing PL for it eliminates ambiguity
+\item Focus on this may be more feasible for real implementation
+\end{itemize}
+\end{block}
 
-% As will be seen, a smaller abstract syntax leans towards syntactic completeness
-% with a larger linearization syntax (in terms of the complexity of the lincats
-% effects the complexity of the entire linearization space)
+\begin{exampleblock}{~}
+As will be seen, a smaller abstract syntax leans towards syntactic completeness,
+but it comes at the cost of larger, more complex \emph{lincats}.
+\end{block}
+\end{frame}
 
-% \end{frame}
+\subsection{Logic '11}
 
-% \subsection{Logic '11}
 
+\begin{frame}
+% \frametitle{Choosing Sides: Concrete vs Abstract}
 % \begin{frame}
-% \frametitle{Logic '11}
+\frametitle{A Grammar for Propositions}
 
-% \begin{itemize}
-% \item CADE 2011
-% \item Application grammar for logical propositions defined over some mathematical
-% domain (integral arithmetic, euclidean geometry)
-% \item Doesn't cover proofs
-% \item Uses a core grammar and extended, translate between them via PGF extension
-
-
-% \begin{exampleblock}{Ideas}
-% \begin{itemize}
-% \item One can use theorems from FOL, to simplify the
-% NL expression (semantics preserving normalizer)
-% \item Serves as a basis for other logics
-% \end{itemize}
-% \end{exampleblock}
-
-
-
-% \end{itemize}
-
-% \end{frame}
-
-% \begin{frame}
-% % \frametitle{Logic '11}
-
-% \begin{block}{Core}
-% \begin{itemize}
-% \item minimal necessary expressivity
-% \item syntactically complete
-% \item $\forall x (Nat(x) \supset Even(x) \lor Odd(x))$
-% \item ``for all x, if x is a natural number then x is even or x is odd"
-% \item ambiguous parses : Catalan explosion with n conjunctions
-% \item need normal form
-% \end{itemize}
+\begin{itemize}
+\item Ranta, \emph{Translating between Language and Logic : What Is Easy and What Is Difficult}
+\item Application grammar for logical propositions defined over some mathematical
+domain (integral arithmetic, euclidean geometry)
+\item Doesn't cover proofs
+\item Uses a core and extended set of categories
+\item Translates between them via PGF extension
+\end{itemize}
 % \end{block}
 
-% \begin{exampleblock}{Semantically Inadequate}
+\begin{exampleblock}{Ideas}
+\begin{itemize}
+\item One can use theorems from FOL to simplify the
+NL expression (semantics preserving normalizer)
+\item Serves as a possible basis for other logics 
+\end{itemize}
+\end{exampleblock}
 
-% ``is it the case that the sum of 3 and the sum of 4 and 10 is prime and 9999 is odd"
+\end{frame}
 
-% \end{exampleblock}
-% \end{frame}
+\begin{frame}
+\frametitle{Logic Grammar Properties}
 
-% \begin{frame}
-% \frametitle{Core Syntax}
+\begin{block}{Core}
+\begin{itemize}
+\item Minimal necessary expressivity
+\item Syntactically complete
+\item Ambiguous parses : Catalan explosion with n conjunctions
+\item Needs to be evaluated to remain legible 
+\end{itemize}
+\end{block}
 
-% \begin{figure}
-% \hspace*{-3mm}%
-%    \includegraphics[width= \paperwidth]{core.png}
-% \end{figure}
+\begin{exampleblock}{Core Example}
+\begin{itemize}
+\item $\forall x (Nat(x) \supset Even(x) \lor Odd(x))$
+\item ``for all x, if x is a natural number then x is even or x is odd"
+\end{itemize}
+\end{exampleblock}
 
-% \end{frame}
+\begin{exampleblock}{Semantically Inadequate Example}
 
-% \begin{frame}
+``is it the case that the sum of 3 and the sum of 4 and 10 is prime and 9999 is odd"
 
-% \begin{block}{Extended}
-% \begin{itemize}
-% \item much more expressive
-% \item semantically adequate
-% \item ``every natural number is even or odd"
-% \item increases both number of categories and functions
-% \item also need for more complicated linearization categories
-% \item complex PGF backend to keep this syntactically complete
-% \item questions about scalability
-% \end{itemize}
+\end{exampleblock}
+\end{frame}
 
-% \end{block}
+\begin{frame}
+\frametitle{Core Syntax}
 
-% \end{frame}
+\begin{figure}
+\hspace*{-3mm}%
+   \includegraphics[width= \paperwidth]{core.png}
+\end{figure}
 
-% \begin{frame}
-% \frametitle{Extended Syntax}
+\end{frame}
 
-% \begin{figure}
-% \hspace*{-3mm}%
-%    \includegraphics[width= \paperwidth]{e.png}
-% \end{figure}
-% \end{frame}
-% % ``every number is even or odd" (more concise, future research topic)
+\begin{frame}
+\frametitle{Extended Properties}
 
+\begin{block}{Extended}
+\begin{itemize}
+\item Much more expressive
+\item Semantically adequate
+\item increases both number of categories and functions
+\item also need for more complicated linearization categories
+\item complex PGF backend to keep this syntactically complete
+\item questions about scalability
+\end{itemize}
 
-% \begin{frame}
-% \frametitle{Translation}
-% $\llbracket - \rrbracket : Extended \to Core$
+\end{block}
 
-% \begin{itemize}
-% % think of coq tactics evaluating to gallina terms
-% \item relatively simple (in the sense that it should be deterministic)
-% \item More or less uses the same logical structure from the ``standard view"
-% \item Core syntax as a model for extended
-% \end{itemize}
+\begin{exampleblock}{Extended Example}
+\begin{itemize}
+\item $\forall x (Nat(x) \supset Even(x) \lor Odd(x))$
+\item ``every natural number is even or odd"
+\end{itemize}
+\end{exampleblock}
 
-% \end{frame}
+\end{frame}
 
-% \begin{frame}
+\begin{frame}
+\frametitle{Extended Syntax}
 
-% $\llbracket - \rrbracket : Core \to Extended$
-
-% \begin{itemize}
-
-% \item Flattening a list \\
-%   $x\ and\ y\ and\ z\ \mapsto x,\ y\ and\ z$
-% \item Aggregation \\
-%   $x\ is\ even\ or\ x\ is\ odd\ \mapsto x\ is\ even\ or\ odd$
-% \item In-situ quantification \\
-%   $\forall\ n\ \in Nat,\ x\ is\ even\ or\ x\ is\ odd \mapsto every\ Nat\ is\ even\ or \odd$
-% \item Negation \\
-%   $it\ is\ not\ that\ case\ that\ x\ is\ even\ \mapsto \x is\ not\ even$
-% \item Reflexivitazion \\
-%   $x\ is\ equal\ to\ x\ \mapsto x\ is\ equal\ to\ itself$
-% \item Modification \\
-%   $x\ is\ a\ number\ and\ x\ is\ even\ \mapsto x\ is\ an\ even\ number$
-% \end{itemize}
-% \end{frame}
+\begin{figure}
+\hspace*{-3mm}%
+   \includegraphics[width= \paperwidth]{e.png}
+\end{figure}
+\end{frame}
 
 
-% \subsection{Hott '14}
+\begin{frame}
+\frametitle{Translating to Core}
+$\llbracket - \rrbracket : Extended \to Core$
+
+\begin{itemize}
+\item Core syntax as a model for extended
+\item relatively simple in the sense that it is be deterministic
+\item More or less uses the same logical structure from the ``standard view"
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Translating to Extended}
+
+$\llbracket - \rrbracket : Core \to Extended$
+\begin{itemize}
+\item Difficult problem, infeasible at scale
+\item Obscures formal detail, but is more intuitive 
+\end{itemize}
+
+\begin{exampleblock}{Conversion}
+\begin{itemize}
+
+\item Flattening a list \\
+  $x\ and\ y\ and\ z\ \mapsto x,\ y\ and\ z$
+\item Aggregation \\
+  $x\ is\ even\ or\ x\ is\ odd\ \mapsto x\ is\ even\ or\ odd$
+\item In-situ quantification \\
+  $\forall\ n\ \in Nat,\ x\ is\ even\ or\ x\ is\ odd \mapsto every\ Nat\ is\ even\ or \odd$
+\item Negation \\
+  $it\ is\ not\ that\ case\ that\ x\ is\ even\ \mapsto \x is\ not\ even$
+\item Reflexivitazion \\
+  $x\ is\ equal\ to\ x\ \mapsto x\ is\ equal\ to\ itself$
+\item Modification \\
+  $x\ is\ a\ number\ and\ x\ is\ even\ \mapsto x\ is\ an\ even\ number$
+\end{itemize}
+\end{exampleblock}
+\end{frame}
+
+
+\subsection{Hott '14}
 
 % \begin{frame}
 % \frametitle{Ranta's (unpublished) talk at Stockholm Math Seminar}

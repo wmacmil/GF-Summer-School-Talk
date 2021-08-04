@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  4 AUG 2021 13:22
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  4 AUG 2021 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1388,7 +1388,7 @@ ive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (/usr/share/te
 xlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty) (/usr/share/texli
 ve/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive
 /texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (./connexiveFinal.a
-ux)
+ux (./latex/judgements.aux))
 \openout1 = `connexiveFinal.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
@@ -1556,6 +1556,13 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [3
 
 ]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[4
+
+]
 \openout4 = `connexiveFinal.vrb'.
 
 (./connexiveFinal.vrb
@@ -1692,16 +1699,6 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[4
-
-]
-\openout4 = `connexiveFinal.vrb'.
-
-(./connexiveFinal.vrb)
-Overfull \hbox (18.21034pt too wide) has occurred while \output is active
- [][][][]  
- []
-
 [5
 
 ]
@@ -1755,6 +1752,9 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [10
 
 ]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1762,42 +1762,6 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [11
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--274
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.274 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1805,6 +1769,42 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [12
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 280--280
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.280 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1819,20 +1819,6 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [14
 
 ]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.410 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1840,6 +1826,20 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [15
 
 ]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.416 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
@@ -1860,6 +1860,260 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
 [18
 
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[19
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[20
+
+]
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 14.40152pt on input line 493.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 7.00075pt on input line 493.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 14.39845pt on input line 493.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 493.
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[21
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[22
+
+]
+\openout2 = `latex/judgements.aux'.
+
+(./latex/judgements.tex
+\openout5 = `connexiveFinal.ptb'.
+
+)
+Overfull \hbox (14.41638pt too wide) detected at line 540
+[][][] $[]$[][][][][][][][] $[]$[][][][][][] 
+ []
+
+
+Overfull \vbox (3.70955pt too high) detected at line 540
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[23
+
+
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[24
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[25
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[26
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[27
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[28
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[29
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[30
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[31
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[32
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[33
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[34
+
+]
+
+! LaTeX Error: \begin{exampleblock} on input line 756 ended by \end{block}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.756 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[35
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[36
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[37
+
+]
+File: core.png Graphic file (type bmp)
+<core.png>
+
+Overfull \hbox (11.46419pt too wide) in paragraph at lines 820--820
+ | [] 
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[38
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[39
+
+]
+File: e.png Graphic file (type bmp)
+<e.png>
+
+Overfull \hbox (11.46419pt too wide) in paragraph at lines 853--853
+ | [] 
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[40
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[41
+
+]
+! Undefined control sequence.
+\beamer@doifinframe ...ry\ Nat\ is\ even\ or \odd 
+                                                  $ \item Negation \\ $it\ i...
+l.893 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\beamer@doifinframe ...t\ x\ is\ even\ \mapsto \x 
+                                                  is\ not\ even$ \item Refle...
+l.893 \end{frame}
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \vbox (0.30948pt too high) detected at line 893
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
 ])
 ! Emergency stop.
 <*> connexiveFinal.tex
@@ -1868,11 +2122,11 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
  
 Here is how much of TeX's memory you used:
- 35628 strings out of 479819
- 709373 string characters out of 5895846
+ 35808 strings out of 479819
+ 712850 string characters out of 5895846
  1138189 words of memory out of 5000000
- 51969 multiletter control sequences out of 15000+600000
- 542413 words of font info for 108 fonts, out of 8000000 for 9000
+ 52126 multiletter control sequences out of 15000+600000
+ 544689 words of font info for 124 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,18n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on connexiveFinal.xdv (18 pages, 628612 bytes).
+Output written on connexiveFinal.xdv (42 pages, 1413828 bytes).
