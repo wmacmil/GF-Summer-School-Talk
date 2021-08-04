@@ -1,17 +1,12 @@
-\frametitle{Associativity of natural numbers}
-% [from software foundations]
-\begin{verbatim}
-Theorem: For any n, m and p,
-  n + (m + p) = (n + m) + p.
-Proof: By induction on n.
-  First, suppose n = 0. We must show that
-    0 + (m + p) = (0 + m) + p.
-  This follows directly from the definition of +.
-  Next, suppose n = S n', where
-    n' + (m + p) = (n' + m) + p.
-  We must now show that
-    (S n') + (m + p) = ((S n') + m) + p.
-  By the definition of +, this follows from
-    S (n' + (m + p)) = S ((n' + m) + p),
-  which is immediate from the induction hypothesis. Qed.
-\end{verbatim}
+\frametitle{Remarks}
+
+\begin{quote}{Robert Harper, OPLSS}
+  Concrete syntax is, in some sense, where programming meets psychology.
+\end{quote}
+
+\begin{itemize}
+\item Trinitarian doctrine is in the ``formal" space
+\item Trinitarianism + linguistics is partially informal and very underexplored
+\item Introduces many philosophical concerns
+\item Perhaps a rereading of Wittgenstein should take place in this context
+\end{itemize}

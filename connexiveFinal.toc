@@ -1,11 +1,12 @@
 \babel@toc {english}{}
 \beamer@sectionintoc {1}{Overview}{2}{0}{1}
 \beamer@subsectionintoc {1}{1}{Introduction}{2}{0}{1}
-\beamer@sectionintoc {2}{Preliminaries and Perspectives}{10}{0}{2}
-\beamer@subsectionintoc {2}{1}{MLTT}{10}{0}{2}
-\beamer@subsectionintoc {2}{2}{Agda}{20}{0}{2}
-\beamer@subsectionintoc {2}{3}{Philosophical Considerations}{24}{0}{2}
-\beamer@sectionintoc {3}{GF Grammars}{31}{0}{3}
-\beamer@subsectionintoc {3}{1}{Logic '11}{33}{0}{3}
-\beamer@subsectionintoc {3}{2}{Hott '14}{40}{0}{3}
-\beamer@subsectionintoc {3}{3}{A PL in GF}{46}{0}{3}
+\beamer@sectionintoc {2}{Preliminaries and Perspectives}{11}{0}{2}
+\beamer@subsectionintoc {2}{1}{MLTT}{11}{0}{2}
+\beamer@subsectionintoc {2}{2}{Agda}{21}{0}{2}
+\beamer@subsectionintoc {2}{3}{Philosophical Considerations}{25}{0}{2}
+\beamer@sectionintoc {3}{GF Grammars}{32}{0}{3}
+\beamer@subsectionintoc {3}{1}{Logic '11}{34}{0}{3}
+\beamer@subsectionintoc {3}{2}{Hott '14}{41}{0}{3}
+\beamer@subsectionintoc {3}{3}{A PL in GF}{47}{0}{3}
+\beamer@sectionintoc {4}{Conclusion}{60}{0}{4}

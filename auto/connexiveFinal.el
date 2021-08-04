@@ -16,11 +16,6 @@
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
    (TeX-run-style-hooks
     "latex2e"
-    "latex/equiv"
-    "latex/n"
-    "latex/p"
-    "latex/i"
-    "latex/ih"
     "beamer"
     "beamer10"
     "fontenc"
