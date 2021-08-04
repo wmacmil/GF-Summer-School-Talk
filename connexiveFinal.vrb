@@ -1,9 +1,27 @@
-\frametitle{The Dimensions of Grammar}
-% https://tikzcd.yichuanshen.de/#N4Igdg9gJgpgziAXAbVABwnAlgFyxMJZABgBoBmAXVJADcBDAGwFcYkQBlNGAYx2YBOAWwA6IgAQQAZmPEBxAGIgAvqXSZc+QijLFqdJq3YAZGAA8sPArI5YAXm1XrseAkXKk9NBizaJOAJ5gOPR8lrIAwhBCaIwwODBg8AhOIBguWu4U+j5G-hwwQvTB4RIAgrAAjsyhASpqaRqu2sgeAIw5hn4gKvowUADm8ESgUgLRSGQgOBBIbd5d7BwheHB4PEyyALLxABbQcAD89aPjQpM0M0geBr7sAErFIbIAEhAAKu+yAORtACwgGiMegAIxgjAACk1Mv4BFgBrscCcQGMJogpldEAAmBZ3fw8ZggyxMT7I1HndGXWaIP64vIgR7BeiyYwQAalcS-AFA0HgqEZNyw+GI3rKIA
-\centering
-\begin{tikzcd}
-Lexicon\ Size                                                                                                                                          &  &  & Syntactic\ Completeness \\
-                                                                                                                                                       &  &  & {}                      \\
-                                                                                                                                                       &  &  &                         \\
-Spectrum\ of\ GF \arrow[uuu, "Statistical\ Methods?"] \arrow[rrr, "Ranta\ HoTT\ '14"'] \arrow[rrruuu, "cubicalTT"] \arrow[rrruu, "Ranta\ Logic\ '14"'] &  &  & Semantic\ Adequacy
-\end{tikzcd}
+\frametitle{BNFC $\to$ GF}
+
+\begin{itemize}
+\item Backus-Naur form Converter (BNFC)
+\item Parser generator for PL's
+\item A cousin of GF for that combines the concrete and abstract into a single grammar file.
+\item The BNFC functions are quite similar, but resembles classic BNF
+\item Precedence is native in BNFC
+\item We have help from Formal.gf in the RGL.
+\end{itemize}
+
+\begin{verbatim}
+Lam. Exp  ::= "\\" [PTele] "->" Exp ;
+Fun. Exp1 ::= Exp2 "->" Exp1 ;
+App. Exp2 ::= Exp2 Exp3 ;
+\end{verbatim}
+
+\begin{verbatim}
+fun
+  Lam : [Tele] -> Exp -> Exp ;
+  Fun : Exp -> Exp -> Exp ;
+  App : Exp -> Exp -> Exp ;
+lin
+  Lam pt e = mkPrec 0 ("\\" ++ pt ++ "->" ++ usePrec 0 e) ;
+  Fun = infixr 1 "->" ;
+  App = infixl 2 "" ;
+\end{verbatim}

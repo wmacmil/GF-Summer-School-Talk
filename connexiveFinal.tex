@@ -1,4 +1,4 @@
-\documentclass[10pt]{beamer}
+\documentclass[9pt]{beamer}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
@@ -51,6 +51,45 @@
 \newcommand{\arrowH}[2]{#1 \rightarrow #2}
 \newcommand{\appH}[2]{#1 #2}
 \newcommand{\equivalenceH}[2]{#1 \simeq #2}
+
+% hott stuff here
+\newtheorem{definition}%{Definition}
+\newtheorem{lem}{Lemma}
+\newtheorem{proof}%{Proof}
+\newtheorem{thm}{Theorem}
+
+\newcommand{\jdeq}{\equiv}      % An equality judgment
+\newcommand{\refl}[1]{\ensuremath{\mathsf{refl}_{#1}}\xspace}
+\newcommand{\define}[1]{\textbf{#1}}
+\newcommand{\defeq}{\vcentcolon\equiv}  % A judgmental equality currently being defined
+
+%\newcommand{\jdeq}{\equiv}      % An equality judgment
+%\let\judgeq\jdeq
+
+
+\newcommand{\ind}[1]{\mathsf{ind}_{#1}}
+\newcommand{\indid}[1]{\ind{=_{#1}}} % (Martin-Lof) path induction principle for identity types
+
+\newcommand{\blank}{\mathord{\hspace{1pt}\text{--}\hspace{1pt}}}
+
+\newcommand{\opp}[1]{\mathord{{#1}^{-1}}}
+\let\rev\opp
+
+\newcommand{\id}[3][]{\ensuremath{#2 =_{#1} #3}\xspace}
+
+
+
+\newcommand{\UU}{\ensuremath{\mathcal{U}}\xspace}
+\let\bbU\UU
+\let\type\UU
+
+\newcommand{\equalH}[2]{#1 = #2}
+\newcommand{\comprehensionH}[3]{\{ #1 : #2 \mid #3 \}}
+\newcommand{\arrowH}[2]{#1 \rightarrow #2}
+\newcommand{\appH}[2]{#1 #2}
+\newcommand{\equivalenceH}[2]{#1 \simeq #2}
+
+
 
 \usetheme{Antibes}
 \usecolortheme{beaver}
@@ -116,6 +155,7 @@ I want feedback on this talk, please
 \item \textbf{HOL} : Higher Order Logic
 \item \textbf{HIT} : Higher Inductive Type
 \item \textbf{GADT} : Generalized Algebraic Data Type
+\item \textbf{RGL} : Resource Grammar Library
 \end{itemize}
 \end{frame}
 
@@ -895,414 +935,520 @@ $\llbracket - \rrbracket : Core \to Extended$
 
 \subsection{Hott '14}
 
-% \begin{frame}
-% \frametitle{Ranta's (unpublished) talk at Stockholm Math Seminar}
-% \begin{itemize}
-% \item Case study for text of \emph{real} mathematics writing
-% \item Purely GF translation
-% \item Complex abstract structure including latex, metadocument structure, etc.
-% \item Homotopy Type Theory (HoTT) specific lexicon
-% \item Includes proofs, but AST not similar to PL
-% \item Includes both expressions and propositions (breaks curry howard)
-% \item Semantically Adequate but syntactically incomplete
-% \end{itemize}
-% \end{frame}
-
-
-% \begin{frame}
-% \frametitle{HoTT Grammar Modules}
-
-% \begin{figure}
-% \hspace*{-3mm}%
-%    \includegraphics[width= \paperwidth]{testdep3.jpg}
-% \end{figure}
-% \end{frame}
-
-% \begin{frame}[fragile]
-% \frametitle{Framework.gf}
-% \begin{verbatim}
-% cat
-%   Paragraph ; -- definition, theorem, etc
-%   Definition ; -- definition of a new concept
-%   Assumption ; -- assumption in a proof -- let ...
-%   [Assumption]{1} ;  -- list of assumptions in one sentence
-%   Conclusion ; -- conclusion in a proof -- thus P
-%   Prop ; -- proposition,sentence or formula, A is contractible
-%   Sort ; -- set, type, etc corresponding to a common noun
-%   Ind ; -- individual element corresponding to a singular term
-%   Fun ; -- function with individual value
-%   Pred ; -- predicate: function with proposition value
-%   [Ind] ; -- list of individual expressions -- 1, 2 and 3
-%   UnivPhrase ; -- universal noun phrase -- for all x,y : A
-%   ConclusionPhrase ; -- conclusion word -- hence
-%   Label ; -- name/number of definition, theorem, etc
-%   Title ; -- title for theorem, definition, etc
-% \end{verbatim}
-% \end{frame}
-% \begin{frame}[fragile]
-
-% \frametitle{Formulas.gf}
-% \begin{verbatim}
-% cat
-%   Exp ;          -- formal expression             
-%                  -- x + y = z
-%   Var ;          -- variable
-%                  -- x
-%   [Var]{1} ;     -- list of variables             
-%                  -- x, y, z
-%   [Exp]{1} ;     -- list of expressions           
-%                  -- 1_{A}, A
-%   Format ;       -- line other than content       
-%                  -- \begin{document}
-%   MathEnv ;      -- math environment              
-%                  -- $ ... $
-% \end{verbatim}
-% \end{frame}
-
-% \begin{frame}[fragile]
-% \frametitle{Comparative Syntax}
-
-% \begin{itemize}
-% \item We work with the definition of contractability, the notion that a type (or space) is
-% actually a point, i.e. up to equality, there is only object. 
-% \item We show the rendered latex, a pidgin agda syntax (after some concrete
-%   modifications), and the Agda code
-% \end{itemize}\\~\\
-
-% \textbf{Definition}:
-% A type $A$ is contractible, if there is $a : A$, called the center of contraction, such that for all $x : A$, $\equalH {a}{x}$.
-
-% \\~\\
-% \begin{figure}
-% \begin{verbatim}
-% isContr ( A : Set ) : Set = 
-%   ( a : A ) ( * ) ( ( x : A ) -> Id ( a ) ( x ) )
-% \end{verbatim}
-% \end{figure}
-
-% % \input{latex/contr}
-
-% \end{frame}
-
-% \begin{frame}[fragile]
-
-% \begin{itemize}
-% \item We also show that a notion of a map being an equivalence, that of the
-%   every element in the codomain having a contractible image (think bijection) 
-% \item notice the error in the Pidgin case
-% \end{itemize}
-
-% \\~\\
-
-%  \textbf{Definition}:
-%  A map $f : \arrowH {A}{B}$ is an equivalence, if for all $y : B$, its fiber, $\comprehensionH {x}{A}{\equalH {\appH {f}{x}}{y}}$, is contractible.
-%  We write $\equivalenceH {A}{B}$, if there is an equivalence $\arrowH {A}{B}$.
-
-% \\~\\
-
-% \begin{figure}
-% \begin{verbatim}
-% Equivalence ( f : A -> B ) : Set = 
-%   ( y : B ) -> ( isContr ( fiber it ) ) ; ; ; 
-%   fiber it : Set = ( x : A ) ( * ) ( Id ( f ( x ) ) ( y ) )
-% \end{verbatim}
-% \end{figure}
-
-% % \input{latex/equiv}
-% \end{frame}
-
-% \subsection{A PL in GF}
-
-% \begin{frame}
-% \frametitle{GF as a programming language parser}
-
-% \begin{itemize}
-% \item How can a PL parser be bootstrapped to linearize to natural language ?
-% \item \emph{Syntactically adequate} out the box
-% \item There exists many existing programs to test on, hopefully less
-%   overhead 
-% \item In dependently typed language, almost everything is an expression \\
-%       e.g. item No distinguishing syntactically between types and terms
-% \item this makes the parser easy to write for the PL but difficult for the NL
-% \item All precedence information at the concrete level
-% \end{itemize}
-
-% \end{frame}
-
-
-% \begin{frame}[fragile]
-% \frametitle{Basic Categories}
-% \begin{verbatim}
-% cat
-%   Exp ;
-%   Var ;
-%   Tele ;
-%   LTele ;
-%   [Var]{1} ;
-%   [Tele]{2} ;
-%   [LTele]{2} ;
-%   Decl ;
-
-%   --cat [C] {n}
-%   -- =
-%   --cat ListC ;
-%   --fun BaseC : C -> ...-> C -> ListC ; -- n C ’s
-%   --fun ConsC : C -> ListC -> ListC
-% \end{verbatim}
-% \end{frame}
-
-% \begin{frame}[fragile]
-
-% \frametitle{Dependent Lambda Calc with Equality}
-
-% \begin{verbatim}
-% fun
-%   Dtype , Dterm : Var -> Exp -> Decl ; 
-
-%   Earr : Exp -> Exp -> Exp ;
-%   Epi : [Tele] -> Exp -> Exp ;
-%   Eid : Exp -> Exp -> Exp -> Exp ; -- for type
-%   Eid2 : Exp -> Exp -> Exp ;
-%   Enat , Euni : Exp ;
-
-%   Evar : Var -> Exp ;
-%   Elam : [LTele] -> Exp -> Exp ;
-%   Eapp : Exp -> Exp -> Exp ;
-
-%   Erefl : Exp ;
-%   Eidind : Exp -> Exp -> Exp -> Exp -> Exp -> Exp ;
-
-%   Ezer : Exp ;
-%   Esuc : Exp -> Exp ;
-%   EsucEta : Exp ; 
-%   Enatind : Exp -> Exp -> Exp -> Exp -> Exp ;
-% \end{verbatim}
-% \end{frame}
-
-
-% \begin{frame}
-% % \input{latex/n}
-% \end{frame}
-
-% \begin{frame}[fragile]
-% \frametitle{Associativity of natural numbers}
-% % [from software foundations]
-% \begin{verbatim}
-% Theorem: For any n, m and p,
-%   n + (m + p) = (n + m) + p.
-% Proof: By induction on n.
-%   First, suppose n = 0. We must show that
-%     0 + (m + p) = (0 + m) + p.
-%   This follows directly from the definition of +.
-%   Next, suppose n = S n', where
-%     n' + (m + p) = (n' + m) + p.
-%   We must now show that
-%     (S n') + (m + p) = ((S n') + m) + p.
-%   By the definition of +, this follows from
-%     S (n' + (m + p)) = S ((n' + m) + p),
-%   which is immediate from the induction hypothesis. Qed.
-% \end{verbatim}
-% \end{frame}
-
-% \begin{frame}
-
-% % \input{latex/p}
-
-% \end{frame}
-
-% \begin{frame}
-
-% % \input{latex/i}
-
-% \end{frame}
-
-% \begin{frame}
-
-% % \input{latex/ih}
-
-% \end{frame}
-
-% % finish after this
-
-% \begin{frame}[fragile]
-
-% \begin{verbatim}
-% p -lang=LHask "
-%   \\ ( x y z : nat ) -> 
-%   natind 
-%     (\\ (f : nat) -> 
-%      ((plus f (plus y z)) == (plus (plus f y) z))) 
-%     refl 
-%     ( 
-%      \\ ( f : nat ) -> 
-%      \\ (g : 
-%       ((plus f (plus y z)) == (plus (plus f y) z))
-%         ) 
-%       -> ap suc g  
-%     ) 
-%     x" | l
-% 0 msec
-
-% \end{verbatim}
-
-% \end{frame}
-
-% \begin{frame}[fragile]
-
-% \begin{verbatim}
-% L> 
-%   function taking x , y z in the natural numbers 
-%   to 
-%   We proceed by induction over x .
-%   We therefore wish to prove : function taking f, 
-%     in the natural numbers to apply apply plus to 
-%     f to apply apply plus to y to z is equal 
-%     to apply apply plus to apply apply plus to f 
-%     to y to z .
-%   In the base case, suppose x equals zero.
-%     we know this by reflexivity .
-%   In the inductive case, 
-%     suppose x is the successor. 
-%     Then one has one has function taking f , 
-%       in the natural numbers to function
-%       taking g , in apply apply plus to f 
-%       to apply apply plus to y to z is equal to
-%       apply apply plus to apply apply plus to f 
-%       to y to z to apply ap to the successor
-%       of g.
-% \end{verbatim}
-% \end{frame}
-
-
-% \begin{frame}
-% \frametitle{A minimal Dependently Typed PL in GF}
-
-% \begin{itemize}
-% \end{itemize}
-
-% \end{frame}
-
-% \begin{frame}
-
-% \frametitle{BNFC}
-
-% \begin{itemize}
-% \item Backus-Naur form Converter (BNFC) : a cousin of GF for that combines the concrete and abstract
-%   into a single grammar file.
-% \item supports precedence out of the box. this is done via a seperate GF module 
-% \item BNFC -> GF is a pretty seamless translation
-% \item Everything from Göteborg 
-% \end{itemize}
-
-% \end{frame}
-
-% \begin{frame}
-% \frametitle{cubicalTT}
-% \begin{itemize}
-% \item Existing grammars for experimental PLs, like cubicalTT
-% \item Treats equality natively, Univalence becomes a theorem
-% \item \emph{Computational Higher Type Theory}
-% \item Experimental \& hot research topic
-% \item cubicalTT discontinued, now Cubical Agda
-% \item Explicit \emph{split} instead of pattern matching
-% \item Only one universe, inconsistent
-% \end{itemize}
-% \end{frame}
-
-% \section{Conclusion}
-
-% \begin{frame}
-% \frametitle{Issues with our grammars}
-
-% \begin{block}{NL Generation}
-% \end{block}
-% \begin{itemize}
-% \item Induction principle vs pattern matching (internal vs external)
-% \item Properly deal with all the \emph{applys} in the NL case
-% \item Scale to more interesting facts about, for instance, number theory
-% \item Symbolic module extension
-% \end{itemize}
-
-% \begin{block}{PL Difficulties}
-% \item Length of list issues, how to get it to properly linearize to two sytnaxes with unique list idioms 
-% \item Pattern matching
-% \item 
-
-% \end{block}
-
-% \end{frame}
-
-
-
-% \begin{frame}
-% \frametitle{}
-
-% \end{frame}
-
-
-% \begin{frame}
-% \frametitle{Future Work}
-
-% Convert mathematicians.
-% More interaction between PL communities - Lean, Agda, Coq , {Prl} -
-% These languages each represent a  huge field of interrelated and independent research.
-
-% Linguistic analysis.  Gangaselem's work is both practical and philosophical,
-% both directions need a lot more research
-
-% A mathematician objected that it can't be difficult to prove a 2 is prime in
-% Agda. This is because they in some sense are mixing definitional and
-% propositional equality.
-
-% Prop equality <-> isomorphism via univalence, but even moreso after cubical
-
-% HITs <-> new proofs, new discoveries more akin to semantic feeling
-
-% A FORMAL SYSTEM FOR EUCLID’S ELEMENTS
-% https://www.cambridge.org/core/journals/review-of-symbolic-logic/article/abs/formal-system-for-euclids-elements/07CA7E5F8E1C5C2EB632E1005CBE7BEF
-
-% Different intersecting ideas of models, syntax vs semantic
-
-% Krasimir : bigger grammar, begins resembling RGL
-% (but we also need to
-% investigate where compile time optimizations are necessary for this)
-% We need an RGL to take care of things that satisfy both the Computer Scientists,
-% Logicians, and Mathematicians
-
-% TODO:
-
-
-% - pattern matching (Agda) perhaps ad-hoc, post processing necessary
-% - GF latex RGL (at least for some of it)
-% - domain corpus for comparison of concrete syntax's
-% - testing suite, framework, and methodology (specifically, for formal language CNLs)
-% - some work on GF itself, to allow for user defined categories (like Int and
-% String for variables)
-% - interface with the Agda community.  Alfa and GF grew together, and its a shame
-% they parted ways.
-% - possible investigation of metaprogramming in GF (this may hit the parser
-% complexity bottleneck)
-% - Mathematical Theory of GF will us to understand GF more formally, i.e. prove
-% theorems about the adjunction between Concrete and Abstract
-% - inference to determine type signature arities (Abstract seems the way to go,
-% although with hidden variables this becomes an exponential problem in terms of
-% the type signatures
-
-% Diagram about what is a model and what is syntax in GF
-
-% While Machine learning enthusisasts (Szegedy, ...) think that Proving,
-% Translating, etc are feasible, it is certainly our belief that this is very
-% wishful thinking.  If this work has taught me anything, its that the
-% mathematical way of thinking, presenting, and communicating is complex and nuanced in ways
-% are digital technologies aren't yet able to do much with (even with lots of
-% human labor)
-
-% maybe there are just different grammars which need to be developed, and the
-% opposing spectrum will never unify
-
-% automatically derive precedences from code for unique parses
-
-% \end{frame}
-
-
-% \end{document}
+\begin{frame}
+\frametitle{An Unpublished Talk at the Stockholm University Math Seminar}
+
+\begin{itemize}
+\item Ranta, \emph{Translating Homotopy Type Theory in Grammatical Framework},
+  Fall 2014
+\item Case study for text of \emph{real} mathematics writing
+\item Purely GF translation
+\item Complex abstract structure including latex, metadocument structure, etc.
+\item HoTT specific lexicon
+\item Includes proofs, but AST not similar to PL
+\item Includes both expressions and propositions (breaks Curry-Howard)
+\item \emph{Semantically adequate}
+\item \emph{Syntactically incomplete}
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{HoTT Grammar Modules}
+
+\begin{figure}
+\hspace*{-3mm}%
+   \includegraphics[width= \paperwidth]{testdep3.jpg}
+\end{figure}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Framework.gf}
+\begin{verbatim}
+cat
+  Paragraph ; -- definition, theorem, etc
+  Definition ; -- definition of a new concept
+  Assumption ; -- assumption in a proof -- let ...
+  [Assumption]{1} ;  -- list of assumptions in one sentence
+  Conclusion ; -- conclusion in a proof -- thus P
+  Prop ; -- proposition,sentence or formula, A is contractible
+  Sort ; -- set, type, etc corresponding to a common noun
+  Ind ; -- individual element corresponding to a singular term
+  Fun ; -- function with individual value
+  Pred ; -- predicate: function with proposition value
+  [Ind] ; -- list of individual expressions -- 1, 2 and 3
+  UnivPhrase ; -- universal noun phrase -- for all x,y : A
+  ConclusionPhrase ; -- conclusion word -- hence
+  Label ; -- name/number of definition, theorem, etc
+  Title ; -- title for theorem, definition, etc
+\end{verbatim}
+\end{frame}
+\begin{frame}[fragile]
+
+\frametitle{Formulas.gf}
+\begin{verbatim}
+cat
+  Exp ;          -- formal expression             
+                 -- x + y = z
+  Var ;          -- variable
+                 -- x
+  [Var]{1} ;     -- list of variables             
+                 -- x, y, z
+  [Exp]{1} ;     -- list of expressions           
+                 -- 1_{A}, A
+  Format ;       -- line other than content       
+                 -- \begin{document}
+  MathEnv ;      -- math environment              
+                 -- $ ... $
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Contractability}
+
+\begin{block}{Comments}
+\begin{itemize}
+\item We work with the definition of contractability, the notion that a type (or space) is
+actually a point, i.e. up to equality, there is only object
+\item We show the (i) rendered latex, (ii)  pidgin Agda syntax after some concrete
+  modifications, and (iii) the Agda code
+\end{itemize}\\~\\
+\end{block}
+
+\textbf{Definition}:
+A type $A$ is contractible, if there is $a : A$, called the center of contraction, such that for all $x : A$, $\equalH {a}{x}$.
+
+\\~\\
+\begin{figure}
+\begin{verbatim}
+isContr ( A : Set ) : Set = 
+  ( a : A ) ( * ) ( ( x : A ) -> Id ( a ) ( x ) )
+\end{verbatim}
+\end{figure}
+
+% \input{latex/contr}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Equivalence}
+\begin{itemize}
+\item We also show that a notion of a map being an equivalence, that of the
+  every element in the codomain having a contractible image (think bijection) 
+\item notice the error in the Pidgin case
+\end{itemize}
+
+\\~\\
+
+ \textbf{Definition}:
+ A map $f : \arrowH {A}{B}$ is an equivalence, if for all $y : B$, its fiber, $\comprehensionH {x}{A}{\equalH {\appH {f}{x}}{y}}$, is contractible.
+ We write $\equivalenceH {A}{B}$, if there is an equivalence $\arrowH {A}{B}$.
+
+
+\begin{figure}
+\begin{verbatim}
+Equivalence ( f : A -> B ) : Set = 
+  ( y : B ) -> ( isContr ( fiber it ) ) ; ; ; 
+  fiber it : Set = ( x : A ) ( * ) ( Id ( f ( x ) ) ( y ) )
+\end{verbatim}
+\end{figure}
+
+% \input{latex/equiv}
+\end{frame}
+
+\subsection{A PL in GF}
+
+\begin{frame}
+\frametitle{GF as a programming language parser}
+
+\begin{itemize}
+\item How can a PL parser be bootstrapped to linearize to natural language ?
+\item \emph{Syntactically adequate} out the box
+\item All precedence information at the concrete level
+\item There exists many existing programs to test on, hopefully less
+  overhead 
+\item In dependently typed language, almost everything is an expression \\
+\item No distinguishing syntactically between types and terms
+\item This makes the \emph{abstract syntax} easy to write for the PL (in GF) but difficult for the NL
+\item Caution : This also makes it difficult to implement an ITP
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Basic Categories}
+\begin{verbatim}
+cat
+  Exp ;
+  Var ;
+  Tele ;
+  LTele ;
+  [Var]{1} ;
+  [Tele]{2} ;
+  [LTele]{2} ;
+  Decl ;
+
+  --cat [C] {n}
+  -- =
+  --cat ListC ;
+  --fun BaseC : C -> ...-> C -> ListC ; -- n C ’s
+  --fun ConsC : C -> ListC -> ListC
+\end{verbatim}
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Dependent Lambda Calculus with Propositional Equality}
+
+\begin{verbatim}
+fun
+  Dtype , Dterm : Var -> Exp -> Decl ; 
+
+  Earr : Exp -> Exp -> Exp ;
+  Epi : [Tele] -> Exp -> Exp ;
+  Eid : Exp -> Exp -> Exp -> Exp ; -- for type
+  Eid2 : Exp -> Exp -> Exp ;
+  Enat , Euni : Exp ;
+
+  Evar : Var -> Exp ;
+  Elam : [LTele] -> Exp -> Exp ;
+  Eapp : Exp -> Exp -> Exp ;
+
+  Erefl : Exp ;
+  Eidind : Exp -> Exp -> Exp -> Exp -> Exp -> Exp ;
+
+  Ezer : Exp ;
+  Esuc : Exp -> Exp ;
+  EsucEta : Exp ; 
+  Enatind : Exp -> Exp -> Exp -> Exp -> Exp ;
+\end{verbatim}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Natural Numbers in Agda}
+% \input{latex/n}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Proof Associativity of Natural Numbers from \emph{Software Foundations}}
+% [from software foundations]
+\begin{verbatim}
+Theorem: For any n, m and p,
+  n + (m + p) = (n + m) + p.
+Proof: By induction on n.
+  First, suppose n = 0. We must show that
+    0 + (m + p) = (0 + m) + p.
+  This follows directly from the definition of +.
+  Next, suppose n = S n', where
+    n' + (m + p) = (n' + m) + p.
+  We must now show that
+    (S n') + (m + p) = ((S n') + m) + p.
+  By the definition of +, this follows from
+    S (n' + (m + p)) = S ((n' + m) + p),
+  which is immediate from the induction hypothesis. Qed.
+\end{verbatim}
+\end{frame}
+
+\begin{frame}
+\frametitle{Pattern Matching Proofs in Agda}
+
+% \input{latex/p}
+
+\end{frame}
+
+\begin{frame}
+
+\frametitle{Natural Number Induction Principle (Elimination Rule) in Agda}
+% todo, add J
+% \input{latex/i}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Agda Associativity Proof}
+% \input{latex/ih}
+
+\end{frame}
+
+% finish after this
+
+\begin{frame}[fragile]
+\frametitle{Pidgin cubicalTT Associativity Proof}
+
+\begin{verbatim}
+p -lang=LHask "
+  \\ ( x y z : nat ) -> 
+  natind 
+    (\\ (f : nat) -> 
+     ((plus f (plus y z)) == (plus (plus f y) z))) 
+    refl 
+    ( 
+     \\ ( f : nat ) -> 
+     \\ (g : 
+      ((plus f (plus y z)) == (plus (plus f y) z))
+        ) 
+      -> ap suc g  
+    ) 
+    x" | l
+0 msec
+
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]
+
+\frametitle{Pidgin NL Associativity Proof}
+\begin{verbatim}
+L> 
+  function taking x , y z in the natural numbers 
+  to 
+  We proceed by induction over x .
+  We therefore wish to prove : function taking f, 
+    in the natural numbers to apply apply plus to 
+    f to apply apply plus to y to z is equal 
+    to apply apply plus to apply apply plus to f 
+    to y to z .
+  In the base case, suppose x equals zero.
+    we know this by reflexivity .
+  In the inductive case, 
+    suppose x is the successor. 
+    Then one has one has function taking f , 
+      in the natural numbers to function
+      taking g , in apply apply plus to f 
+      to apply apply plus to y to z is equal to
+      apply apply plus to apply apply plus to f 
+      to y to z to apply ap to the successor
+      of g.
+\end{verbatim}
+\end{frame}
+
+
+\begin{frame}
+
+\frametitle{cubicalTT Grammar}
+
+\begin{alertblock}{Idea}
+  How can we build a GF PL parser that unambiguously parses an existing PL?
+\end{alertblock}
+
+\begin{block}{HoTT Book}
+\begin{itemize}
+\item Canonical source for learning HoTT
+\item Concurrently formalized as it was written
+\item Multiple Agda and Coq libraries mirroring the text
+\item Open source, latex available
+\item Many authors suggest it's language should be more neutral
+\end{itemize}
+\end{alertblock}
+
+\begin{exampleblock}{My Library}
+A custom Agda Library was written additionally for this project to mirror the
+exact HoTT structure. It was an exercise in formalization by hand, and can
+hopefully soon  serve as a test corpus.  
+\end{exampleblock}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{cubicalTT}
+\begin{itemize}
+\item Existing grammars for experimental PLs, like cubicalTT
+\item Treats propositional equality natively
+\item Univalence becomes a theorem
+\item \emph{Computational Higher Type Theory}
+\item Experimental \& a hot research topic
+\item Explicit \emph{split} instead of pattern matching
+\item Only one universe, inconsistent
+\item Less pretty syntax than Agda, but front-end parser is in BNFC
+\item cubicalTT discontinued, now Cubical Agda
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{BNFC $\to$ GF}
+
+\begin{itemize}
+\item Backus-Naur form Converter (BNFC) 
+\item Parser generator for PL's
+\item A cousin of GF for that combines the concrete and abstract into a single grammar file.
+\item The BNFC functions are quite similar, but resembles classic BNF
+\item Precedence is native in BNFC
+\item We have help from Formal.gf in the RGL.
+\end{itemize}
+
+\begin{verbatim}
+Lam. Exp  ::= "\\" [PTele] "->" Exp ;
+Fun. Exp1 ::= Exp2 "->" Exp1 ;
+App. Exp2 ::= Exp2 Exp3 ;
+\end{verbatim}
+
+\begin{verbatim}
+fun
+  Lam : [Tele] -> Exp -> Exp ;
+  Fun : Exp -> Exp -> Exp ;
+  App : Exp -> Exp -> Exp ;
+lin
+  Lam pt e = mkPrec 0 ("\\" ++ pt ++ "->" ++ usePrec 0 e) ;
+  Fun = infixr 1 "->" ; 
+  App = infixl 2 "" ;
+\end{verbatim}
+\end{frame}
+
+\begin{frame}
+\frametitle{ Symmetry of Equality in Agda}  
+
+% \include{latex/Id}
+
+\end{frame}
+
+% fix before thesis, no title
+\begin{frame}
+% \frametitle{Symmetry of Equality from HoTT Book}
+\begin{lem}\label{lem:opp}
+  For every type $A$ and every $x,y:A$ there is a function
+  \begin{equation*}
+    (x= y)\to(y= x)
+  \end{equation*}
+  denoted $p\mapsto \opp{p}$, such that $\opp{\refl{x}}\jdeq\refl{x}$ for each $x:A$.
+  We call $\opp{p}$ the \define{inverse} of $p$.
+\end{lem}
+\begin{proof}[First proof]
+  Assume given $A:\UU$, and
+  let $D:{\textstyle\prod_{(x,y:A)}}(x= y) \; \to \; \type$ be the type family defined by $D(x,y,p)\defeq (y= x)$.
+  %$\prod_{(x:A)} \prod_{y:B}$
+  In other words, $D$ is a function assigning to any $x,y:A$ and $p:x=y$ a type, namely the type $y=x$.
+  Then we have an element
+  \begin{equation*}
+    d\defeq \lambda x.\ \refl{x}:\prod_{x:A} D(x,x,\refl{x}).
+  \end{equation*}
+  Thus, the induction principle for identity types gives us an element
+  $\indid{A}(D,d,x,y,p): (y= x)$
+  for each $p:(x= y)$.
+  We can now define the desired function $\opp{(\blank)}$ to be 
+  $\lambda p.\ \indid{A}(D,d,x,y,p)$, 
+  i.e.\ we set 
+  $\opp{p} \defeq \indid{A}(D,d,x,y,p)$.
+  The conversion rule [missing reference] 
+  gives $\opp{\refl{x}}\jdeq \refl{x}$, as required.
+\end{proof}
+\end{frame}
+
+
+\section{Conclusion}
+
+\subsection{Todo}
+
+\begin{frame}
+\frametitle{Issues with our grammars}
+
+\begin{block}{NL Generation}
+\begin{itemize}
+\item Properly deal with all the \emph{applys} in the NL case
+\item Scale to more interesting facts about, number theory or HoTT 
+\item Symbolic module extension
+\item Modularize the grammar
+\end{itemize}
+\end{block}
+
+\begin{block}{PL Difficulties}
+\begin{itemize}
+\item Length of list issues, how to get it to properly linearize to two sytnaxes with unique list idioms 
+\item Pattern matching
+\item Implement inductive types, records, as many features of Agda as possible
+\item Port to Coq, Lean, or some other ITP
+\end{itemize}
+\end{block}
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{ Questions Going Forward }
+\begin{itemize}
+\item How will the foundations of mathematics 
+\item What is GF's role in this problem? Are there theoretical or practical limitations?
+\item HITs are leading to new proofs of topological phenomenon, arguably more
+  close to topological intuitions. Perhaps if these are presented
+  linguistically, they may make arguing for ITPs easier
+\item What about graphical proofs and graphical programming languages?
+
+\frametitle{Future Work}
+
+More interaction between PL communities - Lean, Agda, Coq , {Prl} -
+These languages each represent a  huge field of interrelated and independent research.
+
+Linguistic analysis.  Gangaselem's work is both practical and philosophical,
+both directions need a lot more research
+
+A mathematician objected to me last week that it can't be difficult to prove a 2 is prime in
+Agda. This is because they in some sense are mixing definitional and
+propositional equality - it's easy to compute that two is prime via some algorithm, but to
+construct a program which represents a proof. With tactics or metaprogramming
+these two may be reconciled.  And cubical agda, allowing computation with all
+equality, represents a future direction to be explored for these matters.
+in some sense, this
+can some kind of 
+How do you know division is implemented correctly, or any other aspect of your
+programany other aspect of your program. Tests v
+
+
+Different intersecting ideas of models, syntax vs semantic
+
+Krasimir : bigger grammar, begins resembling RGL
+(but we also need to
+investigate where compile time optimizations are necessary for this)
+We need an RGL to take care of things that satisfy both the Computer Scientists,
+Logicians, and Mathematicians
+
+TODO:
+
+
+- pattern matching (Agda) perhaps ad-hoc, post processing necessary
+- GF latex RGL (at least for some of it)
+- domain corpus for comparison of concrete syntax's
+- testing suite, framework, and methodology (specifically, for formal language CNLs)
+- some work on GF itself, to allow for user defined categories (like Int and
+String for variables)
+- interface with the Agda community.  Alfa and GF grew together, and its a shame
+they parted ways.
+- possible investigation of metaprogramming in GF (this may hit the parser
+complexity bottleneck)
+- Mathematical Theory of GF will us to understand GF more formally, i.e. prove
+theorems about the adjunction between Concrete and Abstract
+- inference to determine type signature arities (Abstract seems the way to go,
+although with hidden variables this becomes an exponential problem in terms of
+the type signatures
+
+Diagram about what is a model and what is syntax in GF
+
+While Machine learning enthusisasts (Szegedy, ...) think that Proving,
+Translating, etc are feasible, it is certainly our belief that this is very
+wishful thinking.  If this work has taught me anything, its that the
+mathematical way of thinking, presenting, and communicating is complex and nuanced in ways
+are digital technologies aren't yet able to do much with (even with lots of
+human labor)
+
+maybe there are just different grammars which need to be developed, and the
+opposing spectrum will never unify
+
+automatically derive precedences from code for unique parses
+
+
+\item Goal is to mirror both CADE '11 and HoTT '14 with the abbstract 
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Metaphors}
+
+Covered many issues, about a very hypothetical problem
+Religion, there is a conversion problem
+
+
+Actually a very tangible problem
+Architect and Engineer - seperation of concerns
+
+
+\end{document}

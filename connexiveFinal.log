@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  4 AUG 2021 15:35
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2020.8.27)  4 AUG 2021 18:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -94,8 +94,8 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen156
 \Gm@layoutvoffset=\dimen157
 \Gm@dimlist=\toks15
-) (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+) (/usr/share/texlive/texmf-dist/tex/latex/extsizes/size9.clo
+File: size9.clo 1999/11/11 v1.4a NON-Standard LaTeX file (size option)
 ) (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/sha
 re/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
@@ -819,16 +819,17 @@ Package fontspec Info: Font family 'XITSMath(0)' created for font 'XITS Math'
 Package fontspec Info: Font family 'XITSMath(1)' created for font 'XITS Math'
 (fontspec)             with options
 (fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=8.75-},{Size=6.75-8.75,Font=XITS
-(fontspec)             Math,Style=MathScript},{Size=-6.75,Font=XITS
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
 (fontspec)             Math,Style=MathScriptScript}}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <8.75->"XITS
-(fontspec)             Math/OT:script=math;language=dflt;"<6.75-8.75>"XITS
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.75>"XITS
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <7.875->"XITS
+(fontspec)             Math/OT:script=math;language=dflt;"<6.075-7.875>"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.075>"XITS
+
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->"XITS
@@ -862,56 +863,57 @@ Package fontspec Info: XITS Math/B scale = 1.0001.
 Package fontspec Info: Font family 'XITSMath(2)' created for font 'XITS Math'
 (fontspec)             with options
 (fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=8.75-},{Size=6.75-8.75,Font=XITS
-(fontspec)             Math,Style=MathScript},{Size=-6.75,Font=XITS
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
 (fontspec)             Math,Style=MathScriptScript}},ScaleAgain=1.0001,FontAdju
 stment={\fontdimen
-(fontspec)             8\font =5.8pt\relax \fontdimen 9\font =4.8pt\relax
-(fontspec)             \fontdimen 10\font =4.8pt\relax \fontdimen 11\font
-(fontspec)             =7.0pt\relax \fontdimen 12\font =4.8pt\relax \fontdimen
-(fontspec)             13\font =4.0pt\relax \fontdimen 14\font =4.0pt\relax
-(fontspec)             \fontdimen 15\font =2.75pt\relax \fontdimen 16\font
-(fontspec)             =2.5pt\relax \fontdimen 17\font =2.5pt\relax \fontdimen
-(fontspec)             18\font =3.75pt\relax \fontdimen 19\font =0.5pt\relax
-(fontspec)             \fontdimen 22\font =2.5pt\relax \fontdimen 20\font
-(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)             8\font =5.22pt\relax \fontdimen 9\font =4.32pt\relax
+(fontspec)             \fontdimen 10\font =4.32pt\relax \fontdimen 11\font
+(fontspec)             =6.3pt\relax \fontdimen 12\font =4.32pt\relax
+(fontspec)             \fontdimen 13\font =3.6pt\relax \fontdimen 14\font
+(fontspec)             =3.6pt\relax \fontdimen 15\font =2.475pt\relax
+(fontspec)             \fontdimen 16\font =2.25pt\relax \fontdimen 17\font
+(fontspec)             =2.25pt\relax \fontdimen 18\font =3.375pt\relax
+(fontspec)             \fontdimen 19\font =0.45pt\relax \fontdimen 22\font
+(fontspec)             =2.25pt\relax \fontdimen 20\font =0pt\relax \fontdimen
+(fontspec)             21\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.75->s*[1.0001]"XITS
-(fontspec)             Math/OT:script=math;language=dflt;"<6.75-8.75>s*[1.0001]
-"XITS
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.75>s*[1.0
-001]"XITS
+(fontspec)             <7.875->s*[1.0001]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;"<6.075-7.875>s*[1.000
+1]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.075>s*[1.
+0001]"XITS
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =5.8pt\relax \fontdimen 9\font
-(fontspec)             =4.8pt\relax \fontdimen 10\font =4.8pt\relax \fontdimen
-(fontspec)             11\font =7.0pt\relax \fontdimen 12\font =4.8pt\relax
-(fontspec)             \fontdimen 13\font =4.0pt\relax \fontdimen 14\font
-(fontspec)             =4.0pt\relax \fontdimen 15\font =2.75pt\relax
-(fontspec)             \fontdimen 16\font =2.5pt\relax \fontdimen 17\font
-(fontspec)             =2.5pt\relax \fontdimen 18\font =3.75pt\relax
-(fontspec)             \fontdimen 19\font =0.5pt\relax \fontdimen 22\font
-(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =5.22pt\relax \fontdimen 9\font
+(fontspec)             =4.32pt\relax \fontdimen 10\font =4.32pt\relax
+(fontspec)             \fontdimen 11\font =6.3pt\relax \fontdimen 12\font
+(fontspec)             =4.32pt\relax \fontdimen 13\font =3.6pt\relax
+(fontspec)             \fontdimen 14\font =3.6pt\relax \fontdimen 15\font
+(fontspec)             =2.475pt\relax \fontdimen 16\font =2.25pt\relax
+(fontspec)             \fontdimen 17\font =2.25pt\relax \fontdimen 18\font
+(fontspec)             =3.375pt\relax \fontdimen 19\font =0.45pt\relax
+(fontspec)             \fontdimen 22\font =2.25pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1.0001]"XITS
 (fontspec)             Math/B/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =5.8pt\relax \fontdimen 9\font
-(fontspec)             =4.8pt\relax \fontdimen 10\font =4.8pt\relax \fontdimen
-(fontspec)             11\font =7.0pt\relax \fontdimen 12\font =4.8pt\relax
-(fontspec)             \fontdimen 13\font =4.0pt\relax \fontdimen 14\font
-(fontspec)             =4.0pt\relax \fontdimen 15\font =2.75pt\relax
-(fontspec)             \fontdimen 16\font =2.5pt\relax \fontdimen 17\font
-(fontspec)             =2.5pt\relax \fontdimen 18\font =3.75pt\relax
-(fontspec)             \fontdimen 19\font =0.5pt\relax \fontdimen 22\font
-(fontspec)             =2.5pt\relax \fontdimen 20\font =0pt\relax \fontdimen
-(fontspec)             21\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =5.22pt\relax \fontdimen 9\font
+(fontspec)             =4.32pt\relax \fontdimen 10\font =4.32pt\relax
+(fontspec)             \fontdimen 11\font =6.3pt\relax \fontdimen 12\font
+(fontspec)             =4.32pt\relax \fontdimen 13\font =3.6pt\relax
+(fontspec)             \fontdimen 14\font =3.6pt\relax \fontdimen 15\font
+(fontspec)             =2.475pt\relax \fontdimen 16\font =2.25pt\relax
+(fontspec)             \fontdimen 17\font =2.25pt\relax \fontdimen 18\font
+(fontspec)             =3.375pt\relax \fontdimen 19\font =0.45pt\relax
+(fontspec)             \fontdimen 22\font =2.25pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 15.
@@ -940,39 +942,39 @@ Package fontspec Info: XITS Math/B scale = 0.9999.
 Package fontspec Info: Font family 'XITSMath(3)' created for font 'XITS Math'
 (fontspec)             with options
 (fontspec)             [BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script
-=Math,SizeFeatures={{Size=8.75-},{Size=6.75-8.75,Font=XITS
-(fontspec)             Math,Style=MathScript},{Size=-6.75,Font=XITS
+=Math,SizeFeatures={{Size=7.875-},{Size=6.075-7.875,Font=XITS
+(fontspec)             Math,Style=MathScript},{Size=-6.075,Font=XITS
 (fontspec)             Math,Style=MathScriptScript}},ScaleAgain=0.9999,FontAdju
 stment={\fontdimen
-(fontspec)             8\font =0.66pt\relax \fontdimen 9\font =1.5pt\relax
-(fontspec)             \fontdimen 10\font =1.5pt\relax \fontdimen 11\font
-(fontspec)             =3.0pt\relax \fontdimen 12\font =6.0pt\relax \fontdimen
+(fontspec)             8\font =0.594pt\relax \fontdimen 9\font =1.35pt\relax
+(fontspec)             \fontdimen 10\font =1.35pt\relax \fontdimen 11\font
+(fontspec)             =2.7pt\relax \fontdimen 12\font =5.4pt\relax \fontdimen
 (fontspec)             13\font =0pt\relax }].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
 (fontspec)              
 (fontspec)             - 'normal' (m/n) with NFSS spec.:
-(fontspec)             <8.75->s*[0.9999]"XITS
-(fontspec)             Math/OT:script=math;language=dflt;"<6.75-8.75>s*[0.9999]
-"XITS
-(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.75>s*[0.9
-999]"XITS
+(fontspec)             <7.875->s*[0.9999]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;"<6.075-7.875>s*[0.999
+9]"XITS
+(fontspec)             Math/OT:script=math;language=dflt;+ssty=0;"<-6.075>s*[0.
+9999]"XITS
 (fontspec)             Math/OT:script=math;language=dflt;+ssty=1;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =0.66pt\relax \fontdimen 9\font
-(fontspec)             =1.5pt\relax \fontdimen 10\font =1.5pt\relax \fontdimen
-(fontspec)             11\font =3.0pt\relax \fontdimen 12\font =6.0pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =0.594pt\relax \fontdimen 9\font
+(fontspec)             =1.35pt\relax \fontdimen 10\font =1.35pt\relax
+(fontspec)             \fontdimen 11\font =2.7pt\relax \fontdimen 12\font
+(fontspec)             =5.4pt\relax \fontdimen 13\font =0pt\relax 
 (fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[0.9999]"XITS
 (fontspec)             Math/B/OT:script=math;language=dflt;"
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 (fontspec)             and font adjustment code:
-(fontspec)             \fontdimen 8\font =0.66pt\relax \fontdimen 9\font
-(fontspec)             =1.5pt\relax \fontdimen 10\font =1.5pt\relax \fontdimen
-(fontspec)             11\font =3.0pt\relax \fontdimen 12\font =6.0pt\relax
-(fontspec)             \fontdimen 13\font =0pt\relax 
+(fontspec)             \fontdimen 8\font =0.594pt\relax \fontdimen 9\font
+(fontspec)             =1.35pt\relax \fontdimen 10\font =1.35pt\relax
+(fontspec)             \fontdimen 11\font =2.7pt\relax \fontdimen 12\font
+(fontspec)             =5.4pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `normal' on input line 1
@@ -1380,37 +1382,138 @@ File: pgflibraryarrows.meta.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 \pgfarrowlength=\dimen340
 \pgfarrowwidth=\dimen341
 \pgfarrowlinewidth=\dimen342
-))) (/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAntibes.sty (/us
-r/share/texlive/texmf-dist/tex/latex/beamer/beamerouterthemetree.sty) (/usr/sha
-re/texlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/t
-exlive/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texl
-ive/texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (/usr/share/te
-xlive/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty) (/usr/share/texli
-ve/texmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive
-/texmf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (./connexiveFinal.a
-ux (./latex/judgements.aux))
+)))
+
+! LaTeX Error: Command \definition already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \newtheorem{definition}
+                            %{Definition}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@lem=\count368
+
+! LaTeX Error: Command \proof already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.58 \newtheorem{proof}
+                       %{Proof}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+\c@thm=\count369
+
+! LaTeX Error: Command \equalH already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86 \newcommand{\equalH}[2]{#1 = #2}
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \comprehensionH already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ...\comprehensionH}[3]{\{ #1 : #2 \mid #3 \}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \arrowH already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \newcommand{\arrowH}[2]{#1 \rightarrow #2}
+                                               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \appH already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89 \newcommand{\appH}[2]{#1 #2}
+                                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \equivalenceH already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \newcommand{\equivalenceH}[2]{#1 \simeq #2}
+                                                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(/usr/share/texlive/texmf-dist/tex/latex/beamer/beamerthemeAntibes.sty (/usr/sh
+are/texlive/texmf-dist/tex/latex/beamer/beamerouterthemetree.sty) (/usr/share/t
+exlive/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty) (/usr/share/texli
+ve/texmf-dist/tex/latex/beamer/beamercolorthemeorchid.sty) (/usr/share/texlive/
+texmf-dist/tex/latex/beamer/beamerinnerthemerectangles.sty)) (/usr/share/texliv
+e/texmf-dist/tex/latex/beamer/beamercolorthemebeaver.sty) (/usr/share/texlive/t
+exmf-dist/tex/latex/beamer/beamerinnerthemerounded.sty) (/usr/share/texlive/tex
+mf-dist/tex/latex/beamer/beamerouterthemeinfolines.sty) (./connexiveFinal.aux (
+./latex/judgements.aux))
 \openout1 = `connexiveFinal.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 67.
-LaTeX Font Info:    ... okay on input line 67.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 106.
+LaTeX Font Info:    ... okay on input line 106.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -1419,23 +1522,23 @@ LaTeX Font Info:    ... okay on input line 67.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(10.0pt, 344.19536pt, 10.0pt)
+* h-part:(L,W,R)=(9.0pt, 346.19536pt, 9.0pt)
 * v-part:(T,H,B)=(0.0pt, 273.14662pt, 0.0pt)
 * \paperwidth=364.19536pt
 * \paperheight=273.14662pt
-* \textwidth=344.19536pt
+* \textwidth=346.19536pt
 * \textheight=244.6939pt
-* \oddsidemargin=-62.26999pt
-* \evensidemargin=-62.26999pt
+* \oddsidemargin=-63.26999pt
+* \evensidemargin=-63.26999pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=10.0pt
+* \topskip=9.0pt
 * \footskip=14.22636pt
-* \marginparwidth=3.0pt
-* \marginparsep=11.0pt
+* \marginparwidth=4.0pt
+* \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=8.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1447,7 +1550,7 @@ LaTeX Font Info:    ... okay on input line 67.
 
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box137
-Package hyperref Info: Link coloring OFF on input line 67.
+Package hyperref Info: Link coloring OFF on input line 106.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1455,11 +1558,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/share/texlive/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count368
+\c@section@level=\count370
 )
-LaTeX Info: Redefining \ref on input line 67.
-LaTeX Info: Redefining \pageref on input line 67.
-LaTeX Info: Redefining \nameref on input line 67.
+LaTeX Info: Redefining \ref on input line 106.
+LaTeX Info: Redefining \pageref on input line 106.
+LaTeX Info: Redefining \nameref on input line 106.
 (./connexiveFinal.out) (./connexiveFinal.out)
 \@outlinefile=\write6
 \openout6 = `connexiveFinal.out'.
@@ -1492,48 +1595,44 @@ Dictionary: translator-theorem-dictionary, Language: English
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 (./connexiveFinal.nav)
-Overfull \hbox (18.21034pt too wide) in paragraph at lines 67--67
+Overfull \hbox (18.21034pt too wide) in paragraph at lines 106--106
  [][][][]  
  []
 
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 6
-7.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+06.
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 67.
+(Font)              scaled to size 5.00053pt on input line 106.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 67.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 67.
-
+(Font)              scaled to size 4.99947pt on input line 106.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 106
+.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 67.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 106
+.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 6
-7.
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 1
+06.
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 71.
+(Font)              scaled to size 9.00096pt on input line 110.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 7.5008pt on input line 71.
+(Font)              scaled to size 6.75072pt on input line 110.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 6.00064pt on input line 71.
+(Font)              scaled to size 5.40056pt on input line 110.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 71.
+(Font)              scaled to size 8.99904pt on input line 110.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 7.49919pt on input line 71.
+(Font)              scaled to size 6.74927pt on input line 110.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 5.99936pt on input line 71.
-
-LaTeX Font Warning: Font shape `U/stmry/m/n' in size <7.5> not available
-(Font)              size <7> substituted on input line 71.
-
+(Font)              scaled to size 5.39941pt on input line 110.
 
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
@@ -1690,7 +1789,7 @@ Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no p in font nullfont!
 
-Overfull \hbox (14.42162pt too wide) detected at line 28
+Overfull \hbox (16.62163pt too wide) detected at line 28
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -1769,7 +1868,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 [12
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
  []
 
@@ -1780,14 +1879,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.280 \end{frame}
+l.320 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 280--280
+Underfull \hbox (badness 10000) in paragraph at lines 320--320
 
  []
 
@@ -1798,7 +1897,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.280 \end{frame}
+l.320 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1833,7 +1932,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.416 \end{frame}
+l.456 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1876,13 +1975,17 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
 ]
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 493.
+(Font)              scaled to size 10.95116pt on input line 533.
 LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 493.
+(Font)              scaled to size 8.00085pt on input line 533.
+LaTeX Font Info:    Font shape `TU/XITSMath(2)/m/n' will be
+(Font)              scaled to size 6.00064pt on input line 533.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 493.
+(Font)              scaled to size 10.94882pt on input line 533.
 LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 493.
+(Font)              scaled to size 7.99915pt on input line 533.
+LaTeX Font Info:    Font shape `TU/XITSMath(3)/m/n' will be
+(Font)              scaled to size 5.99936pt on input line 533.
 
 Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
@@ -1904,12 +2007,8 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 \openout5 = `connexiveFinal.ptb'.
 
 )
-Overfull \hbox (14.41638pt too wide) detected at line 540
+Overfull \hbox (16.61636pt too wide) detected at line 580
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
- []
-
-
-Overfull \vbox (3.70955pt too high) detected at line 540
  []
 
 
@@ -2003,13 +2102,13 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
 ]
 
-! LaTeX Error: \begin{exampleblock} on input line 756 ended by \end{block}.
+! LaTeX Error: \begin{exampleblock} on input line 796 ended by \end{block}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.756 \end{frame}
+l.796 \end{frame}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -2040,7 +2139,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 File: core.png Graphic file (type bmp)
 <core.png>
 
-Overfull \hbox (11.46419pt too wide) in paragraph at lines 820--820
+Overfull \hbox (9.46419pt too wide) in paragraph at lines 860--860
  | [] 
  []
 
@@ -2062,7 +2161,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 File: e.png Graphic file (type bmp)
 <e.png>
 
-Overfull \hbox (11.46419pt too wide) in paragraph at lines 853--853
+Overfull \hbox (9.46419pt too wide) in paragraph at lines 893--893
  | [] 
  []
 
@@ -2084,7 +2183,7 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 ! Undefined control sequence.
 \beamer@doifinframe ...ry\ Nat\ is\ even\ or \odd 
                                                   $ \item Negation \\ $it\ i...
-l.893 \end{frame}
+l.933 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2095,7 +2194,7 @@ and I'll forget about whatever was undefined.
 ! Undefined control sequence.
 \beamer@doifinframe ...t\ x\ is\ even\ \mapsto \x 
                                                   is\ not\ even$ \item Refle...
-l.893 \end{frame}
+l.933 \end{frame}
                  
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -2104,7 +2203,25 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \vbox (0.30948pt too high) detected at line 893
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[42
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[43
+
+]
+File: testdep3.jpg Graphic file (type bmp)
+<testdep3.jpg>
+
+Overfull \hbox (9.46419pt too wide) in paragraph at lines 962--962
+ | [] 
  []
 
 
@@ -2112,9 +2229,376 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
  [][][][]  
  []
 
-[42
+[44
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[45
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[46
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \end{itemize}\\~
+                    \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \\~
+        \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[47
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \\~
+       \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[48
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[49
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[50
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \vbox (2.205pt too high) detected at line 1124
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[51
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[52
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[53
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[54
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[55
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[56
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[57
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \vbox (2.26653pt too high) detected at line 1224
+ []
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[58
+
+]
+
+! LaTeX Error: \begin{block} on input line 1250 ended by \end{alertblock}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1250 \end{frame}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[59
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[60
+
+]
+\openout4 = `connexiveFinal.vrb'.
+
+(./connexiveFinal.vrb)
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[61
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[62
+
+]
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\UU ->\ensuremath {\mathcal {U}}\xspace 
+                                        
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\type ->\ensuremath {\mathcal {U}}\xspace 
+                                          
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\defeq ->\vcentcolon 
+                     \equiv 
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\defeq ->\vcentcolon 
+                     \equiv 
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\defeq ->\vcentcolon 
+                     \equiv 
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\refl ...\ensuremath {\mathsf {refl}_{#1}}\xspace 
+                                                  
+l.1335 \end{frame}
+                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[63
+
+]
+Overfull \hbox (18.21034pt too wide) has occurred while \output is active
+ [][][][]  
+ []
+
+[64
 
 ])
+Runaway argument?
+ 
+! File ended while scanning use of \frame.
+<inserted text> 
+                \par 
+<*> connexiveFinal.tex
+                      
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
 ! Emergency stop.
 <*> connexiveFinal.tex
                       
@@ -2122,11 +2606,11 @@ Overfull \hbox (18.21034pt too wide) has occurred while \output is active
 
  
 Here is how much of TeX's memory you used:
- 35808 strings out of 479819
- 712850 string characters out of 5895846
- 1138189 words of memory out of 5000000
- 52126 multiletter control sequences out of 15000+600000
- 544689 words of font info for 124 fonts, out of 8000000 for 9000
+ 35906 strings out of 479819
+ 714633 string characters out of 5895846
+ 1138134 words of memory out of 5000000
+ 52189 multiletter control sequences out of 15000+600000
+ 546197 words of font info for 138 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  58i,18n,109p,805b,1345s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on connexiveFinal.xdv (42 pages, 1413828 bytes).
+Output written on connexiveFinal.xdv (64 pages, 2103396 bytes).
