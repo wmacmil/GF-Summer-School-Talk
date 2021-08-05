@@ -97,7 +97,7 @@
 \useoutertheme{infolines}
 
 %\titlegraphic{\includegraphics[width=25mm]{gottingen1.png}}
-\title{Modeling Formal Languages in Grammatical Framework}
+\title{Modeling Formal Languages in GF}
 \subtitle{On the Grammar of Proof}
 \author{Warrick Macmillan}
 \date{$7^{th}$ August 2021}
@@ -603,7 +603,7 @@ There are infinitely many twin primes.
 
 \frametitle{Twin Prime Conjecture in Agda}
 
-% \include{latex/twin-primes}
+\include{latex/twin-primes}
 
 \end{frame}
 
@@ -1025,7 +1025,7 @@ isContr ( A : Set ) : Set =
 \end{verbatim}
 \end{figure}
 
-% \input{latex/contr}
+\input{latex/contr}
 
 \end{frame}
 
@@ -1052,7 +1052,7 @@ Equivalence ( f : A -> B ) : Set =
 \end{verbatim}
 \end{figure}
 
-% \input{latex/equiv}
+\input{latex/equiv}
 \end{frame}
 
 \subsection{A PL in GF}
@@ -1126,7 +1126,7 @@ fun
 
 \begin{frame}
 \frametitle{Natural Numbers in Agda}
-% \input{latex/n}
+\input{latex/n}
 \end{frame}
 
 \begin{frame}[fragile]
@@ -1152,7 +1152,7 @@ Proof: By induction on n.
 \begin{frame}
 \frametitle{Pattern Matching Proofs in Agda}
 
-% \input{latex/p}
+\input{latex/p}
 
 \end{frame}
 
@@ -1160,13 +1160,13 @@ Proof: By induction on n.
 
 \frametitle{Natural Number Induction Principle (Elimination Rule) in Agda}
 % todo, add J
-% \input{latex/i}
+\input{latex/i}
 
 \end{frame}
 
 \begin{frame}
 \frametitle{Agda Associativity Proof}
-% \input{latex/ih}
+\input{latex/ih}
 
 \end{frame}
 
@@ -1298,7 +1298,7 @@ lin
 \begin{frame}
 \frametitle{ Symmetry of Equality in Agda}  
 
-% \include{latex/Id}
+\include{latex/Id}
 
 \end{frame}
 
@@ -1340,7 +1340,7 @@ lin
 \subsection{Todo}
 
 \begin{frame}
-\frametitle{Issues with our grammars}
+\frametitle{Difficulties in NL Generation}
 
 \begin{block}{NL Generation}
 \begin{itemize}
@@ -1348,107 +1348,153 @@ lin
 \item Scale to more interesting facts about, number theory or HoTT 
 \item Symbolic module extension
 \item Modularize the grammar
+\item GF latex package in RGL, ideally
 \end{itemize}
 \end{block}
+\end{frame}
 
-\begin{block}{PL Difficulties}
+\begin{frame}
+\frametitle{Difficulties in PL Direction}
+\begin{block}{PL Pains}
 \begin{itemize}
 \item Length of list issues, how to get it to properly linearize to two sytnaxes with unique list idioms 
 \item Pattern matching
 \item Implement inductive types, records, as many features of Agda as possible
 \item Port to Coq, Lean, or some other ITP
+\item Inference needed to determine type signature aritities in Agda, probably
+  via abstract syntax, although possibly exponential number of functions n hidden arguments
+\item Precedence analysis
 \end{itemize}
 \end{block}
 \end{frame}
 
 
+\begin{frame}
+\frametitle{Mathematicians Objections}
+\begin{itemize}
+\item The syntax of programming languages is less elegant, harder to read, and often indecipherable - even to the original author given enough time
+\item Computers, programs, programming languages, and software have bugs
+\item Code deprecates over time, and old code often breaks with software updates
+\item Learning to code requires expertise in its own right, and mathematicians don't have time to become experts in that, or so they believe
+\item Tedious details are necessary in machine implementations of proofs 
+\item Martin-Löf type theory is an entirely different foundation of mathematics, and most mathematicians aren't concerned with foundations
+\item Natural language proofs often explicitly keep track of proof states, or goals, whereas interactive proof development shields these when one simply witnesses the program syntax
+\item There is very little \emph{new} mathematics which has been developed in theorem provers, in the sense of mainstream mathematical journals publishing original research that was developed exclusively in theorem provers
+\item Typecheckers are stubborn
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Computer Scientist's Frustrations}
+\begin{itemize}
+\item Vague language is prone to error in interpretation
+\item Details left to be deciphered by the reader often nontrivial, and possibly impossible to infer for non-experts
+\item No easy way to fork someone else's work, credit them without explicitly referencing papers and theorem number
+\item No online repository to look up, for instance, theorems proven by their type signature (think Hoogle)
+\item Many (mostly older) papers written in foreign languages without translations available
+\item Errors may not be caught until much later
+\item Peer review incredibly costly 
+\item Type-checker is bookkeeper, mathematician must do this manually
+\end{itemize}
+\end{frame}
 
 \begin{frame}
 \frametitle{ Questions Going Forward }
 \begin{itemize}
-\item How will the foundations of mathematics 
+\item How will the foundations of mathematics change, and how will this change
+  reflect new ways of speaking and thinking about mathematics?
 \item What is GF's role in this problem? Are there theoretical or practical limitations?
 \item HITs are leading to new proofs of topological phenomenon, arguably more
-  close to topological intuitions. Perhaps if these are presented
-  linguistically, they may make arguing for ITPs easier
+  close to topological intuitions. How will these effect the ITP community at large?
 \item What about graphical proofs and graphical programming languages?
-
-\frametitle{Future Work}
-
-More interaction between PL communities - Lean, Agda, Coq , {Prl} -
-These languages each represent a  huge field of interrelated and independent research.
-
-Linguistic analysis.  Gangaselem's work is both practical and philosophical,
-both directions need a lot more research
-
-A mathematician objected to me last week that it can't be difficult to prove a 2 is prime in
-Agda. This is because they in some sense are mixing definitional and
-propositional equality - it's easy to compute that two is prime via some algorithm, but to
-construct a program which represents a proof. With tactics or metaprogramming
-these two may be reconciled.  And cubical agda, allowing computation with all
-equality, represents a future direction to be explored for these matters.
-in some sense, this
-can some kind of 
-How do you know division is implemented correctly, or any other aspect of your
-programany other aspect of your program. Tests v
-
-
-Different intersecting ideas of models, syntax vs semantic
-
-Krasimir : bigger grammar, begins resembling RGL
-(but we also need to
-investigate where compile time optimizations are necessary for this)
-We need an RGL to take care of things that satisfy both the Computer Scientists,
-Logicians, and Mathematicians
-
-TODO:
-
-
-- pattern matching (Agda) perhaps ad-hoc, post processing necessary
-- GF latex RGL (at least for some of it)
-- domain corpus for comparison of concrete syntax's
-- testing suite, framework, and methodology (specifically, for formal language CNLs)
-- some work on GF itself, to allow for user defined categories (like Int and
-String for variables)
-- interface with the Agda community.  Alfa and GF grew together, and its a shame
-they parted ways.
-- possible investigation of metaprogramming in GF (this may hit the parser
-complexity bottleneck)
-- Mathematical Theory of GF will us to understand GF more formally, i.e. prove
-theorems about the adjunction between Concrete and Abstract
-- inference to determine type signature arities (Abstract seems the way to go,
-although with hidden variables this becomes an exponential problem in terms of
-the type signatures
-
-Diagram about what is a model and what is syntax in GF
-
-While Machine learning enthusisasts (Szegedy, ...) think that Proving,
-Translating, etc are feasible, it is certainly our belief that this is very
-wishful thinking.  If this work has taught me anything, its that the
-mathematical way of thinking, presenting, and communicating is complex and nuanced in ways
-are digital technologies aren't yet able to do much with (even with lots of
-human labor)
-
-maybe there are just different grammars which need to be developed, and the
-opposing spectrum will never unify
-
-automatically derive precedences from code for unique parses
-
-
-\item Goal is to mirror both CADE '11 and HoTT '14 with the abbstract 
-
+\end{itemize}
 \end{frame}
 
+\begin{frame}
+\frametitle{Future Work}
+
+\begin{block}{Unified Grammar}
+\begin{itemize}
+\item  Goal : with the best of all three approaches taken above
+\item  Objections : maybe there are just different grammars which need to be
+  developed for more domain specific tasks in this area.
+\item Mirror both CADE '11 and HoTT '14 in cubicalTT with their respective
+  qualities maximized and difficulties minimized
+\end{itemize}
+\end{block}
+
+\begin{block}{Linguistic Analysis}
+\begin{itemize}
+\item  Gangaselem's work is both practical and philosophical, but just the tip
+  of the iceberg
+\item  Differences between NLs and PLs still ripe for exploration
+\end{itemize}
+\end{block}
+
+\begin{block}{``RGL" for Formal Language}
+\begin{itemize}
+\item  Krasimir : bigger grammar, begins resembling RGL
+\item We need to build a formal language RGL for GF
+\item Other ways of connecting it with external ITPs and PLs
+\item Possibly reinvigorate use of dependent types in GF
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin {frame}
+\frametitle{TODO}
+\begin{itemize}
+\item Amass a domain corpus for comparison of specific concrete syntax 
+\item Testing suite, framework, and methodology for GF CNLs, especially 
+  in the domain of propositions and types 
+\item some work on GF itself, to allow for user defined categories (like Int and
+String for variables)
+\item More interface with the Agda (or other PL) communities
+\item Possible investigation of metaprogramming in GF (this may hit the parser
+complexity bottleneck)
+\item Mathematical theory of GF (specifically, a categorical semantics with ASTs
+  being represented by operads). There is a presumed adjunction between GF Trees and Strings will us to understand GF more formally, i.e. prove
+  theorems about the relation between concrete and abstract syntax, especially regarding
+  expressivity, complexity, and scalability
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Related Work}
+\begin{itemize}
+\item NaProChe (Natural Language Proof Checking) : CNL with back-end solver which guarantees correctness
+\item Mizar : ITP with nl built in (based on set theory)
+\item NL interface for Coq
+\item Boxer system parses NL to FOL
+\item Ranta and Hallgren's work on NL inteface for Alfa
+\item Machine Learning : Szegedy, Josef Urban 
+\end{itemize}
+\end{frame}
 
 \begin{frame}
 \frametitle{Metaphors}
 
-Covered many issues, about a very hypothetical problem
-Religion, there is a conversion problem
+We've covered many issues, about a very immature problem.
 
+\begin{block}{Math as Religion}
+\begin{itemize}
+\item How one views the foundations of mathematics resembles religion
+\item All sides are convinced they are correct
+\item There are constant forks, reinterpretations, and heretics along the way
+\end{itemize}
+\end{block}
 
-Actually a very tangible problem
-Architect and Engineer - seperation of concerns
+Actually, in some sense, this is a very tangible problem, and the forces are already at work to
+integrate these fields.
 
+\begin{block}{~}
+\begin{itemize}
+\item Mathematician : Architect
+\item Type Theorist : Engineer
+\item Linguist : Scientist
+\end{itemize}
+\end{block}
+
+\end{frame}
 
 \end{document}
